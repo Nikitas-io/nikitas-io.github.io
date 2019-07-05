@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+body {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    text-align: left;
+}
+
+#header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#name {
+    margin-bottom: 0px;
+}
+
+#color1 {
+    background: #fffaf0;
+}
+
+#color2 {
+    background: #118a0d;
+}
+
+#color3 {
+    background: #574f4f;
+}
+
+#zenRocks {
+    max-width: 94%;
+    min-width: 100%;
+    border-radius: 1%;
+    opacity: 0.85;
+}
+
+#featured {
+    text-align: left;
+}
+
+.description {
+    margin-top: 0px;
+}
+
+.colorBox {
+    width: 70px;
+    height: 70px;
+    border: 1.2px dashed gray;
+    border-radius: 10%;
+}
+
+.images {
+    width: 100%;
+    border-radius: 1%;
+    opacity: 0.85;
+}
+
+.links {
+    text-decoration: none;
+    color: #574f4f;
+}
+
+/*For small screens (Mostly cellphones)*/
+
+@media screen and (max-width:390px) {
+    body {
+        background: url('images/background-small_2x.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    aside {
+        width: 90%;
+        margin-top: 3%;
+        margin-left: 14%;
+        display: inline-flex;
+    }
+    section {
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    figcaption {
+        margin-bottom: 8%;
+    }
+    #zenRocks {
+        width: 97%;
+    }
+    #logo {
+        order: -1;
+        width: 19%;
+        font-size: 6vh;
+        margin-top: 0.1em;
+        margin-left: -1%;
+    }
+    #title {
+        order: 0;
+        width: 81%;
+        text-align: left;
+    }
+    #name {
+        font-size: 2.5vh;
+        font-weight: 500;
+    }
+    .captions {
+        margin-top: 0.5%;
+        font-size: 3vh;
+        margin-bottom: 0.5%;
+    }
+    .colorBox {
+        min-width: 22px;
+        max-width: 22px;
+        height: 22px;
+    }
+    .hex {
+        margin-top: 0%;
+        margin-right: 2%;
+        font-size: 1.9vh;
+    }
+    .description {
+        font-size: 1.3vh;
+        font-weight: 500;
+    }
+    .images {
+        min-width: 150px;
+    }
+}
+
+/*For medium screens (Mostly tablets, maybe cellphones)*/
+
+@media screen and (min-width:391px) and (max-width:600px) {
+    body {
+        background: url('images/background-medium_2x.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    aside {
+        width: 90%;
+        margin-top: 3%;
+        margin-left: 10%;
+        display: inline-flex;
+    }
+    section {
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    figcaption {
+        margin-bottom: 8%;
+    }
+    #zenRocks {
+        width: 97%;
+    }
+    #logo {
+        order: -1;
+        width: 19%;
+        font-size: 8vh;
+        margin-top: 0.1em;
+        margin-left: -1%;
+    }
+    #title {
+        order: 0;
+        width: 81%;
+        text-align: left;
+    }
+    #name {
+        font-size: 3.1vh;
+    }
+    .captions {
+        margin-top: 0.5%;
+        font-size: 4vh;
+        margin-bottom: 0.5%;
+    }
+    .colorBox {
+        min-width: 42px;
+        max-width: 42px;
+        height: 42px;
+    }
+    .hex {
+        margin-top: 0%;
+        margin-right: 4%;
+        font-size: 2.2vh;
+    }
+    .description {
+        font-size: 1.7vh;
+    }
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/*Still for medium screens (Mostly tablets)*/
+
+@media screen and (min-width:601px) and (max-width:980px) {
+    body {
+        background: url('images/background-large_2x.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    aside {
+        margin-top: 22%;
+        margin-left: 5%;
+        margin-right: 1%;
+        width: 10%;
+        order: -1;
+    }
+    section {
+        width: 80%;
+        order: 0;
+    }
+    #logo {
+        order: -1;
+        width: 10%;
+        font-size: 11vh;
+        margin-top: 0.3em;
+    }
+    #title {
+        order: 0;
+        width: 90%;
+        text-align: right;
+    }
+    #name {
+        font-size: 5vh;
+    }
+    #featured {
+        font-size: 6.5vh;
+        margin-bottom: 0%;
+        margin-left: 0.68%;
+    }
+    .captions {
+        margin-top: 0.5%;
+        font-size: 6.5vh;
+        margin-bottom: 0.5%;
+    }
+    .colorBox {
+        width: 44px;
+        height: 44px;
+        margin-bottom: -13%;
+    }
+    .hex {
+        font-size: 2.2vh;
+    }
+    .description {
+        font-size: 3vh;
+    }
+}
+
+/*For big screens*/
+
+@media screen and (min-width:981px) and (max-width:1090px) {
+    body {
+        background: url('images/background-large_2x.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    aside {
+        margin-top: 20%;
+        margin-left: 4.5%;
+        width: 10%;
+        order: -1;
+    }
+    section {
+        width: 80%;
+        order: 0;
+    }
+    #logo {
+        order: -1;
+        width: 10%;
+        font-size: 12vh;
+        margin-top: 0.4em;
+    }
+    #title {
+        order: 0;
+        width: 90%;
+        text-align: right;
+    }
+    #name {
+        font-size: 7.5vh;
+        margin-bottom: 0px;
+    }
+    #featured {
+        font-size: 6.5vh;
+        margin-bottom: 0%;
+        margin-left: 3%;
+    }
+    #work {
+        margin-left: -3%;
+        display: inline-flex;
+    }
+    #relax {
+        margin-left: -56px;
+        margin-right: -56px;
+    }
+    .captions {
+        margin-top: 0.5%;
+        font-size: 5vh;
+        margin-bottom: 0.5%;
+    }
+    .images {
+        min-height: 16vh;
+        max-height: 16vh;
+        min-width: 24vh;
+        max-width: 24vh;
+    }
+    .colorBox {
+        width: 53px;
+        height: 53px;
+    }
+}
+
+@media screen and (min-width:1090px) {
+    body {
+        background: url('images/background-large_2x.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 1091px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section {
+        width: 83%;
+        order: 0;
+    }
+    aside {
+        margin-top: 25%;
+        margin-left: 3%;
+        width: 10%;
+        order: -1;
+    }
+    #zenRocks {
+        min-width: 100%;
+    }
+    #logo {
+        order: -1;
+        width: 10%;
+        font-size: 11vh;
+        margin-top: 0.4em;
+    }
+    #title {
+        order: 0;
+        width: 90%;
+        text-align: right;
+    }
+    #name {
+        font-size: 5.7vh;
+        margin-bottom: 0px;
+    }
+    #featured {
+        font-size: 5.5vh;
+        margin-bottom: 0%;
+        margin-left: 2.68%;
+    }
+    #work {
+        margin-left: -3.5%;
+        display: inline-flex;
+    }
+    #relax {
+        margin-left: -56px;
+        margin-right: -56px;
+    }
+    .captions {
+        margin-top: 0.5%;
+        font-size: 4vh;
+        margin-bottom: 0.5%;
+    }
+    .images {
+        min-height: 16vh;
+        max-height: 16vh;
+        min-width: 24vh;
+        max-width: 24vh;
+    }
+}
+
+/*height centered display settings for ipads*/
+
+@media screen and (min-width:601px) and (max-width:800px) and (min-height:760px) {
+    body {
+        background: url('images/background-large_2x.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    aside {
+        margin-top: 21%;
+        margin-left: 4.5%;
+        width: 10%;
+        order: -1;
+    }
+    section {
+        width: 80%;
+        order: 0;
+        margin-right: 1%;
+    }
+    #zenRocks {
+        width: 90%;
+    }
+    #logo {
+        order: -1;
+        width: 10%;
+        font-size: 7.5vh;
+        margin-top: 0.4em;
+    }
+    #title {
+        order: 0;
+        width: 90%;
+        text-align: right;
+    }
+    #name {
+        font-size: 4vh;
+        margin-bottom: 0px;
+    }
+    #featured {
+        font-size: 3.5vh;
+        margin-bottom: 0%;
+        margin-left: 4.5%;
+    }
+    .captions {
+        margin-top: 0.5%;
+        font-size: 2vh;
+        margin-bottom: 0.5%;
+    }
+    .images {
+        max-width: 80%;
+    }
+    .colorBox {
+        width: 44px;
+        height: 44px;
+        margin-bottom: -15%;
+    }
+    .hex {
+        font-size: 1.6vh;
+    }
+    .description {
+        font-size: 2vh;
+    }
+}
+
+@media screen and (min-width:981px) and (max-width:1200px) and (min-height:850px) and (max-height:1400px) {
+    body {
+        background: url('images/background-large_2x.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    aside {
+        margin-top: 21%;
+        margin-left: 4.5%;
+        width: 10%;
+        order: -1;
+    }
+    section {
+        width: 80%;
+        order: 0;
+        margin-right: 1%;
+    }
+    #zenRocks {
+        min-width: 96%;
+    }
+    #logo {
+        order: -1;
+        width: 10%;
+        font-size: 7.5vh;
+        margin-top: 0.4em;
+    }
+    #title {
+        order: 0;
+        width: 90%;
+        text-align: right;
+    }
+    #name {
+        font-size: 4vh;
+        margin-bottom: 0px;
+    }
+    #featured {
+        font-size: 3vh;
+        margin-bottom: 0%;
+        margin-left: 3%;
+    }
+    #work {
+        margin-left: -3%;
+        display: inline-flex;
+    }
+    #relax {
+        margin-left: -56px;
+        margin-right: -56px;
+    }
+    .captions {
+        margin-top: 0.5%;
+        font-size: 2vh;
+        margin-bottom: 0.5%;
+    }
+    .images {
+        min-height: 11vh;
+        max-height: 11vh;
+        min-width: 18vh;
+        max-width: 18vh;
+    }
+    .colorBox {
+        width: 44px;
+        height: 44px;
+        margin-bottom: -15%;
+    }
+    .hex {
+        font-size: 1.6vh;
+    }
+    .description {
+        font-size: 2vh;
+    }
+}
