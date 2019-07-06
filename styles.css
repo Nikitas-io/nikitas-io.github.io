@@ -22,7 +22,23 @@ body {
     font-family: 'vger_light', sans-serif;
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(38, 29, 69);
+    color: crimson;
 }
+
+body::after {
+    content: "";
+    background-image: url(images/circuit_board.jpg);
+    background-size: cover;
+    opacity: 0.09;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  
 
 aside {
     text-align: left;
@@ -41,6 +57,14 @@ aside {
     order: -1;
 }
 
+hr{
+    background-color: crimson;
+    height: 7px;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
 #header {
     display: flex;
     flex-wrap: wrap;
@@ -51,21 +75,10 @@ aside {
     margin-bottom: 0px;
 }
 
-#color1 {
-    background: #fffaf0;
-}
-
-#color2 {
-    background: #118a0d;
-}
-
-#color3 {
-    background: #574f4f;
-}
-
 #zenRocks {
     height: 560px;
     opacity: 0.85;
+    background-color: rgb(55, 41, 99);
 }
 
 #featured {
@@ -90,8 +103,8 @@ aside {
 }
 
 .borders{
-    border: 2px solid black;
-    box-shadow: 5px 10px 18px red;
+    border: 1px solid rgb(64, 183, 247);
+    box-shadow: 4px 4px 11px mediumvioletred;
 }
 
 
@@ -100,7 +113,7 @@ aside {
 
 @media screen and (max-width:390px) {
     body {
-        background: url('images/background-small_2x.jpg');
+        /* background: url('images/background-small_2x.jpg'); */
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -166,7 +179,7 @@ aside {
 
 @media screen and (min-width:391px) and (max-width:600px) {
     body {
-        background: url('images/background-medium_2x.jpg');
+        /* background: url('images/background-medium_2x.jpg'); */
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -232,7 +245,7 @@ aside {
 
 @media screen and (min-width:601px) and (max-width:980px) {
     body {
-        background: url('images/background-large_2x.jpg');
+        /* background: url('images/background-large_2x.jpg'); */
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -289,7 +302,7 @@ aside {
 
 @media screen and (min-width:981px) and (max-width:1090px) {
     body {
-        background: url('images/background-large_2x.jpg');
+        /* background: url('images/background-large_2x.jpg'); */
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -339,7 +352,7 @@ aside {
 
 @media screen and (min-width:1090px) {
     body {
-        background: url('images/background-large_2x.jpg');
+        /* background: url('images/background-large_2x.jpg'); */
         background-size: contain;
         background-repeat: no-repeat;
         width: 1091px;
