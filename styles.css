@@ -26,17 +26,18 @@ body {
     color: crimson;
 }
 
-body::after {
+body::before {
     content: "";
-    background-image: url(images/circuit_board.jpg);
+    background-image: url(images/circuit_board_2.jpg);
     background-size: cover;
-    opacity: 0.09;
+    background-repeat: no-repeat;
+    opacity: 0.15;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;   
+ 
   }
   
 
@@ -75,7 +76,9 @@ hr{
     margin-bottom: 0px;
 }
 
-#zenRocks {
+#logs {
+    text-align: left;
+    padding: 10px;
     height: 560px;
     opacity: 0.85;
     background-color: rgb(55, 41, 99);
@@ -131,7 +134,7 @@ hr{
     figcaption {
         margin-bottom: 8%;
     }
-    #zenRocks {
+    #logs {
         width: 97%;
     }
     #logo {
@@ -197,7 +200,7 @@ hr{
     figcaption {
         margin-bottom: 8%;
     }
-    #zenRocks {
+    #logs {
         width: 97%;
     }
     #logo {
@@ -277,7 +280,7 @@ hr{
         font-size: 45px;
         margin-bottom: 0%;
     }
-    #zenRocks {
+    #logs {
         height: 480px;
     }
     .captions {
@@ -359,7 +362,7 @@ hr{
         margin-left: auto;
         margin-right: auto;
     }
-    #zenRocks {
+    #logs {
         min-width: 100%;
     }
     #logo {
@@ -401,70 +404,3 @@ hr{
         max-width: 210px;
     }
 }
-
-
-
-
-#container {
-    padding: .1em 1.5em 1em 1em;
-  }
-  #container output {
-    clear: both;
-    width: 100%;
-  }
-  #container output h3 {
-    margin: 0;
-  }
-  #container output pre {
-    margin: 0;
-  }
-  .input-line {
-    display: -webkit-box;
-    -webkit-box-orient: horizontal;
-    -webkit-box-align: stretch;
-    display: -moz-box;
-    -moz-box-orient: horizontal;
-    -moz-box-align: stretch;
-    display: box;
-    box-orient: horizontal;
-    box-align: stretch;
-    clear: both;
-  }
-  .input-line > div:nth-child(2) {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    box-flex: 1;
-  }
-  .prompt {
-    white-space: nowrap;
-    color: #96b38a;
-    margin-right: 7px;
-    display: -webkit-box;
-    -webkit-box-pack: center;
-    -webkit-box-orient: vertical;
-    display: -moz-box;
-    -moz-box-pack: center;
-    -moz-box-orient: vertical;
-    display: box;
-    box-pack: center;
-    box-orient: vertical;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  .cmdline {
-    outline: none;
-    background-color: transparent;
-    margin: 0;
-    width: 100%;
-    font: inherit;
-    border: none;
-    color: inherit;
-  }
-  .ls-files {
-    height: 45px;
-    -webkit-column-width: 100px;
-    -moz-column-width: 100px;
-    -o-column-width: 100px;
-    column-width: 100px;
-  }
