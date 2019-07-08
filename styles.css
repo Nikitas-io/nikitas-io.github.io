@@ -28,7 +28,7 @@ body {
 
 body::before {
     content: "";
-    background-image: url(images/circuit_board_2.jpg);
+    background-image: url(images/background/circuit_board_large.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.15;
@@ -89,6 +89,10 @@ hr{
     text-align: left;
 }
 
+#work {
+    margin-bottom: 5%;
+}
+
 .description {
     font-size: 18.7px;
     font-family: vger_regular;
@@ -101,8 +105,10 @@ hr{
 }
 
 .images {
-    width: 100%;
-    opacity: 0.85;
+    border-radius: 73px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .borders{
@@ -115,10 +121,8 @@ hr{
 /*For small screens (Mostly cellphones)*/
 
 @media screen and (max-width:390px) {
-    body {
-        /* background: url('images/background-small_2x.jpg'); */
-        background-size: contain;
-        background-repeat: no-repeat;
+    body::before {
+        background-image: url(images/background/circuit_board_small.jpg);
     }
     aside {
         width: 90%;
@@ -130,9 +134,6 @@ hr{
         width: 94%;
         margin-left: auto;
         margin-right: auto;
-    }
-    figcaption {
-        margin-bottom: 8%;
     }
     #logs {
         width: 97%;
@@ -154,11 +155,6 @@ hr{
         font-size: 26px;
         font-weight: bold;
     }
-    .captions {
-        margin-top: 0.5%;
-        font-size: 20px;
-        margin-bottom: 0.5%;
-    }
     .colorBox {
         min-width: 22px;
         max-width: 22px;
@@ -174,17 +170,15 @@ hr{
         font-weight: 500;
     }
     .images {
-        min-width: 150px;
+
     }
 }
 
 /*For medium screens (Mostly tablets, maybe cellphones)*/
 
 @media screen and (min-width:391px) and (max-width:600px) {
-    body {
-        /* background: url('images/background-medium_2x.jpg'); */
-        background-size: contain;
-        background-repeat: no-repeat;
+    body::before {
+        background-image: url(images/background/circuit_board_small.jpg);
     }
     aside {
         width: 90%;
@@ -196,9 +190,6 @@ hr{
         width: 94%;
         margin-left: auto;
         margin-right: auto;
-    }
-    figcaption {
-        margin-bottom: 8%;
     }
     #logs {
         width: 97%;
@@ -219,11 +210,6 @@ hr{
         margin-top: 6px;
         font-size: 30px;
         font-weight: bold;
-    }
-    .captions {
-        margin-top: 0.5%;
-        font-size: 30px;
-        margin-bottom: 0.5%;
     }
     .colorBox {
         min-width: 42px;
@@ -247,10 +233,8 @@ hr{
 /*Still for medium screens (Mostly tablets)*/
 
 @media screen and (min-width:601px) and (max-width:980px) {
-    body {
-        /* background: url('images/background-large_2x.jpg'); */
-        background-size: contain;
-        background-repeat: no-repeat;
+    body::before {
+        background-image: url(images/background/circuit_board_medium.jpg);
     }
     section {
         width: 76.5%;
@@ -283,11 +267,6 @@ hr{
     #logs {
         height: 480px;
     }
-    .captions {
-        margin-top: 0.5%;
-        font-size: 45px;
-        margin-bottom: 0.5%;
-    }
     .colorBox {
         width: 44px;
         height: 44px;
@@ -304,10 +283,8 @@ hr{
 /*For big screens*/
 
 @media screen and (min-width:981px) and (max-width:1090px) {
-    body {
-        /* background: url('images/background-large_2x.jpg'); */
-        background-size: contain;
-        background-repeat: no-repeat;
+    body::before {
+        background-image: url(images/background/circuit_board_medium.jpg);
     }
     #logo {
         order: -1;
@@ -328,24 +305,8 @@ hr{
         font-size: 45px;
         margin-bottom: 0%;
     }
-    #work {
-        margin-left: -3%;
-        display: inline-flex;
-    }
-    #relax {
-        margin-left: -56px;
-        margin-right: -56px;
-    }
-    .captions {
-        margin-top: 0.5%;
-        font-size: 30px;
-        margin-bottom: 0.5%;
-    }
     .images {
-        min-height: 125px;
-        max-height: 125px;
-        min-width: 210px;
-        max-width: 210px;
+
     }
     .colorBox {
         width: 53px;
@@ -355,9 +316,6 @@ hr{
 
 @media screen and (min-width:1090px) {
     body {
-        /* background: url('images/background-large_2x.jpg'); */
-        background-size: contain;
-        background-repeat: no-repeat;
         width: 1091px;
         margin-left: auto;
         margin-right: auto;
@@ -384,23 +342,7 @@ hr{
         font-size: 45px;
         margin-bottom: 0%;
     }
-    #work {
-        margin-left: -3.5%;
-        display: inline-flex;
-    }
-    #relax {
-        margin-left: -56px;
-        margin-right: -56px;
-    }
-    .captions {
-        margin-top: 0.5%;
-        font-size: 30px;
-        margin-bottom: 0.5%;
-    }
     .images {
-        min-height: 125px;
-        max-height: 125px;
-        min-width: 210px;
-        max-width: 210px;
+
     }
 }
