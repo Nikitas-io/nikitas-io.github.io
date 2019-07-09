@@ -1,6 +1,6 @@
 const button = new Audio('sfx/button.wav');
-button.volume = 0.3;
-const typingLetter = new Audio('sfx/typingletter.wav');
+button.volume = 0.1;
+const typingLetter = new Audio('sfx/typing.mp3');
 typingLetter.volume = 0.1;
 
 //Play the sound.
@@ -33,7 +33,7 @@ var showText = function (target, message, index, interval) {
 // Log Entries.
 const logEntries = [];
 logEntries[1] = "When it all started I had no idea how far deep this goes... At this point, I'm too \
-invested to ever look back. Like last year, this summer too, I will not be taking any days off."
+invested to ever look back. Like last year, this summer too, I won't be taking any days off."
 
 // Start the log.
 const logButton = document.getElementById('log-button');
