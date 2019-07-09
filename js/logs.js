@@ -12,4 +12,4 @@ var showText = function (target, message, index, interval) {
 
 
 
-showText("logs", "Do you want to load state?", 0, 50);
+showText("log-text", "LOG ENTRY #1", 0, 50);
