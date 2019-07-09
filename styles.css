@@ -98,12 +98,15 @@ hr{
 }
 
 #log-entry-num{
-    font-family: vger_bold;
+    font-family: hunters;
+    font-weight: bold;
 }
 
 .log-text{
+    font-family: hunters;
+    margin-left: 2%;
+    margin-right: 2%;
     font-size: 15px;
-    font-weight: bold;
     text-align: left;
     padding: 10px;
     opacity: 1;
@@ -111,6 +114,7 @@ hr{
 }
 
 #log-button{
+    cursor: pointer;
     width: 120px;
     height: 53px;
     position: absolute;
@@ -121,6 +125,13 @@ hr{
     font-family: vger_bold;
     color: white;
     background-color: rgb(90, 41, 99);
+
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+#log-button:active{
+    transform: translate(-50%, -43%);
 }
 
 #work {
@@ -148,11 +159,17 @@ hr{
 }
 
 .images {
+    cursor: pointer;
     border-radius: 73px;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     width: 65px;
+    transition: transform .2s; /* Animation */
+}
+
+.images:hover{
+    transform: scale(1.5); /* (150% zoom) */
 }
 
 .borders{
@@ -162,6 +179,10 @@ hr{
 
 .blinker {
   animation: blinker 1.5s linear infinite;
+}
+
+.blinker:hover{
+    animation: none;
 }
 
 @keyframes blinker {
