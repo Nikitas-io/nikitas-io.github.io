@@ -67,7 +67,7 @@ footer{
     justify-content: center; /* center items vertically, in this case */
     align-items: center;     /* center items horizontally, in this case */
     z-index: 1;
-    margin-top: 3%;
+    margin-top: 5%;
     margin-bottom: 7.5%;
 }
 
@@ -214,12 +214,15 @@ hr{
     }
     footer{
         margin-left: 4%;
+        margin-top: 1%;
+        margin-bottom: 10.5%;
     }
     #work {
         width: 239px;
     }
     #logs {
         width: 100%;
+        height: 390px;
     }
     #logo {
         order: -1;
@@ -277,8 +280,13 @@ hr{
         margin-left: 3%;
         margin-right: 3%;
     }
+    footer{
+        margin-top: 1%;
+        margin-bottom: 10.5%;
+    }
     #logs {
         width: 100%;
+        height: 400px;
     }
     #logo {
         order: -1;
