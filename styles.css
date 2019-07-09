@@ -42,11 +42,6 @@ body::before {
     right: 0;
     position: absolute;
 }
-  
-
-aside {
-    text-align: left;
-}
 
 section {
     width: 78%;
@@ -56,11 +51,13 @@ section {
     z-index: 1;
 }
 aside {
-    margin-top: 190px;
+    margin-top: 177px;
     width: 14%;
     margin-left: 3%;
     order: -1;
     z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
 }
 footer{
     width: 100%;
@@ -100,7 +97,11 @@ hr{
     position: relative;
 }
 
-#log-text{
+#log-entry-num{
+    font-family: vger_bold;
+}
+
+.log-text{
     font-size: 15px;
     font-weight: bold;
     text-align: left;
@@ -129,6 +130,7 @@ hr{
 }
 
 .hex{
+    width: 150px;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -183,9 +185,9 @@ hr{
         order: 0;
     }
     section {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
     }
     #logs {
         width: 100%;
@@ -239,9 +241,9 @@ hr{
         order: 0;
     }
     section {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
     }
     #logs {
         width: 100%;

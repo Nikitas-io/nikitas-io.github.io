@@ -12,4 +12,4 @@ var showText = function (target, message, index, interval) {
 
 
 
-showText("log-text", "LOG ENTRY #1", 0, 50);
+showText("log-entry-content", "HERE IS THE LOG ENTRY.", 0, 50);
