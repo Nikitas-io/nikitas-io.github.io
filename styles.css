@@ -91,7 +91,7 @@ hr{
 }
 
 #logs {
-    height: 560px;
+    height: 590px;
     opacity: 0.75;
     background-color: rgb(55, 41, 99);
     position: relative;
@@ -201,8 +201,10 @@ hr{
     aside {
         width: 100%;
         margin-top: 3%;
-        margin-left: 14%;
-        display: inline-flex;
+        margin-left: 3.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         order: 0;
     }
     section {
@@ -210,25 +212,30 @@ hr{
         margin-left: 3%;
         margin-right: 3%;
     }
+    footer{
+        margin-left: 4%;
+    }
+    #work {
+        width: 239px;
+    }
     #logs {
         width: 100%;
     }
     #logo {
         order: -1;
-        width: 30%;
-        font-size: 40px;
+        width: 22%;
+        font-size: 41px;
         margin-top: 0.1em;
         margin-left: -1%;
     }
     #title {
         order: 0;
-        width: 70%;
-        text-align: left;
+        width: 79%;
+        text-align: right;
     }
     #name {
-        margin-top: 6px;
-        font-size: 26px;
-        font-weight: bold;
+        margin-top: 13px;
+        font-size: 30px;
     }
     .colorBox {
         min-width: 22px;
@@ -236,16 +243,17 @@ hr{
         height: 22px;
     }
     .hex {
-        margin-top: 0%;
-        margin-right: 2%;
-        font-size: 1.9vh;
+        width: 87%;
+        margin-top: 4%;
+        font-size: 15px;
     }
     .description {
-        font-size: 13px;
-        font-weight: 500;
+        font-size: 10.2px;
     }
     .images {
-
+        width: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -258,7 +266,10 @@ hr{
     aside {
         width: 100%;
         margin-top: 3%;
-        display: contents;
+        margin-left: 0.8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         order: 0;
     }
     section {
@@ -272,19 +283,23 @@ hr{
     #logo {
         order: -1;
         width: 23%;
-        font-size: 45px;
+        font-size: 57px;
         margin-top: 0.1em;
         margin-left: -1%;
     }
     #title {
         order: 0;
         width: 77%;
-        text-align: left;
+        text-align: right;
     }
     #name {
-        margin-top: 6px;
-        font-size: 30px;
+        margin-top: 16px;
+        font-size: 40px;
         font-weight: bold;
+    }
+    .side-container{
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .colorBox {
         min-width: 42px;
@@ -292,11 +307,12 @@ hr{
         height: 42px;
     }
     .hex {
+        width: 96%;
         margin-top: 0%;
         font-size: 18px;
     }
     .description {
-        font-size: 15px;
+        font-size: 13.6px;
     }
     .images {
         
