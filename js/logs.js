@@ -32,8 +32,7 @@ var showText = function (target, message, index, interval) {
 
 // Log Entries.
 const logEntries = [];
-logEntries[1] = "When it all started I had no idea how far deep this goes... At this point, I'm too \
-invested to ever look back. Like last year, this summer too, I won't be taking any days off."
+logEntries[1] = "You'd think the first entry would be pretty cool and stuff... But I couldn't think of anything that wasn't cringy."
 
 // Start the log.
 const logButton = document.getElementById('log-button');
