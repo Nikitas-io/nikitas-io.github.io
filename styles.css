@@ -4,12 +4,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'vger_bold';
     src: url('fonts/vger_bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'OCRA';
     src: url('fonts/OCRAStd.otf');
@@ -18,9 +20,24 @@
 }
 
 
-html{
+html {
     position: relative;
     min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    height: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px crimson; 
+    border-radius: 10px;
 }
 
 body {
@@ -51,6 +68,7 @@ section {
     order: 0;
     z-index: 1;
 }
+
 aside {
     margin-top: 177px;
     width: 14%;
@@ -60,20 +78,23 @@ aside {
     margin-left: auto;
     margin-right: auto;
 }
-footer{
+
+footer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;  /* make main axis vertical */
-    justify-content: center; /* center items vertically, in this case */
-    align-items: center;     /* center items horizontally, in this case */
+    flex-direction: column;
+    /* make main axis vertical */
+    justify-content: center;
+    /* center items vertically, in this case */
+    align-items: center;
+    /* center items horizontally, in this case */
     z-index: 1;
     margin-top: 5%;
-    margin-bottom: 7.5%;
 }
 
 
-hr{
+hr {
     background-color: crimson;
     height: 7px;
     border: none;
@@ -93,23 +114,23 @@ hr{
 
 #logs {
     height: 590px;
-    opacity: 0.75;
+    opacity: 0.87;
     background-color: rgb(55, 41, 99);
     position: relative;
 }
 
-#log-entry-num{
+#log-entry-num {
     font-family: OCRA;
     font-size: 16px;
     margin-top: 11px;
 }
 
-#log-entry-content{
+#log-entry-content {
     font-family: OCRA;
     font-size: 14px;
 }
 
-.log-text{
+.log-text {
     margin-left: 2%;
     margin-right: 2%;
     text-align: left;
@@ -118,7 +139,7 @@ hr{
     color: white;
 }
 
-#log-button{
+#log-button {
     cursor: pointer;
     width: 120px;
     height: 53px;
@@ -135,17 +156,21 @@ hr{
     transition: opacity 0.3s;
 }
 
-#log-button:active{
+#log-button:active {
     transform: translate(-50%, -43%);
 }
 
-#work {
+#social {
     margin-left: auto;
     margin-right: auto;
     width: 330px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
 }
 
-.hex{
+.hex {
     width: 150px;
     font-size: 18px;
     font-weight: bold;
@@ -170,30 +195,32 @@ hr{
     margin-left: 20px;
     margin-right: 20px;
     width: 65px;
-    transition: transform .2s; /* Animation */
+    transition: transform .2s;
+    /* Animation */
 }
 
-.images:hover{
-    transform: scale(1.5); /* (150% zoom) */
+.images:hover {
+    transform: scale(1.2);
+    /* (150% zoom) */
 }
 
-.borders{
+.borders {
     border: 1px solid rgb(64, 183, 247);
     box-shadow: 4px 4px 11px mediumvioletred;
 }
 
 .blinker {
-  animation: blinker 1.5s linear infinite;
+    animation: blinker 1.5s linear infinite;
 }
 
-.blinker:hover{
+.blinker:hover {
     animation: none;
 }
 
 @keyframes blinker {
-  50% {
-    opacity: 0.4;
-  }
+    50% {
+        opacity: 0.4;
+    }
 }
 
 
@@ -203,6 +230,7 @@ hr{
     body::before {
         background-image: url(images/background/circuit_board_small.jpg);
     }
+
     aside {
         width: 100%;
         margin-top: 3%;
@@ -212,23 +240,27 @@ hr{
         align-items: center;
         order: 0;
     }
+
     section {
         width: 94%;
         margin-left: 3%;
         margin-right: 3%;
     }
-    footer{
+
+    footer {
         margin-left: 4%;
         margin-top: 1%;
-        margin-bottom: 10.5%;
     }
-    #work {
+
+    #social {
         width: 239px;
     }
+
     #logs {
         width: 100%;
         height: 390px;
     }
+
     #logo {
         order: -1;
         width: 22%;
@@ -236,28 +268,34 @@ hr{
         margin-top: 0.1em;
         margin-left: -1%;
     }
+
     #title {
         order: 0;
         width: 79%;
         text-align: right;
     }
+
     #name {
         margin-top: 13px;
         font-size: 30px;
     }
+
     .colorBox {
         min-width: 22px;
         max-width: 22px;
         height: 22px;
     }
+
     .hex {
         width: 87%;
         margin-top: 4%;
         font-size: 15px;
     }
+
     .description {
         font-size: 10.2px;
     }
+
     .images {
         width: 50px;
         margin-left: 10px;
@@ -265,12 +303,87 @@ hr{
     }
 }
 
+
+
+
+
+
+/* carousel Start */
+
+.carousel {
+    width: 95%;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+.slides {
+    display: flex;
+    padding-bottom: 10px;
+
+    overflow-y: hidden;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    scroll-snap-points-x: repeat(200px);
+    scroll-snap-type: mandatory;
+}
+
+.slides::-webkit-scrollbar {
+    height: 15px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: crimson;
+    border-radius: 10px;
+}
+
+.slides::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px crimson; 
+    border-radius: 10px;
+}
+
+.slides>div {
+    z-index: 1;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 48%;
+    height: 210px;
+    margin-right: 2%;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+
+/* carousel End */
+
+
+
+
+
+
+
 /*For medium screens (Mostly tablets, maybe cellphones)*/
 
 @media screen and (min-width:391px) and (max-width:600px) {
     body::before {
         background-image: url(images/background/circuit_board_small.jpg);
     }
+
     aside {
         width: 100%;
         margin-top: 3%;
@@ -280,19 +393,22 @@ hr{
         align-items: center;
         order: 0;
     }
+
     section {
         width: 94%;
         margin-left: 3%;
         margin-right: 3%;
     }
-    footer{
+
+    footer {
         margin-top: 1%;
-        margin-bottom: 10.5%;
     }
+
     #logs {
         width: 100%;
         height: 400px;
     }
+
     #logo {
         order: -1;
         width: 23%;
@@ -300,36 +416,41 @@ hr{
         margin-top: 0.1em;
         margin-left: -1%;
     }
+
     #title {
         order: 0;
         width: 77%;
         text-align: right;
     }
+
     #name {
         margin-top: 16px;
         font-size: 40px;
         font-weight: bold;
     }
-    .side-container{
+
+    .side-container {
         margin-left: 10px;
         margin-right: 10px;
     }
+
     .colorBox {
         min-width: 42px;
         max-width: 42px;
         height: 42px;
     }
+
     .hex {
         width: 96%;
         margin-top: 0%;
         font-size: 18px;
     }
+
     .description {
         font-size: 13.6px;
     }
-    .images {
-        
-    }
+
+    
 }
 
 /*Still for medium screens (Mostly tablets)*/
@@ -338,41 +459,50 @@ hr{
     body::before {
         background-image: url(images/background/circuit_board_medium.jpg);
     }
+
     section {
         width: 76.5%;
         margin-right: 1.5%;
         margin-left: 0%;
     }
+
     aside {
         margin-top: 147px;
         width: 20%;
         margin-left: 2%;
     }
+
     #logo {
         order: -1;
         width: 10%;
         font-size: 67px;
         margin-top: 0.3em;
     }
+
     #title {
         order: 0;
         width: 90%;
         text-align: right;
     }
+
     #name {
         font-size: 45px;
     }
+
     #logs {
         height: 480px;
     }
+
     .colorBox {
         width: 44px;
         height: 44px;
         margin-bottom: -13%;
     }
+
     .hex {
         width: 105px;
     }
+
     .description {
         font-size: 15.3px;
     }
@@ -384,24 +514,27 @@ hr{
     body::before {
         background-image: url(images/background/circuit_board_medium.jpg);
     }
+
     #logo {
         order: -1;
         width: 10%;
         font-size: 85px;
         margin-top: 0.4em;
     }
+
     #title {
         order: 0;
         width: 90%;
         text-align: right;
     }
+
     #name {
         font-size: 55px;
         margin-bottom: 0px;
     }
-    .images {
 
-    }
+    
+
     .colorBox {
         width: 53px;
         height: 53px;
@@ -414,25 +547,28 @@ hr{
         margin-left: auto;
         margin-right: auto;
     }
+
     #logs {
         min-width: 100%;
     }
+
     #logo {
         order: -1;
         width: 10%;
         font-size: 85px;
         margin-top: 0.4em;
     }
+
     #title {
         order: 0;
         width: 90%;
         text-align: right;
     }
+
     #name {
         font-size: 55px;
         margin-bottom: 0px;
     }
-    .images {
 
-    }
+    
 }
