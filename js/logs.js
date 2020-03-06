@@ -29,10 +29,14 @@ var showText = function (target, message, index, interval) {
     }
 }
 
+// Get the current year.
+let year = new Date().getFullYear();
+let myAge = year - 1996;
 
 // Log Entries.
 const logEntries = [];
-logEntries[1] = "You'd think the first entry would be pretty cool and stuff... But I couldn't think of anything that wasn't cringy."
+logEntries[1] = "Welcome to my homepage. I am a " + myAge + "year-old software engineer and project manager." + 
+    " If you'd like to find out more about me, please press one of the animated buttons to learn about Nikitas I/O";
 
 // Start the log.
 const logButton = document.getElementById('log-button');
