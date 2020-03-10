@@ -136,6 +136,7 @@ hr {
 }
 
 .sub-title{
+    margin-left: 3px;
     text-align: left;
 }
 
@@ -148,25 +149,38 @@ hr {
     color: white;
 }
 
-#log-button {
-    cursor: pointer;
-    width: 120px;
-    height: 53px;
+#log-button{
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 120px;
     transform: translate(-50%, -50%);
-    font-size: large;
-    font-family: vger_bold;
-    color: white;
-    background-color: rgb(90, 41, 99);
-
     opacity: 1;
     transition: opacity 0.3s;
 }
 
 #log-button:active {
     transform: translate(-50%, -43%);
+}
+
+.basic-button {
+    cursor: pointer;
+    height: 53px;
+
+    font-size: large;
+    font-family: vger_bold;
+    color: white;
+    background-color: rgb(90, 41, 99);
+}
+
+.basic-button:active {
+    transform: translate(0, 4%);
+}
+
+.scroll-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: fit-content;
 }
 
 #social {
@@ -206,12 +220,10 @@ hr {
     margin-right: 20px;
     width: 65px;
     transition: transform .2s;
-    /* Animation */
 }
 
 .images:hover {
-    transform: scale(1.2);
-    /* (150% zoom) */
+    transform: scale(1.2); /* (150% zoom) */
 }
 
 .borders {
@@ -230,14 +242,13 @@ hr {
     margin-bottom: 2%;
 }
 
-/* 2. Make nav sticky */
 .spy > nav {
 	position: sticky;
-	top: 2rem;
+	top: 1rem;
 	align-self: start;
 }
 
-/* 3. ScrollSpy active styles (see JS tab for activation) */
+/* ScrollSpy active styles (see JS tab for activation) */
 .section-nav li.active > a {
 	color: #333;
 	font-weight: 500;
@@ -252,19 +263,9 @@ hr {
 .section-nav a {
 	text-decoration: none;
 	display: block;
-	padding: .125rem 0;
+	padding: 10px;
 	color: #ccc;
 	transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
-}
-
-.section-nav a:hover,
-.section-nav a:focus {
-	color: #666;
-}
-
-/** Poor man's reset **/
-* {
-	box-sizing: border-box;
 }
 
 ul, ol {
@@ -272,24 +273,21 @@ ul, ol {
 	margin: 0;
 	padding: 0;
 }
+
 li {
-	margin-left: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
 }
 
-h1 {
-	font-weight: 300;
-}
-
-/** page layout **/
 .spy {
 	display: grid;
 	grid-template-columns: 1fr 15em;
 	max-width: 100em;
-	width: 90%;
+	width: 102%;
 	margin: 0 auto;
 }
 
-/** enlarge the sections for this demo, so that we have a long scrollable page **/
 article {
 	padding-bottom: 20rem;
 }
@@ -309,7 +307,6 @@ article {
         opacity: 0.4;
     }
 }
-
 
 /*For small screens (Mostly cellphones)*/
 
