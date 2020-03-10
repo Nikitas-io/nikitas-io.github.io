@@ -77,36 +77,70 @@
         </div>
     </aside>
 
-    <section class="carousel">
-    
+    <section class="scrollspy">
         <div class="sub-title">
             <h1 class="name">PROJECTS</h1>
             <h2 class="description">FEATURED WORK.</h2>
         </div>
     
-    <hr />
-    <div class="slides">
+        <hr />
+        <!-- ScrollSpy Start -->
 
-        <div class="borders" id="slide-1">
-        1
-        </div>
-        <div class="borders" id="slide-2">
-        2
-        </div>
-        <div class="borders" id="slide-3">
-        3
-        </div>
-        <div class="borders" id="slide-4">
-        4
-        </div>
-    </div>
+        <div class="spy">
+            <!-- Content Section -->
+            <div id="project-content">
+                <h1>Smooth Scrolling Sticky ScrollSpy Navigation</h1>
+                <article id="introduction">
+                    <h2>Introduction</h2>
+                    <p>…</p>
+                </article>
+                <article id="request-response">
+                    <h2>Request &amp; Response</h2>
+                    <p>…</p>
+                </article>
+                <article id="endpoints">
+                    <h2>Endpoints</h2>
+                    <article id="endpoints--root">
+                        <h3>Root</h3>
+                        <p>…</p>
+                    </article>
+                    <article id="endpoints--cities-overview">
+                        <h3>Cities Overview</h3>
+                        <p>…</p>
+                    </article>
+                </article>
+                <article id="links">
+                    <h2>Links</h2>
+                    <p>…</p>
+                </article>
+            </div>
+            <!-- End of Content Section -->
 
+            <!-- Navigation Section -->
+            <nav class="section-nav">
+                <ol>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#request-response">Request &amp; Response</a></li>
+                    <li><a href="#endpoints">Endpoints</a>
+                        <ul>
+                            <li class=""><a href="#endpoints--root">Root</a></li>
+                            <li class=""><a href="#endpoints--cities-overview">Cities Overview</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="#links">Links</a></li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- ScrollSpy End -->
     </section>
+
     <footer>
         
     </footer>
 
     <script src="js/logs.js"></script>
+    <script src="js/scrollspy.js"></script>
 </body>
 
 </html>
