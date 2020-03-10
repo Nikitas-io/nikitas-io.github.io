@@ -114,10 +114,27 @@ hr {
 }
 
 #logs {
-    height: 590px;
+    height: 595px;
     opacity: 0.87;
     background-color: rgb(55, 41, 99);
     position: relative;
+
+    
+}
+
+#logs::before {
+    content: "";
+    border: 50px solid transparent;
+    /* border: 232px solid transparent; */
+    border-image: url(images/borders.png) 20 round;
+    /* border-image: url(images/borders.png) 55 round; */
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    
 }
 
 #log-entry-num {
@@ -340,7 +357,6 @@ article {
     }
 
     #logs {
-        width: 100%;
         height: 390px;
     }
 
@@ -409,7 +425,6 @@ article {
     }
 
     #logs {
-        width: 100%;
         height: 400px;
     }
 
@@ -563,10 +578,6 @@ article {
         width: 1091px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    #logs {
-        min-width: 100%;
     }
 
     #logo {
