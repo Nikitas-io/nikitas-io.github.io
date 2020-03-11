@@ -126,7 +126,7 @@ hr {
     content: "";
     border: 50px solid transparent;
     /* border: 232px solid transparent; */
-    border-image: url(images/borders.png) 20 round;
+    border-image: url(images/log-borders.png) 20 round;
     /* border-image: url(images/borders.png) 55 round; */
 
     top: 0;
@@ -137,15 +137,31 @@ hr {
     
 }
 
-#log-entry-num {
-    font-family: OCRA;
-    font-size: 16px;
-    margin-top: 11px;
-}
-
-#log-entry-content {
+.text {
     font-family: OCRA;
     font-size: 14px;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: left;
+    padding: 10px;
+    opacity: 1;
+    color: white;
+}
+
+.text-header{
+    font-family: 'vger_regular';
+    color: crimson;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.article-borders{
+    border: 20px solid transparent;
+    border-image: url(images/article-borders.png) 20 round;
+}
+
+#project-content{
+    margin-right: 20px;
 }
 
 .title{
@@ -157,14 +173,6 @@ hr {
     text-align: left;
 }
 
-.log-text {
-    margin-left: 2%;
-    margin-right: 2%;
-    text-align: left;
-    padding: 10px;
-    opacity: 1;
-    color: white;
-}
 
 #log-button{
     position: absolute;
@@ -323,6 +331,15 @@ li {
 
 article {
 	padding-bottom: 20rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+#project-content hr{
+    height: 2px;
 }
 
 /* Scrollspy End */
