@@ -116,10 +116,7 @@ hr {
 #logs {
     height: 595px;
     opacity: 0.87;
-    background-color: rgb(55, 41, 99);
     position: relative;
-
-    
 }
 
 #logs::before {
@@ -137,11 +134,21 @@ hr {
     
 }
 
+#log-entry{
+    margin-left: 6%;
+}
+
+#log-entry-content{
+    background-color: rgb(55, 41, 99);
+    position: absolute;
+    top: 50px;
+    width: 85%;
+    height: 80%;
+}
+
 .text {
     font-family: OCRA;
     font-size: 14px;
-    margin-left: 2%;
-    margin-right: 2%;
     text-align: left;
     padding: 10px;
     opacity: 1;
@@ -158,6 +165,10 @@ hr {
 .article-borders{
     border: 20px solid transparent;
     border-image: url(images/article-borders.png) 20 round;
+}
+
+.article-image{
+    width: 250px;
 }
 
 #project-content{
@@ -331,9 +342,8 @@ li {
 
 article {
 	padding-bottom: 20rem;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    margin-left: 5px;
     margin-bottom: 60px;
     text-align: left;
 }
