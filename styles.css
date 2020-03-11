@@ -219,6 +219,15 @@ hr {
     margin-top: 5px;
 }
 
+aside img{
+    opacity: 0.85;
+}
+
+aside img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
 .description {
     font-size: 18.7px;
     margin-top: 0px;
@@ -248,6 +257,10 @@ hr {
     box-shadow: 4px 4px 11px mediumvioletred;
 }
 
+.borders:hover{
+    box-shadow: 6px 6px 14px mediumvioletred;
+}
+
 
 /* Scrollspy Start */
 
@@ -267,8 +280,7 @@ hr {
 
 /* ScrollSpy active styles (see JS tab for activation) */
 .section-nav li.active > a {
-	color: #333;
-	font-weight: 500;
+	color: aqua;
 }
 
 /* Sidebar Navigation */
@@ -283,6 +295,10 @@ hr {
 	padding: 10px;
 	color: #ccc;
 	transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.section-nav a:hover {
+	color: white;
 }
 
 ul, ol {
@@ -321,7 +337,7 @@ article {
 
 @keyframes blinker {
     50% {
-        opacity: 0.4;
+        opacity: 0.55;
     }
 }
 
@@ -350,6 +366,10 @@ article {
 
     footer {
         margin-left: 4%;
+    }
+
+    aside img{
+        opacity: 1;
     }
 
     #social {
@@ -416,6 +436,10 @@ article {
         justify-content: center;
         align-items: center;
         order: 0;
+    }
+
+    aside img{
+        opacity: 1;
     }
 
     section {
@@ -496,6 +520,10 @@ article {
         margin-top: 147px;
         width: 20%;
         margin-left: 2%;
+    }
+
+    aside img{
+        opacity: 1;
     }
 
     #logo {
