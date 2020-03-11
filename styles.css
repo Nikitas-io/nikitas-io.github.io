@@ -70,6 +70,13 @@ section {
     z-index: 1;
 }
 
+article {
+    width: 90%;
+    margin-left: 5px;
+    margin-bottom: 80px;
+    text-align: left;
+}
+
 aside {
     margin-top: 177px;
     width: 14%;
@@ -94,6 +101,10 @@ footer {
     z-index: 1;
 }
 
+p{
+    margin-top: 0;
+    padding-top: 0;
+}
 
 hr {
     background-color: crimson;
@@ -150,7 +161,6 @@ hr {
     font-family: OCRA;
     font-size: 14px;
     text-align: left;
-    padding: 10px;
     opacity: 1;
     color: white;
 }
@@ -163,12 +173,17 @@ hr {
 }
 
 .article-borders{
-    border: 20px solid transparent;
-    border-image: url(images/article-borders.png) 20 round;
+    padding-left: 15px;
+    border: 40px solid transparent;
+    border-image: url(images/article-borders.png) 20 stretch;
 }
 
 .article-image{
-    width: 250px;
+    width: 200px;
+    float: left;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-right: 15px;
 }
 
 #project-content{
@@ -338,14 +353,6 @@ li {
 	max-width: 100em;
 	width: 102%;
 	margin: 0 auto;
-}
-
-article {
-	padding-bottom: 20rem;
-    width: 100%;
-    margin-left: 5px;
-    margin-bottom: 60px;
-    text-align: left;
 }
 
 #project-content hr{
