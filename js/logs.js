@@ -29,12 +29,6 @@ var showText = function (target, message, index, interval) {
     }
 }
 
-// Get the current year.
-let year = new Date().getFullYear();
-// Add the current year to the footer of the page.
-const currentYear = document.getElementById('current-year');
-currentYear.innerHTML = year;
-
 // Log Entries.
 const logEntries = [];
 logEntries[1] = "Welcome to my portfolio page. My full name is Nikitas I/O Chatzipazarlis and I am a " + 

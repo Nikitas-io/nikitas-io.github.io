@@ -17,3 +17,9 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 	
 });
+
+// Get the current year.
+let year = new Date().getFullYear();
+// Add the current year to the footer of the page.
+const currentYear = document.getElementById('current-year');
+currentYear.innerHTML = year;
