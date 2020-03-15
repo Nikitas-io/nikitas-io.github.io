@@ -88,17 +88,17 @@ aside {
 }
 
 footer {
-    margin-top: 80px;
+    font-family: OCRA;
+    color: white;
+    font-size: 12px;
+
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: inherit;
+
     /* make main axis vertical */
     justify-content: center;
     /* center items vertically, in this case */
     align-items: center;
-    /* center items horizontally, in this case */
-    z-index: 1;
 }
 
 p{
@@ -204,7 +204,7 @@ hr {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 120px;
+    width: 100px;
     transform: translate(-50%, -50%);
     opacity: 1;
     transition: opacity 0.3s;
@@ -263,8 +263,9 @@ aside img:hover{
 }
 
 .description {
-    font-size: 18.7px;
+    font-size: 16.1px;
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .colorBox {
@@ -417,7 +418,7 @@ li {
     #logo {
         order: -1;
         width: 22%;
-        font-size: 41px;
+        font-size: 49px;
         margin-top: 0.1em;
         margin-left: -1%;
     }
@@ -429,7 +430,7 @@ li {
 
     .name {
         margin-top: 13px;
-        font-size: 30px;
+        font-size: 29px;
     }
 
     .colorBox {
@@ -445,7 +446,9 @@ li {
     }
 
     .description {
-        font-size: 10.2px;
+        font-size: 13.09px;
+        width: 179.5px;
+        float: right;
     }
 
     .images {
@@ -489,7 +492,7 @@ li {
     #logo {
         order: -1;
         width: 23%;
-        font-size: 57px;
+        font-size: 52px;
         margin-top: 0.1em;
         margin-left: -1%;
     }
@@ -500,8 +503,8 @@ li {
     }
 
     .name {
-        margin-top: 16px;
-        font-size: 40px;
+        margin-top: 18px;
+        font-size: 43px;
         font-weight: bold;
     }
 
@@ -523,7 +526,7 @@ li {
     }
 
     .description {
-        font-size: 13.6px;
+        font-size: 10.65px;
     }
 
     .scrollspy {
@@ -573,7 +576,7 @@ li {
     }
 
     .name {
-        font-size: 45px;
+        font-size: 48px;
     }
 
     #logs {
@@ -591,7 +594,7 @@ li {
     }
 
     .description {
-        font-size: 15.3px;
+        font-size: 11.9px;
     }
 
     .scrollspy {
@@ -625,7 +628,7 @@ li {
     }
 
     .name {
-        font-size: 55px;
+        font-size: 65px;
         margin-bottom: 0px;
     }
 
@@ -655,7 +658,7 @@ li {
     }
 
     .name {
-        font-size: 55px;
+        font-size: 65px;
         margin-bottom: 0px;
     }
 

@@ -31,19 +31,23 @@ var showText = function (target, message, index, interval) {
 
 // Get the current year.
 let year = new Date().getFullYear();
-let myAge = year - 1996;
+// Add the current year to the footer of the page.
+const currentYear = document.getElementById('current-year');
+currentYear.innerHTML = year;
 
 // Log Entries.
 const logEntries = [];
-logEntries[1] = "Welcome to my homepage. I am a " + myAge + "year-old software engineer and project manager." + 
-    " If you'd like to find out more about me, please press one of the animated buttons.";
+logEntries[1] = "Welcome to my portfolio page. My full name is Nikitas I/O Chatzipazarlis and I am a " + 
+    "Software Engineer / Project Manager. To find out more about me personally, please press one of" + 
+    " the animated buttons or one of the social media icons. To find out more about my work, scroll" +
+    " further down for a list of my featured projects.";
 
 // Start the log.
 const logButton = document.getElementById('log-button');
 logButton.addEventListener('click', function(){
     soundRestart(button);
     // Print out the log entry.
-    showText("log-entry-content", logEntries[1], 0, 50);
+    showText("log-entry-content", logEntries[1], 0, 30);
     // Make the log-entry button dissapear.
     this.style.opacity = 0;
     this.classList.remove('blinker');
