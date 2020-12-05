@@ -44,6 +44,7 @@ body {
     flex-wrap: wrap;
     background-color: rgb(38, 29, 69);
     color: crimson;
+    overflow-x: hidden;
 }
 
 body::before {
@@ -169,7 +170,7 @@ hr {
 .article-borders{
     padding-left: 15px;
     border: 40px solid transparent;
-    border-image: url(images/article-borders.png) 20 stretch;
+    border-image: url(images/borders.png) 20 stretch;
 }
 
 .article-image{
@@ -249,6 +250,7 @@ hr {
     font-weight: bold;
     text-align: center;
     margin-top: 5px;
+    border-radius: 3px;
 }
 
 aside img{
@@ -672,12 +674,6 @@ ol {
 
 /****** Tabs Menu ******/
 
-html,
-body {
-  background: #212121 top center no-repeat;
-  background-size: 100% 100%;
-
-}
 
 .tabs-list {
   list-style: none;
@@ -710,7 +706,7 @@ body {
   background: rgb(64, 183, 247);
   color: #212121;
   height: 50px;
-  font-size: 1.2em;
+  font-size: 1.1em;
   cursor: default;
 }
 
@@ -722,6 +718,9 @@ body {
   height: 472px;
   padding: 15px 0 5px 0;
   border: 1px solid rgb(64, 183, 247);
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   color: #00dcdc;
   letter-spacing: .1em;
   text-indent: 1em;
@@ -731,7 +730,7 @@ body {
   border-radius: 5px 5px 0 0;
   display: block;
   width: 120px;
-  height: 49.5px;
+  height: 50px;
   border: 1px solid rgba(0, 190, 190, 0.7);
   border-bottom: 0;
   color: aqua;
@@ -744,7 +743,7 @@ body {
 .tabs-list li label:hover {
   height: 50px;
   border-color: rgb(64, 183, 247);
-  color: rgb(64, 183, 247);
+  color: white;
 }
 
 .tabs-list li .section {
