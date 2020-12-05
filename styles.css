@@ -78,7 +78,7 @@ article {
 }
 
 aside {
-    margin-top: 177px;
+    margin-top: 227px;
     width: 14%;
     margin-left: 3%;
     order: -1;
@@ -244,7 +244,7 @@ hr {
 }
 
 .hex {
-    width: 150px;
+    width: 130px;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -553,7 +553,7 @@ ol {
     }
 
     aside {
-        margin-top: 147px;
+        margin-top: 188px;
         width: 20%;
         margin-left: 2%;
     }
@@ -593,7 +593,9 @@ ol {
     }
 
     .hex {
-        width: 105px;
+        width: 104.3px;
+        margin-bottom: 1px;
+        font-size: 16px;
     }
 
     .description {
@@ -683,7 +685,7 @@ body {
   width: 100%;
   padding: 0;
   font-size: 18px;
-  color: #00bebe;
+  color: rgb(64, 183, 247);
 }
 
 .tabs-list * {
@@ -704,8 +706,8 @@ body {
 }
 
 .tabs-list li input[type=radio]:checked ~ label {
-  box-shadow: 0 0 10px #00dcdc;
-  background: #00bebe;
+  box-shadow: 0 0 10px rgb(64, 183, 247);
+  background: rgb(64, 183, 247);
   color: #212121;
   height: 50px;
   font-size: 1.2em;
@@ -719,7 +721,7 @@ body {
   width: 100%;
   height: 472px;
   padding: 15px 0 5px 0;
-  border: 1px solid #00bebe;
+  border: 1px solid rgb(64, 183, 247);
   color: #00dcdc;
   letter-spacing: .1em;
   text-indent: 1em;
@@ -729,19 +731,20 @@ body {
   border-radius: 5px 5px 0 0;
   display: block;
   width: 120px;
-  height: 40px;
+  height: 49.5px;
   border: 1px solid rgba(0, 190, 190, 0.7);
   border-bottom: 0;
   color: rgba(0, 190, 190, 0.7);
   line-height: 50px;
   text-align: center;
+  font-weight: bolder;
   cursor: pointer;
 }
 
 .tabs-list li label:hover {
   height: 50px;
-  border-color: #00bebe;
-  color: #00bebe;
+  border-color: rgb(64, 183, 247);
+  color: rgb(64, 183, 247);
 }
 
 .tabs-list li .section {
@@ -752,7 +755,7 @@ body {
   left: 0;
   /* width: 1000px; */
   padding: 50px;
-  border: 1px solid #00bebe;
+  border: 1px solid rgb(64, 183, 247);
   background: rgba(0, 190, 190, 0.1);
   color: white;
   letter-spacing: -1em;
