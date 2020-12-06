@@ -57,45 +57,66 @@ const sideImages = document.querySelectorAll('.hex');
 // Initialize the first image as selected.
 sideImages[0].classList.add('blinker');
 
-// Main menu selected effect.
-tabButtons.addEventListener('mousedown', function(evt){
-    console.log('\n\nClicked a tab');
-    
-    // console.log(it);
-    if(evt.target.nodeName=='LABEL'){
-        
-        // Loop through the sidebar images.
-        for(i = 0; i<sideImages.length; i++){
-            // Get the image's title.
-            title = sideImages[i].getAttribute('alt');
-            
-            // Remove the active class from all sidebar images.
-            sideImages[i].classList.remove('blinker');
-            
-            // Check with which image does the selected tab match.
-            if(title == evt.target.innerHTML){
-                soundRestart(button);
-                // Set the blinker class to the selected image.
-                sideImages[i].classList.add('blinker');
+function tabAnimation(target){
+    // Loop through the sidebar images.
+    for(i = 0; i<sideImages.length; i++){
+        // Remove the active class from all sidebar images.
+        sideImages[i].classList.remove('blinker');
+        // Check with which image does the selected tab match.
+        if(sideImages[i].getAttribute('alt') == target.innerHTML){
+            // Set the blinker class to the selected image.
+            sideImages[i].classList.add('blinker');
+            // Play a sound effect.
+            soundRestart(button);
+            // Loop through all of the tabs.
+            for(var j=0; j<tabContent.length; j++){
+                // Fade out the tab content.
+                tabContent[j].style.opacity = 0;
+            }
 
-                for(var j=0; j<tabContent.length; j++){
-                    console.log(tabContent[j]);
-                    tabContent[j].style.opacity = 0;
-
-                    // Wait half a second for the menu to fade out.
-                    setTimeout(function(){
-                        for(var j=0; j<tabContent.length; j++){
-                            // Fade in main menu. Setting opacity to 1 is enough to fade the menu in.
-                            tabContent[j].style.opacity = 1;
-                        }
-                    }, 230);
+            // Wait half a second for the menu to fade out.
+            setTimeout(function(){
+                for(var j=0; j<tabButtons.children.length; j++){
+                    tabLabel = tabButtons.children[j].querySelector('label');
+                    // console.log('a tab',tabLabel)
+                    if(target.innerHTML == tabLabel.innerHTML){
+                        // Fade in main menu. Setting opacity to 1 is enough to fade the menu in.
+                        tabContent[j].style.opacity = 1;
+                    }
                 }
+            }, 100);
+        }
+    }
+}
+
+// Select a tab.
+tabButtons.addEventListener('mousedown', function(evt){
+    // Check if a tab label was clicked.
+    if(evt.target.nodeName=='LABEL'){
+        // Perform the tab's content animation.
+        tabAnimation(evt.target);
+    }
+});
+
+
+// Get the sidebar image container.
+imageContainer = document.getElementById('image-container');
+// Select a sidebar image to select a tab.
+imageContainer.addEventListener('mousedown', function(evt){
+    // Check if a tab label was clicked.
+    if(evt.target.nodeName=='IMG'){
+        // Loop through the tab buttons.
+        for(i = 0; i<tabButtons.children.length; i++){
+
+            let label = tabButtons.children[i].querySelector('label');
+            // Check with which tab does the selected image match.
+            if(label.innerHTML == evt.target.getAttribute('alt')){
+                
+                // Select the corresponding tab.
+                label.click();
+                // Perform the tab's content animation.
+                tabAnimation(label);
             }
         }
-
-
-
-    //   evt.target.style.setProperty('--background', '#fbc943');
-    //   evt.target.style.setProperty('color', '#372963');
     }
 });
