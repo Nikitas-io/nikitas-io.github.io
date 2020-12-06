@@ -153,16 +153,16 @@ hr {
 .text-header{
     font-family: 'vger_bold';
     color: crimson;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: bold;
 
     position: absolute;
     margin-left: 28px;
-    margin-top: -9px;
+    margin-top: 0px;
 }
 
 .article-borders{
-    border: 25px solid transparent;
+    border: 40px solid transparent;
     border-image: url(images/borders.png) 20 stretch;
 }
 
@@ -491,7 +491,7 @@ ol {
 
     body .tabs-list li label {
         width: 110px !important;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     body .tabs-list li input[type=radio]:checked ~ label {

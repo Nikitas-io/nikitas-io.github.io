@@ -84,7 +84,7 @@ function tabAnimation(target){
                         tabContent[j].style.opacity = 1;
                     }
                 }
-            }, 100);
+            }, 130);
         }
     }
 }
