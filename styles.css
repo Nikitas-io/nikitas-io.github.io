@@ -359,7 +359,7 @@ ol {
 
 /*For small screens (Mostly cellphones)*/
 
-@media screen and (max-width:390px) {
+@media screen and (max-width:400px) {
     body::before {
         background-image: url(images/background/circuit_board_small.jpg);
     }
@@ -506,7 +506,7 @@ ol {
     }
 
     .text{
-        font-size: 11px;
+        font-size: 12px;
         margin-right: 14px;
     }
 
@@ -517,7 +517,7 @@ ol {
 
 /*For medium screens (Mostly tablets, maybe cellphones)*/
 
-@media screen and (min-width:391px) and (max-width:600px) {
+@media screen and (min-width:401px) and (max-width:600px) {
     body::before {
         background-image: url(images/background/circuit_board_small.jpg);
     }
@@ -649,7 +649,7 @@ ol {
     }
 
     .text{
-        font-size: 11px;
+        font-size: 12px;
         margin-right: 14px;
     }
 
