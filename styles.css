@@ -134,29 +134,13 @@ hr {
     background: transparent;
 }
 
-#log-entry{
-    margin-left: 6%;
-}
-
-#log-entry-header{
-    top: 11px;
-    left: -18px;
-}
-
-#log-entry-content{
-    border-top: 1px solid;
-    position: absolute;
-    top: 50px;
-    width: 85%;
-    height: 80%;
-}
 
 .text {
     font-family: OCRA;
     font-size: 14px;
     text-align: left;
     opacity: 1;
-    color: white;
+    color: #f1f1f1;
 }
 
 .text-header{
@@ -197,21 +181,6 @@ hr {
     text-align: left;
 }
 
-
-#log-button{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100px;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    transition: opacity 0.3s;
-}
-
-#log-button:active {
-    transform: translate(-50%, -43%);
-}
-
 .basic-button {
     cursor: pointer;
     height: 53px;
@@ -247,13 +216,14 @@ hr {
 }
 
 .hex {
-    color: #ccc;
+    color: #e3e3e3;
     width: 130px;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
     margin-top: 5px;
     border-radius: 3px;
+    opacity: 0.8;
 }
 
 aside img{
@@ -297,7 +267,7 @@ aside img:hover{
 }
 
 .borders:hover{
-    box-shadow: 6px 6px 14px mediumvioletred;
+    box-shadow: 0px 0px 10px 5px mediumvioletred;
 }
 
 
@@ -367,7 +337,10 @@ ol {
 /* Scrollspy End */
 
 .blinker {
-    animation: blinker 1.5s linear infinite;
+    /* animation: blinker 4s linear infinite; */
+    opacity: 1;
+    box-shadow: 0px 0px 19px 1px mediumvioletred;
+    pointer-events: none;
 }
 
 .blinker:hover {
@@ -376,7 +349,7 @@ ol {
 
 @keyframes blinker {
     50% {
-        opacity: 0.55;
+        opacity: 0.4;
     }
 }
 
@@ -389,7 +362,7 @@ ol {
 
     aside {
         width: 100%;
-        margin-top: 3%;
+        margin-top: -2%;
         margin-left: 3.5%;
         display: flex;
         justify-content: center;
@@ -409,6 +382,7 @@ ol {
 
     body .tabs-list li input[type=radio]:checked ~ .section {
         height: 273px;
+        pointer-events: none;
     }
 
     #social {
@@ -471,7 +445,7 @@ ol {
 
     aside {
         width: 100%;
-        margin-top: 3%;
+        margin-top: 0%;
         margin-left: 0.8%;
         display: flex;
         justify-content: center;
@@ -689,21 +663,25 @@ ol {
 }
 
 .tabs-list * {
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: all 50ms ease-in-out;
+  transition: all 50ms ease-in-out;
   outline: none;
 }
 
 .tabs-list :before,
 .tabs-list :after { content: ''; }
 
-.tabs-list li { display: inline-block; }
-
-.tabs-list li input[type=radio] {
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  position: absolute;
+.tabs-list li { 
+    display: inline-block;
 }
+
+
+.tabs-list li input[type=radio] {    
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
 
 .tabs-list li input[type=radio]:checked ~ label {
   box-shadow: 0 0 10px rgb(64, 183, 247);
@@ -712,10 +690,11 @@ ol {
   height: 50px;
   font-size: 1.1em;
   cursor: default;
+  /* Make the active tab non-clickable */
+  pointer-events: none;
 }
 
 .tabs-list li input[type=radio]:checked ~ .section {
- filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
   display: block;
   width: 100%;
@@ -725,9 +704,23 @@ ol {
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  color: #00dcdc;
+  color: #f1f1f1;
   letter-spacing: .1em;
   text-indent: 1em;
+  font-family: OCRA;
+  font-size: 14px;
+  /* Make the text unselectable */
+  -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+p.tab-content{
+    transition: opacity .15s;
+    opacity: 1;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .tabs-list li label {
@@ -742,6 +735,12 @@ ol {
   text-align: center;
   font-weight: bolder;
   cursor: pointer;
+  transition: box-shadow .15s;
+  /* Make the text unselectable */
+  -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 .tabs-list li label:hover {
@@ -751,7 +750,6 @@ ol {
 }
 
 .tabs-list li .section {
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   position: absolute;
   top: 51px;
