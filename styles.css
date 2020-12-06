@@ -298,7 +298,7 @@ aside img:hover{
 	box-shadow: 0 0 10px rgb(64, 183, 247);
     background: rgb(64, 183, 247);
     color: #212121;
-    
+    border-radius: 4px;
 }
 
 /* Sidebar Navigation */
@@ -636,11 +636,16 @@ ol {
     }
 
     .text-header{
-        margin-top: 4px;
-        font-size: 19px;
+        margin-top: 6px;
+        font-size: 17px;
         font-weight: bolder;
         font-family: 'vger_regular';
         margin-left: 20px;
+        padding-top: 2px;
+    }
+
+    .section-nav li.active > a {
+        padding-top: 11px;
     }
 
     .text{
