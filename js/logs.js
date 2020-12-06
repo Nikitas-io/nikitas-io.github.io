@@ -1,5 +1,7 @@
 const button = new Audio('sfx/tab.wav');
 button.volume = 0.4;
+const scrollSpy = new Audio('sfx/scroll.wav');
+scrollSpy.volume = 0.6;
 // const typingLetter = new Audio('sfx/typing.mp3');
 // typingLetter.volume = 0.1;
 

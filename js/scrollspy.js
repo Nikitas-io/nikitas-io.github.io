@@ -1,4 +1,6 @@
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', (evt) => {
+	// Clear any hashtags from the page URL if there are any.
+	window.history.replaceState("", document.title, window.location.pathname);
 
 	const observer = new IntersectionObserver(entries => {
 		entries.forEach(entry => {
@@ -16,6 +18,24 @@ window.addEventListener('DOMContentLoaded', () => {
 		observer.observe(article);
 	});
 	
+});
+
+const projectList = document.getElementById('project-list');
+// Select a project to scroll to.
+projectList.addEventListener('click', function(evt){
+    // Check if a tab label was clicked.
+    if(evt.target.nodeName=='A'){
+		// Prevent the default scrolling mechanism.
+		evt.preventDefault();
+		// Play SFX
+		soundRestart(scrollSpy);
+
+		// Get the id of the project we want to scroll to.
+		let projectId = evt.target.getAttribute('href');
+		// Get the project article we want to scroll to from the DOM.
+		let project = document.querySelector(projectId);
+		project.scrollIntoView();
+	}
 });
 
 // Get the current year.
