@@ -90,7 +90,7 @@ function tabAnimation(target){
 }
 
 // Select a tab.
-tabButtons.addEventListener('mousedown', function(evt){
+tabButtons.addEventListener('click', function(evt){
     // Check if a tab label was clicked.
     if(evt.target.nodeName=='LABEL'){
         // Perform the tab's content animation.
@@ -102,7 +102,7 @@ tabButtons.addEventListener('mousedown', function(evt){
 // Get the sidebar image container.
 imageContainer = document.getElementById('image-container');
 // Select a sidebar image to select a tab.
-imageContainer.addEventListener('mousedown', function(evt){
+imageContainer.addEventListener('click', function(evt){
     // Check if a tab label was clicked.
     if(evt.target.nodeName=='IMG'){
         // Loop through the tab buttons.
