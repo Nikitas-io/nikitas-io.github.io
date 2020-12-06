@@ -82,7 +82,7 @@ article {
 }
 
 aside {
-    margin-top: 227px;
+    margin-top: 216px;
     width: 14%;
     margin-left: 3%;
     order: -1;
@@ -210,18 +210,15 @@ hr {
     z-index: 1;
     width: 330px;
     position: absolute;
+    top: 438px;
     bottom: 15px;
     left: 0;
     right: 0;
 }
 
 .hex {
-    color: #e3e3e3;
     width: 130px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 5px;
+    margin-top: 15px;
     border-radius: 3px;
     opacity: 0.8;
 }
@@ -256,9 +253,6 @@ aside img:hover{
     transition: transform .2s;
 }
 
-.images:hover {
-    transform: scale(1.2); /* (150% zoom) */
-}
 
 .borders {
     border: 1px solid rgb(64, 183, 247);
@@ -386,6 +380,7 @@ ol {
     }
 
     #social {
+        top: 309px;
         width: 225px;
     }
 
@@ -420,7 +415,6 @@ ol {
     .hex {
         width: 87%;
         margin-top: 4%;
-        font-size: 15px;
     }
 
     .description {
@@ -467,6 +461,10 @@ ol {
         height: 277px;
     }
 
+    #social{
+        top: 306px;
+    }
+
     #logs {
         height: 400px;
     }
@@ -504,7 +502,6 @@ ol {
     .hex {
         width: 96%;
         margin-top: 0%;
-        font-size: 18px;
     }
 
     .description {
@@ -537,7 +534,7 @@ ol {
     }
 
     aside {
-        margin-top: 188px;
+        margin-top: 177.5px;
         width: 20%;
         margin-left: 2%;
     }
@@ -547,7 +544,11 @@ ol {
     }
 
     body .tabs-list li input[type=radio]:checked ~ .section {
-        height: 357px;
+        height: 333px;
+    }
+
+    #social{
+        top: 363px;
     }
 
     #logo {
@@ -698,7 +699,7 @@ ol {
   opacity: 1;
   display: block;
   width: 100%;
-  height: 472px;
+  height: 408.5px;
   padding: 15px 0 5px 0;
   border: 1px solid rgb(64, 183, 247);
   border-top-right-radius: 5px;
