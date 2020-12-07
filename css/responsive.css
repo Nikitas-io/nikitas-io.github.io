@@ -53,7 +53,7 @@
     }
 
     body .tabs-list li input[type=radio]:checked ~ .section {
-        height: 273px;
+        height: 303px;
         pointer-events: none;
     }
 
@@ -211,7 +211,7 @@
     }
 
     body .tabs-list li input[type=radio]:checked ~ .section {
-        height: 277px;
+        height: 298px;
     }
 
     body .article-image {
@@ -362,11 +362,11 @@
     }
 
     body .tabs-list li input[type=radio]:checked ~ .section {
-        height: 333.5px;
+        height: 349.8px;
     }
 
     #social{
-        top: 363px;
+        top: 358px;
     }
 
     #logo {
