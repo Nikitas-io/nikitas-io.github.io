@@ -1,0 +1,574 @@
+@font-face {
+    font-family: 'vger_regular';
+    src: url('../fonts/vger_regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'vger_bold';
+    src: url('../fonts/vger_bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OCRA';
+    src: url('../fonts/OCRAStd.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 9px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px crimson; 
+    border-radius: 10px;
+}
+
+body {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: vger_regular;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(38, 29, 69);
+    color: crimson;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    background-image: url(../images/background/circuit_board_large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    
+    /* Fade the bottom of the background */
+    box-shadow: inset 0px -150px 117px 15px rgb(38, 29, 69) !important;
+}
+
+section {
+    width: 78%;
+    margin-right: 3%;
+    margin-left: 2%;
+    order: 0;
+    z-index: 1;
+}
+
+article {
+    width: 105%;
+    margin-left: 5px;
+    margin-bottom: 90px;
+    text-align: left;
+}
+
+aside {
+    margin-top: 216px;
+    width: 14%;
+    margin-left: 3%;
+    order: -1;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -80px;
+}
+
+p{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h5{
+    margin-bottom: -35px;
+}
+
+hr {
+    background-color: crimson;
+    height: 7px;
+    border: none;
+
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.big-title {
+    font-family: 'vger_bold';
+    margin-bottom: 0px;
+}
+
+.projects-title{
+    padding-top: 45px;
+    font-size: 50px !important;
+}
+
+#logs {
+    height: 595px;
+    opacity: 0.87;
+    position: relative;
+    background: transparent;
+}
+
+
+.text {
+    font-family: OCRA;
+    font-size: 14px;
+    text-align: left;
+    opacity: 1;
+    color: #f1f1f1;
+    margin-left: -15px;
+    margin-top: -15px;
+}
+
+.text-header{
+    font-family: 'vger_bold';
+    color: crimson;
+    font-size: 21px;
+    font-weight: bold;
+
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 1px;
+}
+
+.article-borders{
+    border: 40px solid transparent;
+    border-image: url(../images/borders.png) 20 stretch;
+}
+
+.article-image{
+    width: 200px;
+    float: left;
+    vertical-align: top;
+    margin-top: 7px;
+    margin-right: 13px;
+    margin-left: -12px;
+    margin-bottom: -6px;
+}
+
+#project-content{
+    margin-top: 27px;
+    margin-right: 20px;
+}
+
+.title{
+    text-align: right;
+}
+
+.sub-title{
+    margin-left: 3px;
+    text-align: left;
+}
+
+.basic-button {
+    cursor: pointer;
+    height: 53px;
+    border-radius: 5px;
+    font-size: large;
+    font-family: vger_bold;
+    color: white;
+}
+
+.basic-button:active {
+    transform: translate(0, 4%);
+}
+
+.scroll-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: fit-content;
+    border: 1px solid rgb(64, 183, 247);
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+#social {
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 330px;
+    position: absolute;
+    top: 438px;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+}
+
+.hex {
+    width: 130px;
+    margin-top: 15px;
+    border-radius: 3px;
+    opacity: 0.8;
+}
+
+aside img{
+    opacity: 0.85;
+}
+
+aside img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.description {
+    font-size: 21.3px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.colorBox {
+    width: 130px;
+    height: 130px;
+}
+
+.images {
+    cursor: pointer;
+    border-radius: 73px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 65px;
+    transition: transform .2s;
+}
+
+
+.borders {
+    border: 1px solid rgb(64, 183, 247);
+    transition: box-shadow .15s;
+
+}
+
+.borders:hover{
+    box-shadow: 0px 0px 10px 5px rgb(64, 183, 247);
+}
+
+
+/* Scrollspy Start */
+
+.scrollspy {
+    width: 98%;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 0%;
+    margin-bottom: 2%;
+}
+
+.spy > nav {
+	position: sticky;
+	top: 1rem;
+	align-self: start;
+}
+
+/* ScrollSpy active styles (see JS tab for activation) */
+.section-nav li.active > a {
+	box-shadow: 0 0 10px rgb(64, 183, 247);
+    background: rgb(64, 183, 247);
+    color: #212121;
+    border-radius: 4px;
+}
+
+/* Sidebar Navigation */
+.section-nav {
+	padding-left: 0;
+	border-left: 1px solid #efefef;
+}
+
+.section-nav a {
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	color: #ccc;
+	transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.section-nav a:hover {
+	color: white;
+}
+
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.spy {
+	display: grid;
+	grid-template-columns: 1fr 15em;
+	max-width: 100em;
+	width: 102%;
+	margin: 0 auto;
+}
+
+#project-content hr{
+    height: 2px;
+    margin-left: 30px;
+}
+
+/* Scrollspy End */
+
+.blinker {
+    /* animation: blinker 4s linear infinite; */
+    opacity: 1;
+    box-shadow: 0px 0px 16px 1px rgb(64, 183, 247);
+    pointer-events: none;
+}
+
+.blinker:hover {
+    animation: none;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.4;
+    }
+}
+
+
+
+
+/****** Tabs Menu ******/
+
+
+.tabs-list {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  font-size: 18px;
+  color: rgb(64, 183, 247);
+}
+
+.tabs-list * {
+  
+  outline: none;
+}
+
+.tabs-list :before,
+.tabs-list :after { content: ''; }
+
+.tabs-list li { 
+    display: inline-block;
+}
+
+
+.tabs-list li input[type=radio] {    
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.tabs-list li input[type=radio]:checked ~ label {
+  box-shadow: 0 0 10px rgb(64, 183, 247);
+  background: rgb(64, 183, 247);
+  color: #212121;
+  height: 50px;
+  font-size: 1.1em;
+  cursor: default;
+  /* Make the active tab non-clickable */
+  pointer-events: none;
+}
+
+.tabs-list li input[type=radio]:checked ~ .section {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 408.5px;
+  padding: 15px 0 5px 0;
+  border: 1px solid rgb(64, 183, 247);
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #f1f1f1;
+  letter-spacing: .1em;
+  text-indent: 1em;
+  font-family: OCRA;
+  font-size: 14px;
+  /* Make the text unselectable */
+  -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+p.tab-content{
+    transition: opacity .15s;
+    opacity: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.tabs-list li label {
+  border-radius: 5px 5px 0 0;
+  display: block;
+  width: 120px;
+  height: 50px;
+  border: 1px solid rgba(0, 190, 190, 0.7);
+  border-bottom: 0;
+  color: #ccc;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: box-shadow .15s;
+  /* Make the text unselectable */
+  -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.tabs-list li label:hover {
+  height: 50px;
+  border-color: rgb(64, 183, 247);
+  color: white;
+}
+
+.tabs-list li .section {
+  opacity: 0;
+  position: absolute;
+  top: 51px;
+  left: 0;
+  /* width: 1000px; */
+  padding: 50px;
+  border: 1px solid rgb(64, 183, 247);
+  background: rgba(0, 190, 190, 0.1);
+  color: white;
+  letter-spacing: -1em;
+  text-indent: 1em;
+  z-index: 1;
+}
+
+
+
+
+
+/*********** Inhinito Logo ***********/
+#inhinito-logo{
+    margin-left: -23px;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+
+/*********** LoFi.gr Logo ***********/
+
+#logo-container{
+    margin-top: 5px;
+    margin-bottom: 1px;
+    float: left;
+    width: fit-content;
+    margin-right: 12px;
+    margin-left: -14px;
+}
+
+#lofi-gr-logo {
+    width: 120px;
+    box-shadow: 0px 0px 30px 0px #614955;
+    border-radius: 50%;
+}
+
+#loading-header{
+    position: absolute;
+    top: 440px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    opacity: 1;
+}
+
+/* Start of loading animation */
+.ring {
+    position: relative;
+    z-index: 0;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: 0px 0px 35px -10px #6e3b98;
+}
+
+.ring::before {
+    opacity: var(--opacity);
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #6e3b98;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6e3b98), to(#6e3b98)), -webkit-gradient(linear, left top, left bottom, from(mediumpurple), to(mediumpurple)), -webkit-gradient(linear, left top, left bottom, from(#3d418d), to(#3d418d)), -webkit-gradient(linear, left top, left bottom, from(#99c4f1), to(#99c4f1));
+    background-image: linear-gradient(#6e3b98, #6e3b98), linear-gradient(mediumpurple, mediumpurple), linear-gradient(#3d418d, #3d418d), linear-gradient(#99c4f1, #99c4f1);
+    -webkit-animation: rotate 7s linear infinite;
+    animation: rotate 7s linear infinite;
+}
+
+*,
+*::before{
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+    }
+}
+
+/*********** The Coreys Logo ***********/
+#coreys-logo{
+    margin-left: -20px;
+    margin-right: 7px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+}

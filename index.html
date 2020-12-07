@@ -9,7 +9,8 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="description" content="Portfolio Website of Nikitas Chatzipazarlis (Νικήτας Χατζηπαζαρλής)">
     <meta name="keywords" content="Inhinito, inhinito, projects, project, nikitas, Νικήτας, Νικητας, Chatzipazarlis, Χατζηπαζαρλής, Χατζηπαζαρλης, Νικήτας Χατζηπαζαρλής, Νικητας Χατζηπαζαρλης, nikitas i/o, io, nikitas io, nikitas.io, i/o">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <!-- Favicon -->
     <link rel="icon" type="image/ico" href="favicon.ico">
     <!--facebook sharing metadata-->
@@ -112,7 +113,7 @@
             <div id="project-content">
                 <div class="text-header">INHINITO</div>
                 <article id="project-1" class="article-borders">
-                    <img src="images/project-placeholder.gif" class="article-image" alt="project-logo" />
+                    <img id="inhinito-logo" src="images/projects/inhinito.png" class="article-image" alt="Inhinito Logo" />
                     <p class="text">
                         <br />
                         I founded Inhinito SCE in order to support the creative community of Greece. I developed the company's team, worked with 
@@ -124,7 +125,12 @@
 
                 <div class="text-header">LOFI.GR</div>
                 <article id="project-2" class="article-borders">
-                    <img src="images/project-placeholder.gif" class="article-image" alt="project-logo" />
+                    <!-- The LoFi.gr Logo animation -->
+                    <div id="logo-container">
+                        <div class="ring">
+                            <img id="lofi-gr-logo" src="images/projects/lofi_gr.png" alt="LoFi.gr logo"/>
+                        </div>
+                    </div>
                     <p class="text">
                         <br />
                         LoFi.gr was developed using the Angular framework and represents the core of the Greek Lo-Fi Community.
@@ -136,7 +142,7 @@
 
                 <div class="text-header">THECOREYS.GR</div>
                 <article id="project-3" class="article-borders">
-                    <img src="images/project-placeholder.gif" class="article-image" alt="project-logo" />
+                    <img id="coreys-logo" src="images/projects/the_coreys.png" class="article-image" alt="The Coreys Logo" />
                     <p class="text">
                         <br />
                         Created this website using only vanilla JavaScript, HTML and CSS as a challenge. The idea was to avoid imports such as libraries or frameworks.
