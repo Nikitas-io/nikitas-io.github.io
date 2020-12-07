@@ -92,7 +92,8 @@ aside {
 }
 
 footer {
-    font-family: "Courier New", Courier, monospace;
+    font-family: monospace;
+    font-size: 15px;
     color: white;
     text-align: center;
     margin-left: auto;
