@@ -116,6 +116,10 @@
         margin-right: 10px;
     }
 
+    body ol{
+        margin-left: 8px;
+    }
+
     body .article-borders {
         border: 30px solid transparent;
         border-image: url(../images/borders.png) 22 stretch;
@@ -123,14 +127,18 @@
 
     body .spy {
         display: grid;
-        grid-template-columns: 1fr 3.5em;
+        grid-template-columns: 1fr 3.4em;
+    }
+
+    body .spy > nav {
+        width: 0px;
     }
 
     body .scroll-button{
         text-indent: -9999px;
-        width: 30px;
-        line-height: 9px;
-        height: 30px;
+        width: 28px;
+        line-height: 6px;
+        height: 28px;
         border-radius: 19px;
         margin-right: 30%;
     }
@@ -154,7 +162,7 @@
 
     .text{
         font-size: 12px;
-        margin-right: 14px;
+        margin-right: 21px;
     }
 
     #project-content{
@@ -313,7 +321,7 @@
 
     .text{
         font-size: 12px;
-        margin-right: 14px;
+        margin-right: 20px;
     }
 
     #project-content{
