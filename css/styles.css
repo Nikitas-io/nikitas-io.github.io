@@ -120,6 +120,12 @@ hr {
 }
 
 
+.title{
+    text-align: right;
+    position: relative;
+    width: 400px;
+}
+
 
 .header {
     display: flex;
@@ -185,9 +191,6 @@ hr {
     margin-right: 20px;
 }
 
-.title{
-    text-align: right;
-}
 
 .sub-title{
     margin-left: 3px;
