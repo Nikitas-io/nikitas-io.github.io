@@ -67,18 +67,22 @@ body::before {
 }
 
 #nikitas-io{
-    margin-left: 12px;
-    margin-top: 12px;
     letter-spacing: 1px;
 }
 
+#page-intro{
+    margin-left: 0;
+    margin-top: 0;
+}
+
 header{
-    position: absolute;
     font-family: 'vger_bold';
+    z-index: 1;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 #expertise{
-    margin-top: 300px;
     width: 100%;
     display: flex;
 }
@@ -595,4 +599,15 @@ p.tab-content{
     margin-right: 7px;
     margin-top: 3px;
     margin-bottom: 0px;
+}
+/***************************************/
+
+#visible-footer-name{
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+#invisible-footer-name{
+    visibility: hidden;
+    margin-bottom: 10px;
 }
