@@ -3,7 +3,7 @@ button.volume = 0.4;
 const scrollSpy = new Audio('sfx/scroll.wav');
 scrollSpy.volume = 0.6;
 const recharge = new Audio('sfx/recharge.mp3');
-recharge.volume = 0.3;
+recharge.volume = 0.5;
 
 //Play the sound.
 var soundFlag = true;

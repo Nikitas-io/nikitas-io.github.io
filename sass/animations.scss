@@ -4,13 +4,13 @@
 $chWidth: 278px;
 
 // Typing animation length.
-$typeDuration: 1600ms;
+$typeDuration: 1500ms;
 
 // The amount of times the cursor will blink.
 $cursorLoopCount: 4;
 
 // The amount of time before the animation begins.
-$animationDelay: 1.4s;
+$animationDelay: 1.3s;
 
 $color: slateblue;
 $bg: #f7f3ff;
@@ -38,7 +38,7 @@ h1 {
 		top: -0.05em;
 		bottom: -0.05em;
 		// width: 0;
-		border-right: 8px solid transparent;
+		border-right: 9px solid transparent;
 	}
 
 	&.animating {
@@ -107,15 +107,6 @@ $frameSize: 100;
 		border-right: 7px solid transparent;
 	}
 
-	body .type-animation.animating {
-		-webkit-animation: type 2000ms;
-		animation: type 2000ms;
-		-webkit-animation-fill-mode: forwards;
-		animation-fill-mode: forwards;
-		-webkit-animation-delay: 1.4s;
-		animation-delay: 1.4s;
-	}
-
 	body #nikitas-io{
 		letter-spacing: 0;
 	}
@@ -140,7 +131,7 @@ $frameSize: 100;
 		-webkit-animation-fill-mode: forwards;
 		animation-fill-mode: forwards;
 		-webkit-animation-delay: 1.4s;
-		animation-delay: 1.4s;
+		animation-delay: 1s;
 	}
 
 	body #nikitas-io{
