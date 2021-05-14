@@ -495,7 +495,9 @@ p.tab-content{
 }
 
 
-
+#logo{
+    z-index: 1;
+}
 
 
 /*********** Inhinito Logo ***********/

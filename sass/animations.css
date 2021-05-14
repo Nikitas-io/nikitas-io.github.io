@@ -19,7 +19,6 @@ h1 {
   right: -1px;
   top: -0.05em;
   bottom: -0.05em;
-  width: -15px;
   border-right: 8px solid transparent;
 }
 
@@ -100,5 +99,35 @@ h1 {
 
 #retype:hover, #retype:focus {
   background-color: #e6daff;
+}
+
+@media screen and (min-width: 421px) and (max-width: 600px) {
+  body h1 {
+    font-size: 3.5rem;
+  }
+  body .type-animation {
+    max-width: 212px;
+  }
+  body .type-animation:after {
+    border-right: 7px solid transparent;
+  }
+  body #nikitas-io {
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  body h1 {
+    font-size: 2.3rem;
+  }
+  body .type-animation {
+    max-width: 138px;
+  }
+  body .type-animation:after {
+    border-right: 5px solid transparent;
+  }
+  body #nikitas-io {
+    letter-spacing: 0;
+  }
 }
 /*# sourceMappingURL=animations.css.map */
