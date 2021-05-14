@@ -23,8 +23,8 @@ h1 {
 }
 
 .type-animation.animating {
-  -webkit-animation: type 1000ms;
-          animation: type 1000ms;
+  -webkit-animation: type 1600ms;
+          animation: type 1600ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 1.4s;
@@ -111,6 +111,14 @@ h1 {
   body .type-animation:after {
     border-right: 7px solid transparent;
   }
+  body .type-animation.animating {
+    -webkit-animation: type 2000ms;
+    animation: type 2000ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+  }
   body #nikitas-io {
     letter-spacing: 0;
   }
@@ -125,6 +133,14 @@ h1 {
   }
   body .type-animation:after {
     border-right: 5px solid transparent;
+  }
+  body .type-animation.animating {
+    -webkit-animation: type 2500ms;
+    animation: type 2500ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
   }
   body #nikitas-io {
     letter-spacing: 0;
