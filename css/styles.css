@@ -66,8 +66,13 @@ body::before {
     box-shadow: inset 0px -150px 117px 15px rgb(38, 29, 69) !important;
 }
 
+#nikitas-io{
+    letter-spacing: 1px;
+}
+
 header{
     position: absolute;
+    font-family: 'vger_bold';
 }
 
 #expertise{

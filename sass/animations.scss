@@ -1,14 +1,10 @@
-// Learn more:
-// @link https://dev.to/5t3ph/pure-css-typing-animation-1nld
 
-// "Type" width
-// - controls how much the word container expands when each letter is "typed"
-// - will need adjusted depending on word and typeface
-$chWidth: 0.5em;
-// Word length
-$chCount: 6;
-// Typing animation length
-$typeDuration: 180ms * $chCount;
+
+// Controls how much the word container expands when each letter is "typed".
+$chWidth: 3.7em;
+
+// Typing animation length.
+$typeDuration: 1000ms;
 
 $color: slateblue;
 $bg: #f7f3ff;
@@ -16,7 +12,6 @@ $cursor: scale-color($color, $lightness: -60%);
 
 h1 {
 	font-size: 4.5rem;
-	text-align: center;
 }
 
 .type-animation {
@@ -26,18 +21,18 @@ h1 {
 	width: 0;
 	overflow: hidden;
 	// Leave room for cursor!
-	padding-right: 0.08em;
+	padding-right: 0.1em;
 	position: relative;
 
 	&:after {
 		content: "";
 		background: $bg;
 		position: absolute;
-		right: 0;
+		right: -1px;
 		top: -0.05em;
 		bottom: -0.05em;
-		width: 0.08em;
-		border-right: 2px solid transparent;
+		width: -15px;
+		border-right: 8px solid transparent;
 	}
 
 	&.animating {
@@ -47,8 +42,7 @@ h1 {
 		animation-delay: 1s;
 
 		&:after {
-			$cursorLoopCount: ((($chCount + 1) * 180)/320) + 3;
-			animation: cursor 320ms $cursorLoopCount ease-in-out;
+			animation: cursor 320ms $cursorLoopCount ease-in;
 		}
 	}
 }
@@ -66,16 +60,10 @@ h1 {
 	}
 }
 
-$frameSize: 100 / $chCount;
+$frameSize: 100;
 @keyframes type {
-	@for $ch from 1 to $chCount {
-		$frame: $ch * $frameSize;
-		#{$frame}% {
-			width: $ch * $chWidth;
-		}
-	}
 	100% {
-		width: ($chCount - 1) * $chWidth;
+		width: $chWidth;
 		padding-right: 0;
 	}
 }

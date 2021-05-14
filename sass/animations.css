@@ -1,6 +1,5 @@
 h1 {
   font-size: 4.5rem;
-  text-align: center;
 }
 
 .type-animation {
@@ -9,7 +8,7 @@ h1 {
   display: inline-flex;
   width: 0;
   overflow: hidden;
-  padding-right: 0.08em;
+  padding-right: 0.1em;
   position: relative;
 }
 
@@ -17,16 +16,16 @@ h1 {
   content: "";
   background: #f7f3ff;
   position: absolute;
-  right: 0;
+  right: -1px;
   top: -0.05em;
   bottom: -0.05em;
-  width: 0.08em;
-  border-right: 2px solid transparent;
+  width: -15px;
+  border-right: 8px solid transparent;
 }
 
 .type-animation.animating {
-  -webkit-animation: type 1080ms;
-          animation: type 1080ms;
+  -webkit-animation: type 1000ms;
+          animation: type 1000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 1s;
@@ -34,8 +33,8 @@ h1 {
 }
 
 .type-animation.animating:after {
-  -webkit-animation: cursor 320ms 6.9375 ease-in-out;
-          animation: cursor 320ms 6.9375 ease-in-out;
+  -webkit-animation: cursor 320ms 4.6875 ease-in;
+          animation: cursor 320ms 4.6875 ease-in;
 }
 
 @-webkit-keyframes cursor {
@@ -65,45 +64,15 @@ h1 {
 }
 
 @-webkit-keyframes type {
-  16.66667% {
-    width: 0.5em;
-  }
-  33.33333% {
-    width: 1em;
-  }
-  50% {
-    width: 1.5em;
-  }
-  66.66667% {
-    width: 2em;
-  }
-  83.33333% {
-    width: 2.5em;
-  }
   100% {
-    width: 2.5em;
+    width: 3.7em;
     padding-right: 0;
   }
 }
 
 @keyframes type {
-  16.66667% {
-    width: 0.5em;
-  }
-  33.33333% {
-    width: 1em;
-  }
-  50% {
-    width: 1.5em;
-  }
-  66.66667% {
-    width: 2em;
-  }
-  83.33333% {
-    width: 2.5em;
-  }
   100% {
-    width: 2.5em;
+    width: 3.7em;
     padding-right: 0;
   }
 }
