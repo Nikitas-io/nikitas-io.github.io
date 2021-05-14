@@ -1,10 +1,16 @@
 
 
 // Controls how much the word container expands when each letter is "typed".
-$chWidth: 3.7em;
+$chWidth: 278px;
 
 // Typing animation length.
 $typeDuration: 1000ms;
+
+// The amount of times the cursor will blink.
+$cursorLoopCount: 4;
+
+// The amount of time before the animation begins.
+$animationDelay: 1.4s;
 
 $color: slateblue;
 $bg: #f7f3ff;
@@ -39,7 +45,7 @@ h1 {
 		animation: type $typeDuration;
 		// "stick" to last frame
 		animation-fill-mode: forwards;
-		animation-delay: 1s;
+		animation-delay: $animationDelay;
 
 		&:after {
 			animation: cursor 320ms $cursorLoopCount ease-in;

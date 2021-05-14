@@ -127,7 +127,7 @@ imageContainer.addEventListener('click', function(evt){
 
 /* Log out Nikitas */
 
-const retype = document.querySelector("#retype");
+const retype = document.querySelector("#logo");
 const word = document.querySelector("h1 span");
 
 // reset the transition by...
