@@ -66,6 +66,16 @@ body::before {
     box-shadow: inset 0px -150px 117px 15px rgb(38, 29, 69) !important;
 }
 
+header{
+    position: absolute;
+}
+
+#expertise{
+    margin-top: 300px;
+    width: 100%;
+    display: flex;
+}
+
 section {
     width: 78%;
     margin-right: 3%;
@@ -127,7 +137,7 @@ hr {
 }
 
 
-.header {
+.cyber-panel {
     display: flex;
     flex-wrap: wrap;
 }
