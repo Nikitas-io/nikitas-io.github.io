@@ -68,23 +68,14 @@ body::before {
 
 #nikitas-io{
     letter-spacing: 1px;
+    margin-top: 64px;
+    margin-bottom: 0;
+    font-family: 'vger_bold';
 }
 
-#page-intro{
-    margin-left: 0;
-    margin-top: 0;
-}
 
 header{
-    font-family: 'vger_bold';
-    z-index: 1;
-    width: 100%;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 140px;
-}
-
-#expertise{
+    margin-top: 25px;
     width: 100%;
     display: flex;
 }
@@ -153,11 +144,6 @@ hr {
 .cyber-panel {
     display: flex;
     flex-wrap: wrap;
-}
-
-.big-title {
-    font-family: 'vger_bold';
-    margin-bottom: 0px;
 }
 
 .projects-title{
@@ -269,12 +255,6 @@ aside img{
 aside img:hover{
     opacity: 1;
     cursor: pointer;
-}
-
-.description {
-    font-size: 21.3px;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 .colorBox {

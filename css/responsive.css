@@ -8,7 +8,7 @@
     aside {
         width: 100%;
         margin-top: -2%;
-        margin-left: 4.3%;
+        margin-left: 2.3%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -62,7 +62,7 @@
         margin-bottom: 10px;
     }
 
-    body #expertise{
+    body header{
         display: block;
     }
 
@@ -88,7 +88,7 @@
         width: 79%;
     }
 
-    .big-title {
+    #nikitas-io {
         margin-top: 25px;
         font-size: 29px;
     }
@@ -106,12 +106,6 @@
     .hex {
         width: 87%;
         margin-top: 4%;
-    }
-
-    .description {
-        font-size: 9.5px;
-        width: 179.5px;
-        float: right;
     }
 
     .images {
@@ -231,7 +225,7 @@
         margin-bottom: 10px;
     }
 
-    body #expertise{
+    body header{
         display: block;
     }
 
@@ -256,10 +250,9 @@
         width: 77%;
     }
 
-    .big-title {
+    #nikitas-io {
         margin-top: 18px;
         font-size: 43px;
-        font-weight: bold;
     }
 
     .projects-title{
@@ -280,10 +273,6 @@
     .hex {
         width: 96%;
         margin-top: 0%;
-    }
-
-    .description {
-        font-size: 14.1px;
     }
 
     .scrollspy {
@@ -397,7 +386,7 @@
         width: 90%;
     }
 
-    .big-title {
+    #nikitas-io {
         font-size: 48px;
     }
 
@@ -419,10 +408,6 @@
         width: 104.3px;
         margin-bottom: 1px;
         font-size: 16px;
-    }
-
-    .description {
-        font-size: 15.7px;
     }
 
     .scrollspy {
@@ -469,7 +454,7 @@
         order: -1;
         width: 10%;
         font-size: 85px;
-        margin-top: 0.4em;
+        
     }
 
     .title {
@@ -477,7 +462,7 @@
         width: 90%;
     }
 
-    .big-title {
+    #nikitas-io {
         font-size: 65px;
         margin-bottom: 0px;
     }
@@ -507,7 +492,7 @@
         width: 90%;
     }
 
-    .big-title {
+    #nikitas-io {
         font-size: 65px;
         margin-bottom: 0px;
     }   

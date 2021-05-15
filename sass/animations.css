@@ -64,14 +64,14 @@ h1 {
 
 @-webkit-keyframes type {
   100% {
-    width: 278px;
+    width: 253px;
     padding-right: 0;
   }
 }
 
 @keyframes type {
   100% {
-    width: 278px;
+    width: 253px;
     padding-right: 0;
   }
 }
@@ -111,9 +111,6 @@ h1 {
   body .type-animation:after {
     border-right: 7px solid transparent;
   }
-  body #nikitas-io {
-    letter-spacing: 0;
-  }
 }
 
 @media screen and (max-width: 420px) {
@@ -133,9 +130,6 @@ h1 {
     animation-fill-mode: forwards;
     -webkit-animation-delay: 1.4s;
     animation-delay: 1s;
-  }
-  body #nikitas-io {
-    letter-spacing: 0;
   }
 }
 /*# sourceMappingURL=animations.css.map */

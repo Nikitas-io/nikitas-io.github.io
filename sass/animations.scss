@@ -1,7 +1,7 @@
 
 
 // Controls how much the word container expands when each letter is "typed".
-$chWidth: 278px;
+$chWidth: 253px;
 
 // Typing animation length.
 $typeDuration: 1500ms;
@@ -106,10 +106,6 @@ $frameSize: 100;
 	body .type-animation:after {
 		border-right: 7px solid transparent;
 	}
-
-	body #nikitas-io{
-		letter-spacing: 0;
-	}
 }
 
 @media screen and (max-width:420px) {
@@ -132,9 +128,5 @@ $frameSize: 100;
 		animation-fill-mode: forwards;
 		-webkit-animation-delay: 1.4s;
 		animation-delay: 1s;
-	}
-
-	body #nikitas-io{
-		letter-spacing: 0;
 	}
 }
