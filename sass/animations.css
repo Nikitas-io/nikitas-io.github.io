@@ -16,10 +16,10 @@ h1 {
   content: "";
   background: #f7f3ff;
   position: absolute;
-  right: -1px;
+  right: -2px;
   top: -0.05em;
   bottom: -0.05em;
-  border-right: 9px solid transparent;
+  border-right: 8px solid transparent;
 }
 
 .type-animation.animating {
@@ -101,15 +101,32 @@ h1 {
   background-color: #e6daff;
 }
 
+@media screen and (min-width: 981px) and (max-width: 1090px) {
+  body .type-animation:after {
+    right: -1px;
+    border-right: 7.5px solid transparent;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 980px) {
+  body .type-animation {
+    max-width: 189px;
+  }
+  body .type-animation:after {
+    right: -3px;
+    border-right: 7.5px solid transparent;
+  }
+}
+
 @media screen and (min-width: 421px) and (max-width: 600px) {
   body h1 {
     font-size: 3.5rem;
   }
   body .type-animation {
-    max-width: 212px;
+    max-width: 170px;
   }
   body .type-animation:after {
-    border-right: 7px solid transparent;
+    border-right: 6px solid transparent;
   }
 }
 
@@ -118,7 +135,7 @@ h1 {
     font-size: 2.3rem;
   }
   body .type-animation {
-    max-width: 138px;
+    max-width: 111px;
   }
   body .type-animation:after {
     border-right: 5px solid transparent;

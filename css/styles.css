@@ -66,9 +66,9 @@ body::before {
     box-shadow: inset 0px -150px 117px 15px rgb(38, 29, 69) !important;
 }
 
-#nikitas-io{
+.big-title{
     letter-spacing: 1px;
-    margin-top: 64px;
+    margin-top: 30px;
     margin-bottom: 0;
     font-family: 'vger_bold';
 }
@@ -96,7 +96,7 @@ article {
 }
 
 aside {
-    margin-top: 216px;
+    margin-top: 178px;
     width: 14%;
     margin-left: 3%;
     order: -1;

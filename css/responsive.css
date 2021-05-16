@@ -79,7 +79,7 @@
         order: -1;
         width: 22%;
         font-size: 49px;
-        margin-top: 0.1em;
+        margin-top: -28px;
         margin-left: -1%;
     }
 
@@ -88,9 +88,9 @@
         width: 79%;
     }
 
-    #nikitas-io {
-        margin-top: 25px;
-        font-size: 29px;
+    .big-title {
+        margin-top: 0px;
+        font-size: 28px;
     }
 
     .projects-title{
@@ -241,7 +241,7 @@
         order: -1;
         width: 23%;
         font-size: 52px;
-        margin-top: 0.1em;
+        margin-top: -20px;
         margin-left: -1%;
     }
 
@@ -250,8 +250,8 @@
         width: 77%;
     }
 
-    #nikitas-io {
-        margin-top: 18px;
+    .big-title {
+        margin-top: 0px;
         font-size: 43px;
     }
 
@@ -292,10 +292,6 @@
         margin-right: 4px;
         font-weight: bolder;
         font-family: 'vger_regular';
-    }
-
-    hr{
-        margin-right: -6px;
     }
 
     body article {
@@ -357,7 +353,7 @@
     }
 
     aside {
-        margin-top: 178px;
+        margin-top: 127px;
         width: 20%;
         margin-left: 2%;
     }
@@ -377,8 +373,8 @@
     #logo {
         order: -1;
         width: 10%;
-        font-size: 67px;
-        margin-top: 0.3em;
+        font-size: 60px;
+        margin-top: -22px;
     }
 
     .title {
@@ -386,7 +382,8 @@
         width: 90%;
     }
 
-    #nikitas-io {
+    .big-title {
+        margin-top: 5px;
         font-size: 48px;
     }
 
@@ -446,6 +443,10 @@
 /*For big screens*/
 
 @media screen and (min-width:981px) and (max-width:1090px) {
+    aside{
+        margin-top: 168.5px;
+    }
+
     body::before {
         background-image: url(../images/background/circuit_board_medium.jpg);
     }
@@ -454,7 +455,7 @@
         order: -1;
         width: 10%;
         font-size: 85px;
-        
+        margin-top: -14px;
     }
 
     .title {
@@ -462,8 +463,9 @@
         width: 90%;
     }
 
-    #nikitas-io {
+    .big-title {
         font-size: 65px;
+        margin-top: 25px;
         margin-bottom: 0px;
     }
 
@@ -484,7 +486,7 @@
         order: -1;
         width: 10%;
         font-size: 85px;
-        margin-top: 0.4em;
+        margin-top: -5px;
     }
 
     .title {
@@ -492,7 +494,7 @@
         width: 90%;
     }
 
-    #nikitas-io {
+    .big-title {
         font-size: 65px;
         margin-bottom: 0px;
     }   
