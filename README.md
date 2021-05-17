@@ -1,5 +1,5 @@
 # Nikitas.io
-This is a responsive portfolio site made by Nikitas.io for Nikitas.io. The theme I used for this project is cyberpunk.
+This is a responsive portfolio site of Nikitas I/O.
 
 ## responsiveness
 I made sure that the website works beautifully for every device and screen size I've tried. 
