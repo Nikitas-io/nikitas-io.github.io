@@ -139,8 +139,8 @@ h1 {
     max-width: 111px;
   }
   body .type-animation:after {
-    border-right: 6px solid transparent;
-    right: -3.5px;
+    border-right: 4px solid transparent;
+    right: -1px;
   }
   body .type-animation.animating {
     -webkit-animation: type 2500ms;
