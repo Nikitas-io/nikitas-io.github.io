@@ -136,7 +136,7 @@ h1 {
     font-size: 2.3rem;
   }
   body .type-animation {
-    max-width: 111px;
+    max-width: 119px;
   }
   body .type-animation:after {
     border-right: 4px solid transparent;

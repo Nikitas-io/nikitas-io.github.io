@@ -98,6 +98,7 @@ body::before {
     display: inline-block;
     vertical-align: top;
     margin-left: 15px;
+    font-family: 'vger_regular';
 }
 
 .desctiption{
@@ -109,7 +110,7 @@ body::before {
     border-radius: 105px;
     width: 27%;
     min-width: 100px;
-    max-width: 210px;
+    max-width: 200px;
 }
 
 section {
