@@ -1,5 +1,6 @@
 
 
+
 // Controls how much the word container expands when each letter is "typed".
 $chWidth: 253px;
 
@@ -13,7 +14,7 @@ $cursorLoopCount: 6;
 $animationDelay: 2.1s;
 
 $color: slateblue;
-$bg: #f7f3ff;
+$bg: crimson;
 $cursor: scale-color($color, $lightness: -60%);
 
 h1 {
@@ -95,9 +96,10 @@ $frameSize: 100;
 }
 
 
-@media screen and (min-width:981px) and (max-width:1090px) {
+
+@media screen and (min-width:981px) {
 	body .type-animation:after {
-		right: -1px;
+		right: 0px;
 		border-right: 7.5px solid transparent;
 	}
 }

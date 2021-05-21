@@ -34,7 +34,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 html::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px crimson; 
+    box-shadow: inset 0 0 5px crimson;
     border-radius: 10px;
 }
 
@@ -62,23 +62,54 @@ body::before {
     right: 0;
     position: absolute;
     z-index: -1;
-    
+
     /* Fade the bottom of the background */
     box-shadow: inset 0px -150px 117px 15px rgb(38, 29, 69) !important;
 }
 
-.big-title{
+.big-title {
     letter-spacing: 1px;
     margin-top: 30px;
     margin-bottom: 0;
     font-family: 'vger_bold';
+    color: white;
 }
 
+.separator{
+    color: crimson
+}
 
-header{
+.tab-panel {
     margin-top: 25px;
     width: 100%;
     display: flex;
+}
+
+#page-intro{
+    display: inline;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#headline{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+}
+
+.desctiption{
+    font-family: vger_regular;
+}
+
+#my-picture{
+    border: 1.5px solid white;
+    border-radius: 105px;
+    width: 27%;
+    min-width: 100px;
+    max-width: 210px;
 }
 
 section {
@@ -92,7 +123,7 @@ section {
 article {
     width: 105%;
     margin-left: 5px;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
     text-align: left;
 }
 
@@ -113,15 +144,15 @@ footer {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -80px;
+    margin-top: 0px;
 }
 
-p{
+p {
     margin-top: 0;
     padding-top: 0;
 }
 
-h5{
+h5 {
     margin-bottom: -35px;
 }
 
@@ -135,7 +166,7 @@ hr {
 }
 
 
-.title{
+.title {
     text-align: right;
     position: relative;
     width: 400px;
@@ -147,7 +178,7 @@ hr {
     flex-wrap: wrap;
 }
 
-.projects-title{
+.projects-title {
     padding-top: 45px;
     font-size: 50px !important;
 }
@@ -170,7 +201,7 @@ hr {
     margin-top: -15px;
 }
 
-.text-header{
+.text-header {
     font-family: 'vger_bold';
     color: crimson;
     font-size: 21px;
@@ -181,12 +212,12 @@ hr {
     margin-top: 1px;
 }
 
-.article-borders{
+.article-borders {
     border: 40px solid transparent;
     border-image: url(../images/borders.png) 20 stretch;
 }
 
-.article-image{
+.article-image {
     width: 200px;
     float: left;
     vertical-align: top;
@@ -196,13 +227,13 @@ hr {
     margin-bottom: -6px;
 }
 
-#project-content{
+#project-content {
     margin-top: 27px;
     margin-right: 20px;
 }
 
 
-.sub-title{
+.sub-title {
     margin-left: 3px;
     text-align: left;
 }
@@ -220,7 +251,7 @@ hr {
     transform: translate(0, 4%);
 }
 
-.scroll-button{
+.scroll-button {
     margin-top: 20px;
     margin-bottom: 20px;
     height: fit-content;
@@ -249,11 +280,11 @@ hr {
     opacity: 0.8;
 }
 
-aside img{
+aside img {
     opacity: 0.85;
 }
 
-aside img:hover{
+aside img:hover {
     opacity: 1;
     cursor: pointer;
 }
@@ -280,7 +311,7 @@ aside img:hover{
 
 }
 
-.borders:hover{
+.borders:hover {
     box-shadow: 0px 0px 10px 5px rgb(64, 183, 247);
 }
 
@@ -295,15 +326,15 @@ aside img:hover{
     margin-bottom: 2%;
 }
 
-.spy > nav {
-	position: sticky;
-	top: 1rem;
-	align-self: start;
+.spy>nav {
+    position: sticky;
+    top: 1rem;
+    align-self: start;
 }
 
 /* ScrollSpy active styles (see JS tab for activation) */
-.section-nav li.active > a {
-	box-shadow: 0 0 10px rgb(64, 183, 247);
+.section-nav li.active>a {
+    box-shadow: 0 0 10px rgb(64, 183, 247);
     background: rgb(64, 183, 247);
     color: #212121;
     border-radius: 4px;
@@ -311,37 +342,38 @@ aside img:hover{
 
 /* Sidebar Navigation */
 .section-nav {
-	padding-left: 0;
-	border-left: 1px solid #efefef;
+    padding-left: 0;
+    border-left: 1px solid #efefef;
 }
 
 .section-nav a {
-	text-decoration: none;
-	display: block;
-	padding: 10px;
-	color: #ccc;
-	transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #ccc;
+    transition: all 50ms ease-in-out;
+    /* 💡 This small transition makes setting of the active state smooth */
 }
 
 .section-nav a:hover {
-	color: white;
+    color: white;
 }
 
 ol {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .spy {
-	display: grid;
-	grid-template-columns: 1fr 15em;
-	max-width: 100em;
-	width: 100%;
-	margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 15em;
+    max-width: 100em;
+    width: 100%;
+    margin: 0 auto;
 }
 
-#project-content hr{
+#project-content hr {
     height: 2px;
     margin-left: 30px;
 }
@@ -372,68 +404,74 @@ ol {
 
 
 .tabs-list {
-  list-style: none;
-  position: relative;
-  width: 100%;
-  padding: 0;
-  font-size: 18px;
-  color: rgb(64, 183, 247);
+    list-style: none;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    font-size: 18px;
+    color: rgb(64, 183, 247);
 }
 
 .tabs-list * {
-  
-  outline: none;
+
+    outline: none;
 }
 
 .tabs-list :before,
-.tabs-list :after { content: ''; }
+.tabs-list :after {
+    content: '';
+}
 
-.tabs-list li { 
+.tabs-list li {
     display: inline-block;
 }
 
 
-.tabs-list li input[type=radio] {    
+.tabs-list li input[type=radio] {
     opacity: 0;
     position: absolute;
     z-index: -1;
 }
 
 
-.tabs-list li input[type=radio]:checked ~ label {
-  box-shadow: 0 0 10px rgb(64, 183, 247);
-  background: rgb(64, 183, 247);
-  color: #212121;
-  height: 50px;
-  font-size: 1.1em;
-  cursor: default;
-  /* Make the active tab non-clickable */
-  pointer-events: none;
+.tabs-list li input[type=radio]:checked~label {
+    box-shadow: 0 0 10px rgb(64, 183, 247);
+    background: rgb(64, 183, 247);
+    color: #212121;
+    height: 50px;
+    font-size: 1.1em;
+    cursor: default;
+    /* Make the active tab non-clickable */
+    pointer-events: none;
 }
 
-.tabs-list li input[type=radio]:checked ~ .section {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: 424.3px;
-  padding: 15px 0 5px 0;
-  border: 1px solid rgb(64, 183, 247);
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  color: #f1f1f1;
-  letter-spacing: .1em;
-  text-indent: 1em;
-  font-family: OCRA;
-  font-size: 14px;
-  /* Make the text unselectable */
-  -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
+.tabs-list li input[type=radio]:checked~.section {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 424.3px;
+    padding: 15px 0 5px 0;
+    border: 1px solid rgb(64, 183, 247);
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #f1f1f1;
+    letter-spacing: .1em;
+    text-indent: 1em;
+    font-family: OCRA;
+    font-size: 14px;
+    /* Make the text unselectable */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
 }
 
-p.tab-content{
+p.tab-content {
     transition: opacity .15s;
     opacity: 1;
     margin-left: 15px;
@@ -441,55 +479,59 @@ p.tab-content{
 }
 
 .tabs-list li label {
-  border-radius: 5px 5px 0 0;
-  display: block;
-  width: 120px;
-  height: 50px;
-  border: 1px solid rgba(0, 190, 190, 0.7);
-  border-bottom: 0;
-  color: #ccc;
-  line-height: 50px;
-  text-align: center;
-  font-weight: bolder;
-  cursor: pointer;
-  transition: box-shadow .15s;
-  /* Make the text unselectable */
-  -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
+    border-radius: 5px 5px 0 0;
+    display: block;
+    width: 120px;
+    height: 50px;
+    border: 1px solid rgba(0, 190, 190, 0.7);
+    border-bottom: 0;
+    color: #ccc;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: box-shadow .15s;
+    /* Make the text unselectable */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
 }
 
 .tabs-list li label:hover {
-  height: 50px;
-  border-color: rgb(64, 183, 247);
-  color: white;
+    height: 50px;
+    border-color: rgb(64, 183, 247);
+    color: white;
 }
 
 .tabs-list li .section {
-  opacity: 0;
-  position: absolute;
-  top: 51px;
-  left: 0;
-  /* width: 1000px; */
-  padding: 50px;
-  border: 1px solid rgb(64, 183, 247);
-  background: rgba(0, 190, 190, 0.1);
-  color: white;
-  letter-spacing: -1em;
-  text-indent: 1em;
-  z-index: 1;
+    opacity: 0;
+    position: absolute;
+    top: 51px;
+    left: 0;
+    /* width: 1000px; */
+    padding: 50px;
+    border: 1px solid rgb(64, 183, 247);
+    background: rgba(0, 190, 190, 0.1);
+    color: white;
+    letter-spacing: -1em;
+    text-indent: 1em;
+    z-index: 1;
 }
 
 
-#logo{
+#logo {
     z-index: 1;
     cursor: pointer;
 }
 
 
 /*********** Inhinito Logo ***********/
-#inhinito-logo{
+#inhinito-logo {
     margin-left: -23px;
     width: 100%;
     margin-bottom: 6px;
@@ -498,7 +540,7 @@ p.tab-content{
 
 /*********** LoFi.gr Logo ***********/
 
-#logo-container{
+#logo-container {
     margin-top: 5px;
     margin-bottom: 1px;
     float: left;
@@ -513,7 +555,7 @@ p.tab-content{
     border-radius: 50%;
 }
 
-#loading-header{
+#loading-header {
     position: absolute;
     top: 440px;
     left: 0;
@@ -558,7 +600,7 @@ p.tab-content{
 }
 
 *,
-*::before{
+*::before {
     box-sizing: border-box;
 }
 
@@ -577,20 +619,21 @@ p.tab-content{
 }
 
 /*********** The Coreys Logo ***********/
-#coreys-logo{
+#coreys-logo {
     margin-left: -20px;
     margin-right: 7px;
     margin-top: 3px;
     margin-bottom: 0px;
 }
+
 /***************************************/
 
-#visible-footer-name{
+#visible-footer-name {
     font-size: 13px;
     margin-top: 25px;
 }
 
-#invisible-footer-name{
+#invisible-footer-name {
     visibility: hidden;
     margin-bottom: 0;
     margin-top: -80px;
