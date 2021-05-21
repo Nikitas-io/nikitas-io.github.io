@@ -105,12 +105,21 @@ body::before {
     font-family: vger_regular;
 }
 
+#contact-me{
+    margin-top: -7px;
+    display: block;
+}
+
 #my-picture{
     border: 1.5px solid white;
     border-radius: 105px;
     width: 27%;
     min-width: 100px;
     max-width: 200px;
+}
+
+.contact-link{
+    color: wheat;
 }
 
 section {
