@@ -8,9 +8,8 @@
     aside {
         width: 100%;
         margin-top: -2%;
-        margin-left: 2.3%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         order: 0;
     }
@@ -106,6 +105,7 @@
     .hex {
         width: 87%;
         margin-top: 4%;
+        margin-left: 6.3%;
     }
 
     .images {
@@ -190,9 +190,8 @@
     aside {
         width: 100%;
         margin-top: 0%;
-        margin-left: 0.8%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         order: 0;
     }
@@ -273,6 +272,7 @@
     .hex {
         width: 96%;
         margin-top: 0%;
+        margin-left: 2px;
     }
 
     .scrollspy {
@@ -475,7 +475,7 @@
     }
 }
 
-@media screen and (min-width:1090px) {
+@media screen and (min-width:1091px) {
     body {
         width: 1091px;
         margin-left: auto;

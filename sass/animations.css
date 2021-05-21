@@ -27,13 +27,13 @@ h1 {
           animation: type 1500ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
 }
 
 .type-animation.animating:after {
-  -webkit-animation: cursor 320ms 4 ease-in;
-          animation: cursor 320ms 4 ease-in;
+  -webkit-animation: cursor 320ms 6 ease-in;
+          animation: cursor 320ms 6 ease-in;
 }
 
 @-webkit-keyframes cursor {
@@ -141,14 +141,6 @@ h1 {
   body .type-animation:after {
     border-right: 4px solid transparent;
     right: -1px;
-  }
-  body .type-animation.animating {
-    -webkit-animation: type 2500ms;
-    animation: type 2500ms;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-delay: 1.4s;
-    animation-delay: 1s;
   }
 }
 /*# sourceMappingURL=animations.css.map */

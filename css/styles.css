@@ -61,6 +61,7 @@ body::before {
     bottom: 0;
     right: 0;
     position: absolute;
+    z-index: -1;
     
     /* Fade the bottom of the background */
     box-shadow: inset 0px -150px 117px 15px rgb(38, 29, 69) !important;

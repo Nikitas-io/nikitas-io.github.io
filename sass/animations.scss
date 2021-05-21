@@ -7,10 +7,10 @@ $chWidth: 253px;
 $typeDuration: 1500ms;
 
 // The amount of times the cursor will blink.
-$cursorLoopCount: 4;
+$cursorLoopCount: 6;
 
 // The amount of time before the animation begins.
-$animationDelay: 1.3s;
+$animationDelay: 2.1s;
 
 $color: slateblue;
 $bg: #f7f3ff;
@@ -94,6 +94,7 @@ $frameSize: 100;
 	}
 }
 
+
 @media screen and (min-width:981px) and (max-width:1090px) {
 	body .type-animation:after {
 		right: -1px;
@@ -140,14 +141,5 @@ $frameSize: 100;
 	body .type-animation:after {
 		border-right: 4px solid transparent;
 		right: -1px;
-	}
-
-	body .type-animation.animating {
-		-webkit-animation: type 2500ms;
-		animation: type 2500ms;
-		-webkit-animation-fill-mode: forwards;
-		animation-fill-mode: forwards;
-		-webkit-animation-delay: 1.4s;
-		animation-delay: 1s;
 	}
 }
