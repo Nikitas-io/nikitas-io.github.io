@@ -12,12 +12,12 @@
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'OCRA';
     src: url('../fonts/OCRAStd.otf');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 
 html {
@@ -25,17 +25,16 @@ html {
 }
 
 html::-webkit-scrollbar {
-    width: 9px;
+    width: 6px;
 }
 
 html::-webkit-scrollbar-thumb {
     background: gray;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 html::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px crimson;
-    border-radius: 10px;
 }
 
 body {
@@ -67,6 +66,90 @@ body::before {
     box-shadow: inset 0px -150px 117px 15px rgb(38, 29, 69) !important;
 }
 
+
+
+/* Menu Navigation Styles Start */
+  
+.nav {
+    font-family: 'vger_regular';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    position: fixed;
+    bottom: 0px;
+    margin: 0;
+    padding: 10px;
+    background: #2f2c5b;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    box-shadow: rgb(51 106 158) 0px 3px 22px 4px;
+}
+
+.nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+}
+
+.nav a {
+    padding: .5em .8em;
+    color: rgb(255 255 255 / 85%);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #3E8914;
+    border-right: 3px solid #2E640F;
+    transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #2E640F;
+    border-left: 3px solid #3E8914;
+    transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+.nav a:hover {
+    color: #3ca3df;
+}
+
+/* Menu Navigation Styles End */
+
+
 .big-title {
     letter-spacing: 1px;
     margin-top: 30px;
@@ -92,6 +175,7 @@ body::before {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    height: 100vh;
 }
 
 #headline{
@@ -179,7 +263,7 @@ hr {
 .title {
     text-align: right;
     position: relative;
-    width: 400px;
+    width: 100%;
 }
 
 
@@ -202,7 +286,7 @@ hr {
 
 
 .text {
-    font-family: OCRA;
+    font-family: monospace;
     font-size: 14px;
     text-align: left;
     opacity: 1;
@@ -434,6 +518,7 @@ ol {
 
 .tabs-list li {
     display: inline-block;
+    font-size: 13.5px;
 }
 
 
@@ -466,10 +551,10 @@ ol {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color: #f1f1f1;
-    letter-spacing: .1em;
+    letter-spacing: .01em;
     text-indent: 1em;
-    font-family: OCRA;
-    font-size: 14px;
+    font-family: monospace;
+    font-size: 15px;
     /* Make the text unselectable */
     -webkit-user-select: none;
     /* Safari */
@@ -531,12 +616,6 @@ p.tab-content {
     letter-spacing: -1em;
     text-indent: 1em;
     z-index: 1;
-}
-
-
-#logo {
-    z-index: 1;
-    cursor: pointer;
 }
 
 
