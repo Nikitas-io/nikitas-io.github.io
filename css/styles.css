@@ -232,7 +232,7 @@ aside {
 }
 
 footer {
-    font-family: monospace;
+    font-family: courier, monospace;
     font-size: 15px;
     color: white;
     text-align: center;
@@ -286,7 +286,7 @@ h5 {
 
 
 .text {
-    font-family: monospace;
+    font-family: courier, monospace;
     font-size: 14px;
     text-align: left;
     opacity: 1;
@@ -553,7 +553,7 @@ ol {
     color: #f1f1f1;
     letter-spacing: .01em;
     text-indent: 1em;
-    font-family: monospace;
+    font-family: courier, monospace;
     font-size: 15px;
     /* Make the text unselectable */
     -webkit-user-select: none;
@@ -768,7 +768,7 @@ p.tab-content {
 
 
 .timeline-item {
-  font-size: 1em;
+  font-size: 15px;
   line-height: 1.75em;
   border-top: 3px solid;
   -o-border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
@@ -779,7 +779,7 @@ p.tab-content {
   padding: 40px;
   position: relative;
   color: white;
-  font-family: monospace;
+  font-family: courier, monospace;
 }
 .timeline-item:before {
   border: 1px solid rgb(64, 183, 247);
