@@ -752,6 +752,7 @@ p.tab-content {
 }
 
 .timeline-dot{
+    border: 1px solid rgb(64, 183, 247);
     width: 10px;
     background: #40b7f7;
     z-index: 1;
@@ -781,6 +782,7 @@ p.tab-content {
   font-family: monospace;
 }
 .timeline-item:before {
+  border: 1px solid rgb(64, 183, 247);
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -800,7 +802,7 @@ p.tab-content {
 }
 .timeline-item:nth-child(even):before {
   left: 100%;
-  margin-left: -27px;
+  margin-left: -29px;
 }
 
 .timeline-item:nth-child(odd) {
@@ -809,7 +811,7 @@ p.tab-content {
 }
 .timeline-item:nth-child(odd):before {
   right: 100%;
-  margin-right: -27px;
+  margin-right: -29px;
 }
 
 .timeline-item:first-child {
@@ -821,4 +823,14 @@ p.tab-content {
 .timeline-item:last-child {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+#auth:before {
+    background-image: url(../images/logos/auth.png) !important;
+    background-size: contain;
+}
+
+#udacity:before {
+    background-image: url(../images/logos/udacity.png) !important;
+    background-size: contain;
 }
