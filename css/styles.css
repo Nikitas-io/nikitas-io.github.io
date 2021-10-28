@@ -106,7 +106,7 @@ body::before {
     color: rgb(255 255 255 / 85%);
     position: relative;
     text-decoration: none;
-    font-size: 20px;
+    font-size: clamp(17px, 2vw, 22px);
 }
 
 .nav a::before,
@@ -162,15 +162,20 @@ body::before {
     color: crimson
 }
 
+.intro-header {
+    letter-spacing: 1px;
+    font-family: 'vger_bold';
+    font-size: 18.2px;
+}
+
 .tab-panel {
-    margin-top: 25px;
     width: 100%;
     display: flex;
 }
 
 #page-intro{
     display: inline;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -185,16 +190,13 @@ body::before {
     font-family: 'vger_regular';
 }
 
-.desctiption{
-    font-family: vger_regular;
-}
-
 #contact-me{
     margin-top: -7px;
     display: block;
 }
 
 #my-picture{
+    cursor: pointer;
     border: 1.5px solid white;
     border-radius: 105px;
     width: 27%;
@@ -834,3 +836,65 @@ p.tab-content {
     background-image: url(../images/logos/udacity.png) !important;
     background-size: contain;
 }
+
+
+
+/** Arrows Animation **/
+
+/* 
+.arrows {
+	width: 60px;
+	height: 75px;
+    top: calc(50% - 40px);
+	position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+	
+    border: 3px solid #3da2df;
+    background: #232b4fc7;
+    padding: 10px;
+    width: 86px;
+    height: 102px;
+    border-radius: 15px;
+}
+
+.arrows path {
+	stroke: #2994D1;
+	fill: transparent;
+	stroke-width: 3px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+
+@-webkit-keyframes arrow 
+{
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; 
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; 
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; 
+} */
