@@ -144,22 +144,6 @@ $line-size: 7;
   }
 }
 
-.bttn {
-  //opacity: 0;
-
-  //will-change: transform, opacity;
-  //animation: fadeIn 0.6s 0.5s forwards ease-out;
-  
-  // cyan theme
-  &.cyan {
-    $theme-color: $border-color;
-    span { color: $theme-color; }
-    .corners {
-      &:after,
-      &:before { border-color: $theme-color; }
-    }
-  }
-}
 
 //
 //  magic box
@@ -173,7 +157,7 @@ $line-size: 7;
   
   .content {
     height: 300px;
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
     
     border: 1px solid transparent;

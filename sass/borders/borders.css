@@ -170,14 +170,6 @@
   bottom: 7px;
 }
 
-.bttn.cyan span {
-  color: #40b7f7;
-}
-
-.bttn.cyan .corners:after, .bttn.cyan .corners:before {
-  border-color: #40b7f7;
-}
-
 .box {
   display: inline-block;
   vertical-align: middle;
@@ -187,7 +179,7 @@
 
 .box .content {
   height: 300px;
-  margin: 20px;
+  margin: 20px auto;
   padding: 20px;
   border: 1px solid transparent;
   border-radius: 3px;

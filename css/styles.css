@@ -620,14 +620,6 @@ p.tab-content {
 }
 
 
-/*********** Inhinito Logo ***********/
-#inhinito-logo {
-    margin-left: -23px;
-    width: 100%;
-    margin-bottom: 6px;
-}
-
-
 /*********** LoFi.gr Logo ***********/
 
 #logo-container {
@@ -828,6 +820,32 @@ p.tab-content {
     background-size: contain;
 }
 
+article a {
+    text-decoration: none;
+    display: block;
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    background-size: cover;
+    background-position: center;
+}
+
+.content h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    font-family: 'vger_bold';
+}
+
+#inhinito-content {
+    background-image: url(../images/projects/inhinito_bg.jpg) !important;
+}
+
+#lofi-content {
+    background-image: url(../images/projects/lofi_bg.jpg) !important;
+}
 
 
 /** Arrows Animation **/
