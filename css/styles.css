@@ -620,85 +620,6 @@ p.tab-content {
 }
 
 
-/*********** LoFi.gr Logo ***********/
-
-#logo-container {
-    margin-top: 5px;
-    margin-bottom: 1px;
-    float: left;
-    width: fit-content;
-    margin-right: 12px;
-    margin-left: -14px;
-}
-
-#lofi-gr-logo {
-    width: 120px;
-    box-shadow: 0px 0px 30px 0px #614955;
-    border-radius: 50%;
-}
-
-#loading-header {
-    position: absolute;
-    top: 440px;
-    left: 0;
-    right: 0;
-    width: fit-content;
-    opacity: 1;
-}
-
-/* Start of loading animation */
-.ring {
-    position: relative;
-    z-index: 0;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 50%;
-    overflow: hidden;
-    padding-top: 10px;
-    padding-bottom: 6px;
-    padding-right: 10px;
-    padding-left: 10px;
-    box-shadow: 0px 0px 35px -10px #6e3b98;
-}
-
-.ring::before {
-    opacity: var(--opacity);
-    border-radius: 50%;
-    content: '';
-    position: absolute;
-    z-index: -2;
-    left: -50%;
-    top: -50%;
-    width: 200%;
-    height: 200%;
-    background-color: #6e3b98;
-    background-repeat: no-repeat;
-    background-size: 50% 50%, 50% 50%;
-    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#6e3b98), to(#6e3b98)), -webkit-gradient(linear, left top, left bottom, from(mediumpurple), to(mediumpurple)), -webkit-gradient(linear, left top, left bottom, from(#3d418d), to(#3d418d)), -webkit-gradient(linear, left top, left bottom, from(#99c4f1), to(#99c4f1));
-    background-image: linear-gradient(#6e3b98, #6e3b98), linear-gradient(mediumpurple, mediumpurple), linear-gradient(#3d418d, #3d418d), linear-gradient(#99c4f1, #99c4f1);
-    -webkit-animation: rotate 7s linear infinite;
-    animation: rotate 7s linear infinite;
-}
-
-*,
-*::before {
-    box-sizing: border-box;
-}
-
-@-webkit-keyframes rotate {
-    100% {
-        -webkit-transform: rotate(1turn);
-        transform: rotate(1turn);
-    }
-}
-
-@keyframes rotate {
-    100% {
-        -webkit-transform: rotate(1turn);
-        transform: rotate(1turn);
-    }
-}
 
 /*********** Street Art Logo ***********/
 #streetart-logo{
@@ -738,7 +659,6 @@ p.tab-content {
 
 .timeline-dot{
     border: 1px solid rgb(64, 183, 247);
-    width: 10px;
     background: #40b7f7;
     z-index: 1;
     height: auto;
@@ -771,7 +691,7 @@ p.tab-content {
   content: "";
   position: absolute;
   border-radius: 50%;
-  padding: 30px;
+  padding: 20px;
   height: 1.25em;
   width: 1.25em;
   background-color: #34435E;
@@ -787,7 +707,7 @@ p.tab-content {
 }
 .timeline-item:nth-child(even):before {
   left: 100%;
-  margin-left: -29px;
+  margin-left: -30px;
 }
 
 .timeline-item:nth-child(odd) {
@@ -834,9 +754,16 @@ article a {
 }
 
 .content h1 {
-    font-size: 4.5rem;
+    font-size: clamp(30px,7.5vw,60px);
     text-align: center;
     font-family: 'vger_bold';
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #inhinito-content {

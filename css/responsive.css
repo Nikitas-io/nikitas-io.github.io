@@ -31,6 +31,11 @@
         font-size: 13px;
     }
 
+    body .box {
+        width: 88%;
+        margin-left: -30px;
+    }
+
     body .tabs-list li label {
         width: 76px !important;
         height: 40px !important;
@@ -195,6 +200,11 @@
 
     body .intro-header {
         font-size: 13.2px;
+    }
+
+    body .box {
+        width: 94%;
+        margin-left: -10px;
     }
 
     aside {
