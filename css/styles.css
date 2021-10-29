@@ -123,17 +123,17 @@ body::before {
     content: '';
     right: 0;
     top: 0;
-    border-top: 3px solid #3E8914;
-    border-right: 3px solid #2E640F;
+    border-top: 3px solid #3ca3df;
+    border-right: 3px solid #2b6191;
     transform: translate(-100%, 50%);
 }
 
-.nav a:after {
+.nav a::after {
     content: '';
     left: 0;
     bottom: 0;
-    border-bottom: 3px solid #2E640F;
-    border-left: 3px solid #3E8914;
+    border-bottom: 3px solid #2b6191;
+    border-left: 3px solid #3ca3df;
     transform: translate(100%, -50%)
 }
 
@@ -324,7 +324,6 @@ h5 {
 }
 
 #project-content {
-    margin-top: 27px;
     margin-right: 20px;
 }
 
@@ -719,14 +718,6 @@ p.tab-content {
     border-radius: 6px;
 }
 
-/*********** The Coreys Logo ***********/
-#coreys-logo {
-    margin-left: -20px;
-    margin-right: 7px;
-    margin-top: 3px;
-    margin-bottom: 0px;
-}
-
 /***************************************/
 
 #visible-footer-name {
@@ -772,11 +763,11 @@ p.tab-content {
 .timeline-item {
   font-size: 15px;
   line-height: 1.75em;
-  border-top: 3px solid;
+  border-top: 2px solid;
   -o-border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
      border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
   border-image-slice: 1;
-  border-width: 3px;
+  border-width: 2px;
   margin: 0;
   padding: 40px;
   position: relative;
@@ -799,7 +790,7 @@ p.tab-content {
 }
 
 .timeline-item:nth-child(even) {
-  border-right: 3px solid;
+  border-right: 2px solid;
   padding-left: 0;
 }
 .timeline-item:nth-child(even):before {
@@ -808,7 +799,7 @@ p.tab-content {
 }
 
 .timeline-item:nth-child(odd) {
-  border-left: 3px solid;
+  border-left: 2px solid;
   padding-right: 0;
 }
 .timeline-item:nth-child(odd):before {

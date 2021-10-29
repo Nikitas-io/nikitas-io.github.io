@@ -11,6 +11,7 @@
     <meta name="keywords" content="Inhinito, inhinito, projects, project, nikitas, Νικήτας, Νικητας, Chatzipazarlis, Χατζηπαζαρλής, Χατζηπαζαρλης, Νικήτας Χατζηπαζαρλής, Νικητας Χατζηπαζαρλης, nikitas i/o, io, nikitas io, nikitas.io, i/o">
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="sass/animations/animations.css" />
+    <link rel="stylesheet" href="sass/borders/borders.css" />
     
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Favicon -->
@@ -149,17 +150,18 @@
         <div class="spy">
             <!-- Content Section -->
             <div id="project-content">
-                <div class="text-header">INHINITO</div>
-                <article id="project-1" class="article-borders">
-                    <a href="http://inhinito.com"><img id="inhinito-logo" src="images/projects/inhinito.png" class="article-image" alt="Inhinito Logo" /></a>
-                    <p class="text">
-                        <br />
-                        I founded Inhinito SCE in order to support the creative community of Greece. I developed the company's team, worked with 
-                        accountants to create the company's statute, created its website and finally worked with lawyers to acquire the brand's 
-                        trademark. I create software, grow the community, develop the brand, and manage projects & social media
-                        for Inhinito.
-                    </p>
+
+                <article id="project-1" class='box out'>
+                    <a href="http://inhinito.com">
+                        <div class='content'>
+                            <p>Inhinito</p>
+                            <img id="inhinito-logo" src="images/projects/inhinito.png" class="article-image" alt="Inhinito Logo" />
+                        </div>
+                    </a>
+                    <div class='corners top'></div>
+                    <div class='corners bottom'></div>
                 </article>
+
 
                 <div class="text-header">LOFI.GR</div>
                 <article id="project-2" class="article-borders">
@@ -185,24 +187,14 @@
                     <a href="https://streetart.gr">
                         <img id="streetart-logo" class="article-image" src="images/projects/street_art.jpg" alt="StreetArt.gr logo"/>
                     </a>
-                    <p class="text">
-                        <br />
-                        Made the "Street Art Greece" website using the Angular framework, with the goal of supporting the 
-                        Greek Street Art Community. I also promote the brand & manage the logistics for StreetArt.gr 
-                        in coordination with some very talented Street Artists.
-                    </p>
                 </article>
 
-                <div class="text-header">THECOREYS.GR</div>
+                <div class="text-header">MASHUP MAP</div>
                 <article id="project-4" class="article-borders">
-                    <a href="https://thecoreys.gr"><img id="coreys-logo" class="article-image" src="images/projects/the_coreys.png" alt="The Coreys Logo" /></a>
-                    <p class="text">
-                        <br />
-                        Created this website using only vanilla JavaScript, HTML and CSS as a challenge. The idea was to avoid imports such as libraries or frameworks.
-                        All JavaScript, CSS and media files are minified and concatenated using Gulp tools for less and smaller
-                        file imports. All aspects were designed with responsiveness in mind so that the site may perform on all screen sizes (phones, tablets and PC). 
-                        The app also uses a custom service worker over https to cache files for an even faster performance.
-                    </p>
+                    <a href="https://thecoreys.gr">
+                        <img class="article-image" src="images/projects/the_coreys.png" alt="The Coreys Logo" />
+                    </a>
+
                 </article>
             </div>
             <!-- End of Content Section -->
@@ -213,7 +205,7 @@
                     <li class="scroll-button basic-button"><a href="#project-1">INHINITO.COM</a></li>
                     <li class="scroll-button basic-button"><a href="#project-2">LOFI.GR</a></li>
                     <li class="scroll-button basic-button"><a href="#project-3">STREETART.GR</a></li>
-                    <li class="scroll-button basic-button"><a href="#project-4">THECOREYS.GR</a></li>
+                    <li class="scroll-button basic-button"><a href="#project-4">MASHUP MAP</a></li>
                 </ol>
             </nav>
         </div>
