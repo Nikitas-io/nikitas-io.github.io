@@ -130,7 +130,6 @@ const word = document.querySelector("h1 span");
 
 // reset the transition by...
 retype.addEventListener("click", function (e) {
-		e.preventDefault;
 
 		// -> removing the class
 		word.classList.remove("animating");

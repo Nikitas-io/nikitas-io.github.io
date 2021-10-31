@@ -45,6 +45,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(38, 29, 69);
+    background: linear-gradient(209deg, rgb(38, 29, 69) 15%, rgb(18 42 110) 83%);
     color: crimson;
     /* overflow-x: hidden; */
 }
@@ -165,7 +166,7 @@ body::before {
 .intro-header {
     letter-spacing: 1px;
     font-family: 'vger_bold';
-    font-size: 18.2px;
+    font-size: 21.4px;
 }
 
 .tab-panel {
@@ -737,6 +738,16 @@ p.tab-content {
 
 #udacity:before {
     background-image: url(../images/logos/udacity.png) !important;
+    background-size: contain;
+}
+
+#inhinito:before {
+    background-image: url(../images/logos/inhinito.png) !important;
+    background-size: contain;
+}
+
+#softweb:before {
+    background-image: url(../images/logos/softweb.png) !important;
     background-size: contain;
 }
 
