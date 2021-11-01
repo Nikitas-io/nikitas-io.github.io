@@ -18,7 +18,7 @@
     }
 
     aside {
-        width: 100%;
+        width: 97%;
         margin-top: 2%;
         display: flex;
         justify-content: space-between;
@@ -55,7 +55,7 @@
         line-height: 40px;
     }
 
-    body .tabs-list li .section {
+    body .tabs-list li .tab-section {
         top: 41px;
     }
 
@@ -64,7 +64,7 @@
         height: 40px !important;
     }
 
-    body .tabs-list li input[type=radio]:checked ~ .section {
+    body .tabs-list li input[type=radio]:checked ~ .tab-section {
         height: 303px;
         pointer-events: none;
     }
@@ -252,7 +252,7 @@
         font-size: 1em;
     }
 
-    body .tabs-list li input[type=radio]:checked ~ .section {
+    body .tabs-list li input[type=radio]:checked ~ .tab-section {
         height: 298px;
     }
 
@@ -408,7 +408,7 @@
         opacity: 1;
     }
 
-    body .tabs-list li input[type=radio]:checked ~ .section {
+    body .tabs-list li input[type=radio]:checked ~ .tab-section {
         height: 349.8px;
     }
 
