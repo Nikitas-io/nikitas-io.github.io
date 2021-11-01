@@ -9,6 +9,14 @@
         font-size: 11.4px;
     }
 
+    body #timeline {
+        width: 80%;
+    }
+
+    body .timeline-item {
+        font-size: 13px;
+    }
+
     aside {
         width: 100%;
         margin-top: -3.5%;
@@ -209,6 +217,10 @@
     body .box {
         width: 94%;
         margin-left: -10px;
+    }
+
+    body #timeline {
+        width: 85%;
     }
 
     aside {

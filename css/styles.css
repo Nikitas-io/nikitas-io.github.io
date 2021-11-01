@@ -622,16 +622,6 @@ p.tab-content {
 
 
 
-/*********** Street Art Logo ***********/
-#streetart-logo{
-    width: 220px;
-    margin-left: -14px;
-    margin-right: 7px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 6px;
-}
-
 /***************************************/
 
 #visible-footer-name {
@@ -650,10 +640,13 @@ p.tab-content {
 
 #timeline {
     margin-bottom: 100px;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #timeline-section {
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -665,12 +658,13 @@ p.tab-content {
     height: auto;
     padding: 10px;
     position: absolute;
-    margin-left: -9.5px;
+    margin-left: -10.4px;
     border-radius: 15px;
 }
-#ending-dot {
+
+/* #ending-dot {
     margin-top: -105px;
-}
+} */
 
 
 .timeline-item {
@@ -765,7 +759,7 @@ article a {
 }
 
 .content h1 {
-    font-size: clamp(30px,7.5vw,60px);
+    font-size: clamp(18px,4.5vw,40px);;
     text-align: center;
     font-family: 'vger_bold';
     line-height: 0;
@@ -783,6 +777,18 @@ article a {
 
 #lofi-content {
     background-image: url(../images/projects/lofi_bg.jpg) !important;
+}
+
+#streetart-content {
+    background-image: url(../images/projects/streetart_bg.jpg) !important;
+}
+
+#thecoreys-content {
+    background-image: url(../images/projects/thecoreys_bg.jpg) !important;
+}
+
+#maps-content {
+    background-image: url(../images/projects/maps_bg.jpg) !important;
 }
 
 
