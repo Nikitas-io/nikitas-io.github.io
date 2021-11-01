@@ -363,7 +363,7 @@ h5 {
     z-index: 1;
     width: 330px;
     position: absolute;
-    top: 432px;
+    top: 453px;
     bottom: 15px;
     left: 0;
     right: 0;
@@ -445,7 +445,7 @@ aside img:hover {
 .section-nav a {
     text-decoration: none;
     display: block;
-    padding: 10px;
+    padding: 11.3px;
     color: #ccc;
     transition: all 50ms ease-in-out;
     /* 💡 This small transition makes setting of the active state smooth */
