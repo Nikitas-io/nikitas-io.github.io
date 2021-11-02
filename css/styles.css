@@ -145,9 +145,13 @@ body::before {
     opacity: 1;
 }
 
-.nav a:hover {
+/* .nav a:hover {
     color: #3ca3df;
-}
+} */
+
+.active-section {
+    color: #3ca3df !important;
+} 
 
 /* Menu Navigation Styles End */
 
@@ -171,13 +175,13 @@ body::before {
 
 .tab-panel {
     width: 100%;
+    margin-bottom: 200px;
     display: flex;
 }
 
 #home{
     display: inline;
-    margin-top: 25px;
-    margin-bottom: 30px;
+    padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -209,15 +213,20 @@ body::before {
     color: wheat;
 }
 
+#project-1 {
+    margin-top: 0 !important;
+}
+
 article {
     width: 105%;
     margin-left: 5px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     text-align: left;
 }
 
 aside {
-    margin-top: 178px;
+    margin-top: 217px;
     width: 14%;
     margin-left: 3%;
     order: -1;
@@ -349,16 +358,13 @@ h5 {
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
-    width: 330px;
-    position: absolute;
-    top: 453Fpx;
     bottom: 15px;
     left: 0;
     right: 0;
 }
 
 .hex {
-    width: 130px;
+    width: 136px;
     margin-top: 15px;
     border-radius: 3px;
     opacity: 0.8;
@@ -380,10 +386,6 @@ section {
     margin-left: 2%;
     order: 0;
     z-index: 1;
-}
-
-.active-section {
-    color: red !important;
 }
 
 .colorBox {
@@ -418,10 +420,9 @@ section {
 .scrollspy {
     width: 98%;
     text-align: center;
-    margin-top: 200px;
     margin-right: 0%;
-    margin-bottom: 2%;
     margin-left: 2%;
+    margin-bottom: 150px;
 }
 
 .spy>nav {
@@ -548,7 +549,7 @@ ol {
     opacity: 1;
     display: block;
     width: 100%;
-    height: 424.3px;
+    height: clamp(350px, 55.5vw, 430px);
     padding: 15px 0 5px 0;
     border: 1px solid rgb(64, 183, 247);
     border-top-right-radius: 5px;

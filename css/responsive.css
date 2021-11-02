@@ -17,6 +17,11 @@
         font-size: 13px;
     }
 
+    body .section {
+        margin-top: -10px !important;
+        height: 330px !important;
+    }
+
     aside {
         width: 97%;
         margin-top: 2%;
@@ -80,11 +85,6 @@
 
     body #projects{
         margin-right: 9px;
-    }
-
-    #social {
-        top: 330px;
-        width: 225px;
     }
 
     #logs {
@@ -226,7 +226,7 @@
 
     aside {
         width: 100%;
-        margin-top: 5%;
+        margin-top: 8%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -263,10 +263,6 @@
 
     body .tab-panel{
         display: block;
-    }
-
-    #social{
-        top: 327px;
     }
 
     #headline{
@@ -392,14 +388,8 @@
         font-size: 18.2px;
     }
 
-    section {
-        width: 76.5%;
-        margin-right: 1.5%;
-        margin-left: 0%;
-    }
-
     aside {
-        margin-top: 127px;
+        margin-top: 185px;
         width: 20%;
         margin-left: 2%;
     }
@@ -410,10 +400,6 @@
 
     body .tabs-list li input[type=radio]:checked ~ .tab-section {
         height: 349.8px;
-    }
-
-    #social{
-        top: 379px;
     }
 
     #headline{
@@ -440,7 +426,7 @@
     }
 
     .hex {
-        width: 104.3px;
+        width: clamp(100px, 17vw, 135px);
         margin-bottom: 1px;
         font-size: 16px;
     }
@@ -482,7 +468,7 @@
 
 @media screen and (min-width:981px) and (max-width:1090px) {
     aside{
-        margin-top: 168.5px;
+        margin-top: 188px;
     }
 
     body::before {

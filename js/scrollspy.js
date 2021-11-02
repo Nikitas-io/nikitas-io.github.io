@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', (evt) => {
 	});
 
 	window.onscroll = function() {
-		var scrollPosition = (document.documentElement.scrollTop + 30) || (document.body.scrollTop + 30);
+		var scrollPosition = (document.documentElement.scrollTop + 130) || (document.body.scrollTop + 130);
 
 		for (i in sections) {
 			
