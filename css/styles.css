@@ -432,6 +432,10 @@ section {
 }
 
 /* ScrollSpy active styles (see JS tab for activation) */
+.section-nav li>a {
+    transition: all 0.3s ease-in-out;
+}
+
 .section-nav li.active>a {
     box-shadow: 0 0 10px rgb(64, 183, 247);
     background: rgb(64, 183, 247);
