@@ -1,6 +1,7 @@
-/* Navbar Scrollspy Start */
-(function() {
 
+window.addEventListener('DOMContentLoaded', (evt) => {
+
+	/* Navbar Scrollspy Start */
 	'use strict';
 
 	var section = document.querySelectorAll("section");
@@ -14,7 +15,7 @@
 	});
 
 	window.onscroll = function() {
-		var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+		var scrollPosition = (document.documentElement.scrollTop + 30) || (document.body.scrollTop + 30);
 
 		for (i in sections) {
 			
@@ -24,12 +25,11 @@
 			}
 		}
 	};
-})();
-/* Navbar Scrollspy End */
+	/* Navbar Scrollspy End */
 
 
-/* Projects Scrollspy Start */
-window.addEventListener('DOMContentLoaded', (evt) => {
+	/* Projects Scrollspy Start */
+
 	// Clear any hashtags from the page URL if there are any.
 	window.history.replaceState("", document.title, window.location.pathname);
 	
@@ -48,9 +48,9 @@ window.addEventListener('DOMContentLoaded', (evt) => {
 	document.querySelectorAll('article[id]').forEach((article) => {
 		observer.observe(article);
 	});
+	/* Projects Scrollspy End */
 	
 });
-/* Projects Scrollspy End */
 
 const projectList = document.getElementById('project-list');
 // Select a project to scroll to.

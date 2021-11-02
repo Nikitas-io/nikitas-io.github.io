@@ -154,7 +154,6 @@ body::before {
 
 .big-title {
     letter-spacing: 1px;
-    margin-top: 30px;
     margin-bottom: 0;
     font-family: 'vger_bold';
     color: white;
@@ -208,14 +207,6 @@ body::before {
 
 .contact-link{
     color: wheat;
-}
-
-section {
-    width: 78%;
-    margin-right: 3%;
-    margin-left: 2%;
-    order: 0;
-    z-index: 1;
 }
 
 article {
@@ -274,7 +265,6 @@ h5 {
 }
 
 .projects-title {
-    padding-top: 45px;
     font-size: 50px !important;
 }
 
@@ -381,6 +371,15 @@ aside img {
 aside img:hover {
     opacity: 1;
     cursor: pointer;
+}
+
+section {
+    width: 78%;
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-left: 2%;
+    order: 0;
+    z-index: 1;
 }
 
 .active-section {
