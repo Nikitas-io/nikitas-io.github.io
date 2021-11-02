@@ -1,7 +1,38 @@
+/* Navbar Scrollspy Start */
+(function() {
+
+	'use strict';
+
+	var section = document.querySelectorAll("section");
+	var sections = {};
+	var i = 0;
+
+	console.log('The sections: ', section);
+	Array.prototype.forEach.call(section, function(e) {
+		sections[e.id] = e.offsetTop;
+		
+	});
+
+	window.onscroll = function() {
+		var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+		for (i in sections) {
+			
+			if (sections[i] <= scrollPosition) {
+				document.querySelector('.active-section').setAttribute('class', ' ');
+				document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active-section');
+			}
+		}
+	};
+})();
+/* Navbar Scrollspy End */
+
+
+/* Projects Scrollspy Start */
 window.addEventListener('DOMContentLoaded', (evt) => {
 	// Clear any hashtags from the page URL if there are any.
 	window.history.replaceState("", document.title, window.location.pathname);
-
+	
 	const observer = new IntersectionObserver(entries => {
 		entries.forEach(entry => {
 			const id = entry.target.getAttribute('id');
@@ -12,13 +43,14 @@ window.addEventListener('DOMContentLoaded', (evt) => {
 			}
 		});
 	});
-
+	
 	// Track all articles that have an `id` applied
 	document.querySelectorAll('article[id]').forEach((article) => {
 		observer.observe(article);
 	});
 	
 });
+/* Projects Scrollspy End */
 
 const projectList = document.getElementById('project-list');
 // Select a project to scroll to.
@@ -37,6 +69,9 @@ projectList.addEventListener('click', function(evt){
 		project.scrollIntoView();
 	}
 });
+
+
+
 
 // Get the current year.
 let year = new Date().getFullYear();

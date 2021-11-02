@@ -73,6 +73,7 @@ body::before {
   
 .nav {
     font-family: 'vger_regular';
+    letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
@@ -174,7 +175,7 @@ body::before {
     display: flex;
 }
 
-#page-intro{
+#home{
     display: inline;
     margin-top: 25px;
     margin-bottom: 30px;
@@ -382,6 +383,10 @@ aside img:hover {
     cursor: pointer;
 }
 
+.active-section {
+    color: red !important;
+}
+
 .colorBox {
     width: 130px;
     height: 130px;
@@ -409,14 +414,15 @@ aside img:hover {
 }
 
 
-/* Scrollspy Start */
+/* Projects Scrollspy Start */
 
 .scrollspy {
     width: 98%;
     text-align: center;
-    margin-left: 2%;
+    margin-top: 200px;
     margin-right: 0%;
     margin-bottom: 2%;
+    margin-left: 2%;
 }
 
 .spy>nav {
@@ -643,7 +649,7 @@ p.tab-content {
     margin-right: auto;
 }
 
-#timeline-section {
+#background {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
