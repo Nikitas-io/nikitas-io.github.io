@@ -489,6 +489,7 @@ p.tab-content {
     opacity: 1;
     margin-left: 15px;
     margin-right: 15px;
+    line-height: 1.6rem;
 }
 
 .tabs-list li label {
@@ -592,7 +593,7 @@ p.tab-content {
 
 .timeline-item {
   font-size: 16px;
-  line-height: 1.75em;
+  line-height: 1.65em;
   border-top: 2px solid;
   -o-border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
   border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
