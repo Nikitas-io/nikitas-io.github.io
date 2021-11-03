@@ -165,12 +165,10 @@
     /* Standard */
     color: white;
     font-size: 4vh;
-    padding: 10px 14px 7px 10px;
+    padding: 10px 0px 7px 8px;
     width: fit-content;
     cursor: pointer;
-    
-
-    margin: 30px 0px 0px 20px;
+    margin: 35px 0px 0px 20px;
 }
 
 #close-burger:hover {
