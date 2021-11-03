@@ -473,6 +473,10 @@
         margin-right: auto;
     }
 
+    body::before {
+        background-image: url(../images/background/circuit_board_large.jpg);
+    }
+
     .description{
         margin-top: 10px;
         font-size: 24.4px;

@@ -52,7 +52,6 @@ body {
 
 body::before {
     content: "";
-    background-image: url(../images/background/circuit_board_large.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.25;
@@ -92,14 +91,14 @@ body::before {
 
 
 #headline{
-    
-    vertical-align: top;
-    
     font-family: 'vger_regular';
-
-    display: block;
     text-align: center;
-    margin-left: 0;
+
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+    z-index: 1;
+    position: relative;
 }
 
 #contact-me{
@@ -107,9 +106,9 @@ body::before {
     display: block;
 }
 
-#my-name {
-    margin-left: 6px;
-}
+/* #my-name {
+ 
+} */
 
 #my-picture{
     cursor: pointer;
@@ -270,12 +269,8 @@ h5 {
 }
 
 #social {
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
-    bottom: 15px;
-    left: 0;
-    right: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .hex {
@@ -566,6 +561,11 @@ p.tab-content {
     margin-right: auto;
 }
 
+#timeline a {
+    display: block;
+    text-decoration: none;
+}
+
 #background {
     width: 95%;
     margin-left: auto;
@@ -595,7 +595,7 @@ p.tab-content {
   line-height: 1.75em;
   border-top: 2px solid;
   -o-border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
-     border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
   border-image-slice: 1;
   border-width: 2px;
   margin: 0;
@@ -603,11 +603,13 @@ p.tab-content {
   position: relative;
   color: white;
   font-family: courier, monospace;
+
+  pointer-events: none; // Disable pointer events for the element.
 }
 .timeline-item:before {
-  border: 1px solid rgb(64, 183, 247);
-  content: "";
-  position: absolute;
+    border: 1px solid rgb(64, 183, 247);
+    content: "";
+    position: absolute;
   border-radius: 50%;
   padding: 20px;
   height: 1.25em;
@@ -617,7 +619,11 @@ p.tab-content {
   line-height: 1.25em;
   color: #ffffff;
   font-size: 1em;
+  box-shadow: 0px 0px 8px 0px rgb(64, 183, 247);
+
+  pointer-events: all; // Enable pointer events for the pseudo-element.
 }
+
 
 .timeline-item:nth-child(even) {
   border-right: 2px solid;

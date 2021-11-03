@@ -1,6 +1,9 @@
 # Nikitas.io
 This is a responsive portfolio site of Nikitas I/O.
 
+- Center landing page content.
+- If screen becomes larger, sidebar menu should close.
+
 ## responsiveness
 I made sure that the website works beautifully for every device and screen size I've tried. 
 
