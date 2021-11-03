@@ -134,6 +134,10 @@
         transform: translate(-165%, 0);
         transition: transform 0.2s ease;
     }
+    body #menubar.open {
+        /* This trasform moves the drawer back into the canvas. */
+        transform: translate(0, 0);
+    }
     body #hamburger {
         display: block;
     }
@@ -187,8 +191,7 @@
 }
 
 #menubar.open {
-    /* This trasform moves the drawer back into the canvas. */
-    transform: translate(0, 0);
+    transform: none; 
     overflow: unset;
     /* Fix the side menu to the right side of the screen when open */
     position: fixed;

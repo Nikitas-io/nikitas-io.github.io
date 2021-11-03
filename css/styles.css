@@ -106,15 +106,15 @@ body::before {
     display: block;
 }
 
-/* #my-name {
- 
-} */
+#my-name {
+    margin-left: 6px;
+}
 
 #my-picture{
     cursor: pointer;
     border: 1.5px solid white;
     border-radius: 105px;
-    width: 27%;
+    width: clamp(30px, 20vw, 160px);
     min-width: 100px;
     max-width: 200px;
     box-shadow: rgb(51 106 158) 0px 3px 22px 4px;
