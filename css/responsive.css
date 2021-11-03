@@ -92,18 +92,10 @@
     }
 
     #headline{
-        display: block;
-        text-align: center;
         margin-left: 6%;
         margin-right: 6%;
     }
 
-    #my-picture{
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        margin-bottom: 22px;
-    }
 
     .description{
         font-size: 11.5px;
@@ -265,19 +257,6 @@
         display: block;
     }
 
-    #headline{
-        display: block;
-        text-align: center;
-        margin-left: 0;
-    }
-
-    #my-picture{
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        margin-bottom: 22px;
-    }
-
     #logs {
         height: 400px;
     }
@@ -400,11 +379,6 @@
 
     body .tabs-list li input[type=radio]:checked ~ .tab-section {
         height: 349.8px;
-    }
-
-    #headline{
-        margin-left: 20px;
-        margin-top: 15px;
     }
 
     .big-title {

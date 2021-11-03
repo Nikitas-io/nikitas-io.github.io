@@ -1,0 +1,197 @@
+#home{
+    display: inline;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Menu Navigation Styles Start */
+  
+.nav {
+    font-family: 'vger_regular';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    position: fixed;
+    bottom: 0px;
+    margin: 0;
+    padding: 10px;
+    background: #2f2c5b;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    box-shadow: rgb(51 106 158) 0px 3px 22px 4px;
+}
+
+.nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+}
+
+.nav a {
+    padding: .5em .8em;
+    color: rgb(255 255 255 / 85%);
+    position: relative;
+    text-decoration: none;
+    font-size: clamp(17px, 2vw, 22px);
+}
+
+.nav a::before,
+.nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #3ca3df;
+    border-right: 3px solid #2b6191;
+    transform: translate(-100%, 50%);
+}
+
+.nav a::after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #2b6191;
+    border-left: 3px solid #3ca3df;
+    transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+/* .nav a:hover {
+    color: #3ca3df;
+} */
+
+.active-section {
+    color: #3ca3df !important;
+} 
+
+/* Menu Navigation Styles End */
+
+
+
+
+/* Sidebar Menu Start */
+
+@media screen and (max-width: 649px) {
+    body .nav li {
+        font-size: 18px;
+        display: block;
+        padding: 5px;
+        margin: 30px 0px;
+    }
+    div #page-navigation {
+        height: 100%;
+        z-index: 2;
+    }
+    body .nav {
+        height: 100%;
+        text-align: center;
+    }
+    body #close-burger {
+        display: block;
+    }
+
+    body #menubar {
+        height: 100%;
+        width: 70%;
+        left: 0;
+        z-index: 10001;
+
+        /* Hide menu off screen */
+        position: fixed;
+        transform: translate(-165%, 0);
+        transition: transform 0.2s ease;
+    }
+    body #hamburger {
+        display: block;
+    }
+    
+}
+
+
+#hamburger {
+    display: none;
+    position: fixed;
+    left: 24px;
+    top: 28px;
+    margin-right: 15px;
+    z-index: 1000;
+    opacity: 1;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(64 183 247);
+    border-radius: 27px;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: .2s linear;
+    box-shadow: rgb(51 106 158) 0px 3px 22px 4px;
+}
+
+#hamburger:focus {
+  outline: none;
+}
+
+#close-burger {
+    display: none;
+    user-select: none;
+    /* Standard */
+    color: white;
+    font-size: 4vh;
+    padding: 10px 14px 7px 10px;
+    width: fit-content;
+    cursor: pointer;
+    
+
+    margin: 30px 0px 0px 20px;
+}
+
+#close-burger:hover {
+    color: rgba(218, 218, 218, 0.753);
+}
+
+#menubar {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 1000;
+}
+
+#menubar.open {
+    /* This trasform moves the drawer back into the canvas. */
+    transform: translate(0, 0);
+    overflow: unset;
+    /* Fix the side menu to the right side of the screen when open */
+    position: fixed;
+    height: 100%;
+}
+
+
+/* Sidebar Menu End */

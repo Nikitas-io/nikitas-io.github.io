@@ -10,10 +10,11 @@
     <meta name="description" content="Personal Webpage of Nikitas Chatzipazarlis (Νικήτας Χατζηπαζαρλής / Νικητας Χατζηπαζαρλης)">
     <meta name="keywords" content="Inhinito, inhinito, projects, project, nikitas, Νικήτας, Νικητας, Chatzipazarlis, Χατζηπαζαρλής, Χατζηπαζαρλης, Νικήτας Χατζηπαζαρλής, Νικητας Χατζηπαζαρλης, nikitas i/o, io, nikitas io, nikitas.io, i/o">
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="sass/animations/animations.css" />
     <link rel="stylesheet" href="sass/borders/borders.css" />
     
-    <link rel="stylesheet" href="css/responsive.css" />
     <!-- Favicon -->
     <link rel="icon" type="image/ico" href="favicon.ico">
     <!--facebook sharing metadata-->
@@ -30,13 +31,22 @@
 
 <body>
 
-    <ul class="nav">
-        <li><a href="#home" class="active-section">Home</a></li>  <!-- Add education here as well as hard-skills -->
-        <li><a href="#about">About</a></li>  <!-- Add education here as well as hard-skills -->
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#background">Background</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <input id="hamburger" class="borders" type="button" value="☰" tabindex="0" aria-label="Menu button" />
+    <div id="menubar">
+        <nav id="page-navigation">
+            <ul class="nav" role="navigation">
+                <li id="close-burger">✖</li>
+
+                <li><a href="#home" class="active-section">Home</a></li>  <!-- Add education here as well as hard-skills -->
+                <li><a href="#about">About</a></li>  <!-- Add education here as well as hard-skills -->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#background">Background</a></li>
+                <!--
+                <li><a href="#contact">Contact</a></li>
+                -->
+            </ul>
+        </nav>
+    </div>
 
     
     <section id="home" class="text">
@@ -45,20 +55,18 @@
         -->
 
         <div id="headline">
-            <h1 class="big-title">N<span class="type-animation animating">IKITAS</span> I/O</h1>
+            <h1 id="my-name" class="big-title">N<span class="type-animation animating">IKITAS</span> I/O</h1>
             <!--
             <span id="contact-me">Contact me via <a class="contact-link" href="https://t.me/nikitas_io">Telegram</a>, <a class="contact-link" href="mailto:nikitas.io@outlook.com">Email</a> or <a class="contact-link" href="https://www.linkedin.com/in/nikitas-io/">LinkedIn</a></span>
             -->
             
             <h2 class="intro-header">GENERATING & IMPLEMENTING IDEAS</h2>
-            <!--
-            <h3 class="intro-header">SOFTWARE <span class="separator">|</span> MANAGEMENT <span class="separator">|</span> BRANDING</h3>
-            <svg class="arrows">
-                <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                <path class="a3" d="M0 40 L30 72 L60 40"></path>
-            </svg>
-            -->
+            
+            <div id="social">
+                <a href="https://www.linkedin.com/in/nikitas-io/" target="_blank"><img title="LinkedIn" class="images borders" src="images/social/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/Nikitas-io" target="_blank"><img title="GitHub" class="images borders" src="images/social/github.png" alt="Github"></a>
+                <a href="https://twitter.com/Nikitas_io" target="_blank"><img title="Twitter" class="images borders" src="images/social/twitter.png" alt="Twitter"></a>
+            </div>
         </div>
     </section>
 
@@ -226,19 +234,19 @@
         <div id="timeline">
             <div id="starting-dot" class="timeline-dot"></div>
             <div id="timeline-content">
-                <p id="auth" class="timeline-item">Studied at the Aristotle University of Thessaloniki (AUTH) where I recieved my bachelor's degree in Computer Science.</p>
+                <p id="auth" class="timeline-item">Studying at the Aristotle University of Thessaloniki (AUTH) to recieve my bachelor's degree in Computer Science.</p>
                 <p id="udacity" class="timeline-item">Started out in Udacity by completing the Google Front End Web Developer Challenge Scholarship and then moved on to graduate from the Full-Stack Web Developer program.</p>
                 <p id="softweb" class="timeline-item">Interned at Softweb Adaptive I.T. Solutions as a full-stack web developer. Worked mainly on MEAN Stack technologies (MongoDB, Express, Angular, NodeJS).</p>
                 <p id="inhinito" class="timeline-item">Co-founded the Inhinito Social Cooperative Enterprise with the goal of making it easier for people to develop projects in a pleasant way and with minimal effort.</p>
-                <p class="timeline-item">Doggo ipsum long bois lotsa pats blep. What a nice floof ruff super chub very good spot, the neighborhood pupper lotsa pats. Borkdrive shibe shoober what a nice floof, borking doggo.</p>
             </div>
             <div id="ending-dot" class="timeline-dot"></div>
         </div>
     </section>
 
 
+    <!--
     <section id="contact">
-        <!---->
+        
         <div class="sub-title">
             <h1 class="big-title projects-title">CONTACT</h1>
         </div>
@@ -246,12 +254,13 @@
         <br />
 
         <div id="social">
-            <!-- Replace Instagram with LinkedIn -->
+        
             <a href="https://www.linkedin.com/in/nikitas-io/" target="_blank"><img title="LinkedIn" class="images borders" src="images/social/linkedin.png" alt="LinkedIn"></a>
             <a href="https://github.com/Nikitas-io" target="_blank"><img title="GitHub" class="images borders" src="images/social/github.png" alt="Github"></a>
             <a href="https://twitter.com/Nikitas_io" target="_blank"><img title="Twitter" class="images borders" src="images/social/twitter.png" alt="Twitter"></a>
         </div>
     </section>
+    -->
 
 
     <footer>
@@ -263,6 +272,7 @@
 
     <script src="js/logs.js"></script>
     <script src="js/scrollspy.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
