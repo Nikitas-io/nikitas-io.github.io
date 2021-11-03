@@ -69,6 +69,7 @@ body::before {
 
 
 .big-title {
+    padding-top: 9px;
     letter-spacing: 1px;
     margin-bottom: 0;
     font-family: 'vger_bold';
@@ -526,7 +527,6 @@ p.tab-content {
     top: 51px;
     left: 0;
     /* width: 1000px; */
-    padding: 50px;
     border: 1px solid rgb(64, 183, 247);
     background: rgba(0, 190, 190, 0.1);
     color: white;

@@ -150,8 +150,8 @@
 #hamburger {
     display: none;
     position: fixed;
-    left: 24px;
-    top: 28px;
+    left: 25px;
+    top: 36px;
     margin-right: 15px;
     z-index: 1000;
     opacity: 1;

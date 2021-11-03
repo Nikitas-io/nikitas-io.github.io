@@ -14,7 +14,7 @@
     }
 
     body .timeline-item {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     body .section {
@@ -45,7 +45,7 @@
         margin-top: -7px;
         margin-left: 10px !important;
         margin-right: 10px !important;
-        font-size: 13px;
+        font-size: 15px;
     }
 
     body .box {
@@ -237,7 +237,7 @@
 
     body .tabs-list li label {
         width: 110px !important;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     body .tabs-list li input[type=radio]:checked ~ label {
