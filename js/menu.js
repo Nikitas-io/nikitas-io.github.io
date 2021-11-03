@@ -7,11 +7,15 @@ const navigationPanel = document.getElementById("page-navigation");
 navigationPanel.addEventListener('click', function(evt) {
   // Check if the element that was clicked was a list item.
   if (evt.target.nodeName=='A') {
-    console.log('list item was clicked');
-    setTimeout(function(){
-      // Close the menu.
-      toggleMenu();
-    }, 250);
+    // Play SFX
+    soundRestart(scrollSpy);
+    // Check if the side-menu is opened.
+    if (menu.classList.contains('open')){
+      setTimeout(function(){
+        // Close the menu.
+        toggleMenu();
+      }, 250);
+    }
   }
 });
 

@@ -8,7 +8,6 @@ window.addEventListener('DOMContentLoaded', (evt) => {
 	var sections = {};
 	var i = 0;
 
-	console.log('The sections: ', section);
 	Array.prototype.forEach.call(section, function(e) {
 		sections[e.id] = e.offsetTop;
 		
