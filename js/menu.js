@@ -14,7 +14,7 @@ navigationPanel.addEventListener('click', function(evt) {
       setTimeout(function(){
         // Close the menu.
         toggleMenu();
-      }, 250);
+      }, 300);
     }
   }
 });
