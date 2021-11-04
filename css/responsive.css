@@ -442,9 +442,9 @@
 /*For big screens*/
 
 @media screen and (min-width:981px) and (max-width:1090px) {
-    aside{
-        margin-top: 188px;
-    }
+        aside{
+            margin-top: 196px;
+        }
 
     body::before {
         background-image: url(../images/background/circuit_board_medium.jpg);
