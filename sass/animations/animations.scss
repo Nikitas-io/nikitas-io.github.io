@@ -158,14 +158,10 @@ $frameSize: 100;
     left: 0;
     right: 0;
 
-	transition: opacity 0.3s ease-in-out;
-    opacity: 0;
+	transition: opacity 1.5s ease-out;
+    opacity: 1;
 
-	.loading {
-		opacity: 1;
-	}
-
-	.loaded {
+	&.loaded {
 		opacity: 0;
 	}
 

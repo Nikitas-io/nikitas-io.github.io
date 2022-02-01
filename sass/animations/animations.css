@@ -153,10 +153,11 @@ h1 {
   position: fixed;
   left: 0;
   right: 0;
-  -webkit-transition: opacity 1.5s ease-in-out;
-  transition: opacity 1.5s ease-in-out;
+  -webkit-transition: opacity 1.5s ease-out;
+  transition: opacity 1.5s ease-out;
   opacity: 1;
 }
+
 .loading-dots.loaded {
   opacity: 0;
 }
