@@ -2,8 +2,8 @@ const button = new Audio('sfx/tab.wav');
 button.volume = 0.4;
 const scrollSpy = new Audio('sfx/scroll.wav');
 scrollSpy.volume = 0.6;
-const recharge = new Audio('sfx/recharge.mp3');
-recharge.volume = 0.6;
+// const recharge = new Audio('sfx/recharge.mp3');
+// recharge.volume = 0.6;
 
 //Play the sound.
 var soundFlag = true;
@@ -125,25 +125,25 @@ imageContainer.addEventListener('click', function(evt){
 
 
 
-/* Log out Nikitas */
+// /* Log out Nikitas */
 
-const retype = document.querySelector("#my-picture");
-const word = document.querySelector("h1 span");
+// const retype = document.querySelector("#my-picture");
+// const word = document.querySelector("h1 span");
 
-// reset the transition by...
-retype.addEventListener("click", function (e) {
-    setTimeout(function () {
-        // Play a sound effect.
-        soundRestart(recharge);
-    }, 1000);
+// // reset the transition by...
+// retype.addEventListener("click", function (e) {
+//     setTimeout(function () {
+//         // Play a sound effect.
+//         soundRestart(recharge);
+//     }, 1000);
 
-    // -> removing the class
-    word.classList.remove("animating");
+//     // -> removing the class
+//     word.classList.remove("animating");
 
-    // -> triggering reflow /* The actual magic */
-    void word.offsetWidth;
+//     // -> triggering reflow /* The actual magic */
+//     void word.offsetWidth;
 
-    // -> and re-adding the class
-    word.classList.add("animating");
+//     // -> and re-adding the class
+//     word.classList.add("animating");
 	
-}, false);
+// }, false);

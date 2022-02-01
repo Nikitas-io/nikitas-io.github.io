@@ -112,7 +112,6 @@ body::before {
 }
 
 #my-picture{
-    cursor: pointer;
     border: 1.5px solid white;
     border-radius: 105px;
     width: clamp(30px, 20vw, 160px);
