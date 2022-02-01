@@ -1,20 +1,24 @@
 
-window.addEventListener('DOMContentLoaded', (evt) => {
 const menu = document.getElementById("menubar");
 const navBar = document.getElementsByClassName("nav");
 const burger = document.getElementById('hamburger');
 const closeBurger = document.getElementById("close-burger");
 const navigationPanel = document.getElementById("page-navigation");
+const mainContent = document.getElementsByTagName('main');
+const homeSection = document.getElementById('home');
 
+window.addEventListener('DOMContentLoaded', (evt) => {
+  // Fade in the home section.
+  homeSection.classList.add('loaded');
   
   // The page is fully loaded
   document.onreadystatechange = () => {
     // document ready
     if (document.readyState === 'complete') {
-      // Slide in bottom menu.
-      console.log('The navbar: ', navBar);
-
+      // Slide in bottom menu.    
       navBar[0].classList.add('loaded');
+      // Fade in the main content.
+      mainContent[0].classList.add('loaded');
     }
   };
 
