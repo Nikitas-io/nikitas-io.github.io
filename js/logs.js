@@ -19,34 +19,6 @@ function soundRestart(audio) {
 }
 
 
-//Show logs.
-var showText = function (target, message, index, interval) {
-    if (index < message.length) {
-        soundRestart(typingLetter);
-        document.getElementById(target).innerHTML += message[index++];
-       // soundRestart("typing");
-        setTimeout(function () {
-            showText(target, message, index, interval);
-        }, interval);
-    }
-}
-
-
-// Start the log.
-// const logButton = document.getElementById('log-button');
-// logButton.addEventListener('click', function(){
-//     soundRestart(button);
-//     // Print out the log entry.
-//     showText("log-entry-content", logEntries[1], 0, 30);
-//     // Make the log-entry button dissapear.
-//     this.style.opacity = 0;
-//     this.classList.remove('blinker');
-//     // Remove the button from the DOM, after it fades away.
-//     setTimeout(function () {
-//         logButton.style.display = 'none';
-//     }, 300);
-// });
-
 
 // Tab Content.
 

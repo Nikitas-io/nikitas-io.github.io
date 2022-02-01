@@ -23,17 +23,19 @@ h1 {
 }
 
 .type-animation.animating {
-  -webkit-animation: type 1500ms;
-          animation: type 1500ms;
+  -webkit-animation: type 0.8s;
+          animation: type 0.8s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 2.1s;
-          animation-delay: 2.1s;
 }
 
 .type-animation.animating:after {
-  -webkit-animation: cursor 320ms 6 ease-in;
-          animation: cursor 320ms 6 ease-in;
+  -webkit-animation: cursor 320ms 0 ease-in;
+          animation: cursor 320ms 0 ease-in;
+}
+.type-animation:after {
+  -webkit-animation: cursor 320ms 300 ease-in;
+          animation: cursor 320ms 300 ease-in;
 }
 
 @-webkit-keyframes cursor {
