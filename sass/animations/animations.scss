@@ -5,13 +5,13 @@
 $chWidth: 253px;
 
 // Typing animation length.
-$typeDuration: 1500ms;
+$typeDuration: 0.8s;
 
 // The amount of times the cursor will blink.
-$cursorLoopCount: 6;
+$cursorLoopCount: 600;
 
 // The amount of time before the animation begins.
-$animationDelay: 2.1s;
+$animationDelay: 0s;
 
 $color: slateblue;
 $bg: crimson;
@@ -40,6 +40,8 @@ h1 {
 		bottom: -0.05em;
 		// width: 0;
 		border-right: 8px solid transparent;
+
+		animation: cursor 320ms $cursorLoopCount ease-in;
 	}
 
 	&.animating {
@@ -49,7 +51,7 @@ h1 {
 		animation-delay: $animationDelay;
 
 		&:after {
-			animation: cursor 320ms $cursorLoopCount ease-in;
+			animation: cursor 320ms 0 ease-in;
 		}
 	}
 }
@@ -144,4 +146,48 @@ $frameSize: 100;
 		border-right: 4px solid transparent;
 		right: -1px;
 	}
+}
+
+
+/* Loading Notice */
+  
+.loading-dots {
+    text-align: center;
+    z-index: 5;
+	position: fixed;
+    left: 0;
+    right: 0;
+
+	transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+
+	.loading {
+		opacity: 1;
+	}
+
+	.loaded {
+		opacity: 0;
+	}
+
+    .dot {
+        display: inline;
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+        position: relative;
+        top: -1em;
+        font-size: 3.5em;
+        opacity: 0;
+        animation: showHideDot 1s ease-in-out infinite;
+
+        &.one { animation-delay: 0.2s; }
+        &.two { animation-delay: 0.4s; }
+        &.three { animation-delay: 0.6s; }
+    }
+}
+
+@keyframes showHideDot {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    60% { opacity: 1; }
+    100% { opacity: 0; }
 }

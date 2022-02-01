@@ -7,6 +7,7 @@ const navigationPanel = document.getElementById("page-navigation");
 const mainContent = document.getElementsByTagName('main');
 const homeSection = document.getElementById('home');
 const word = document.querySelector("h1 span");
+const loadingDots = document.getElementsByClassName('loading-dots');
 
 window.addEventListener('DOMContentLoaded', (evt) => {
   // Fade in the home section.
@@ -23,6 +24,9 @@ window.addEventListener('DOMContentLoaded', (evt) => {
       // Animate the Nikitas text.
       void word.offsetWidth;
       word.classList.add("animating");
+
+      // Fade out the loading dots.
+      loadingDots[0].classList.add('loaded');
     }
   };
 

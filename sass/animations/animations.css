@@ -20,6 +20,8 @@ h1 {
   top: -0.05em;
   bottom: -0.05em;
   border-right: 8px solid transparent;
+  -webkit-animation: cursor 320ms 600 ease-in;
+          animation: cursor 320ms 600 ease-in;
 }
 
 .type-animation.animating {
@@ -27,15 +29,13 @@ h1 {
           animation: type 0.8s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .type-animation.animating:after {
   -webkit-animation: cursor 320ms 0 ease-in;
           animation: cursor 320ms 0 ease-in;
-}
-.type-animation:after {
-  -webkit-animation: cursor 320ms 300 ease-in;
-          animation: cursor 320ms 300 ease-in;
 }
 
 @-webkit-keyframes cursor {
@@ -143,6 +143,78 @@ h1 {
   body .type-animation:after {
     border-right: 4px solid transparent;
     right: -1px;
+  }
+}
+
+/* Loading Notice */
+.loading-dots {
+  text-align: center;
+  z-index: 5;
+  position: fixed;
+  left: 0;
+  right: 0;
+  -webkit-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+  opacity: 1;
+}
+.loading-dots.loaded {
+  opacity: 0;
+}
+
+.loading-dots .dot {
+  display: inline;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  position: relative;
+  top: -1em;
+  font-size: 3.5em;
+  opacity: 0;
+  -webkit-animation: showHideDot 1s ease-in-out infinite;
+          animation: showHideDot 1s ease-in-out infinite;
+}
+
+.loading-dots .dot.one {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.loading-dots .dot.two {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.loading-dots .dot.three {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+@-webkit-keyframes showHideDot {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showHideDot {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=animations.css.map */

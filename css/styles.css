@@ -83,6 +83,14 @@ body::before {
     font-size: 21.4px;
 }
 
+.loading-notice {
+    font-family: 'vger_bold';
+    font-size: 17px;
+    margin-top: 24px;
+    margin-bottom: 18px;
+    margin-right: 4px;
+}
+
 .tab-panel {
     width: 100%;
     margin-bottom: 200px;
@@ -719,3 +727,5 @@ article a {
 #maps-content {
     background-image: url(../images/projects/maps_bg.jpg) !important;
 }
+
+  
