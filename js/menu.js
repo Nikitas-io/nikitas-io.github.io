@@ -8,6 +8,7 @@ const mainContent = document.getElementsByTagName('main');
 const homeSection = document.getElementById('home');
 const word = document.querySelector("h1 span");
 const loadingDots = document.getElementsByClassName('loading-dots');
+const scrollIndicator = document.getElementsByClassName('scroll-indicator');
 
 window.addEventListener('DOMContentLoaded', (evt) => {
   // Fade in the home section.
@@ -21,12 +22,20 @@ window.addEventListener('DOMContentLoaded', (evt) => {
       navBar[0].classList.add('loaded');
       // Fade in the main content.
       mainContent[0].classList.add('loaded');
+      document.body.style.overflowY = 'auto';
+
       // Animate the Nikitas text.
       void word.offsetWidth;
       word.classList.add("animating");
 
+      
       // Fade out the loading dots.
       loadingDots[0].classList.add('loaded');
+      setTimeout(function(){
+        loadingDots[0].style.display = 'none';
+        // Fade in the scroll indicator.
+        scrollIndicator[0].style.opacity = 1;
+      }, 500);
     }
   };
 
