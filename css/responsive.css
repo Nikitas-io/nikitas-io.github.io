@@ -203,10 +203,6 @@
     .scroll-indicator {
         display: block !important;
     }
-
-    #home{
-        height: 100vh;
-    }
 }
 
 @media screen and (min-width:421px) and (max-width:600px) {
