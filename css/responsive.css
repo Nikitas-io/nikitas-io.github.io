@@ -201,7 +201,7 @@
 
 @media screen and (max-width:600px) {
     .arrows {
-        display: block !important;
+        display: inline-block !important;
     }
 }
 
