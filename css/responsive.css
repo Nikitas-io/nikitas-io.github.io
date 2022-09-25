@@ -200,7 +200,7 @@
 /*For medium screens (Mostly tablets, maybe cellphones)*/
 
 @media screen and (max-width:600px) {
-    .scroll-indicator {
+    .arrows {
         display: block !important;
     }
 }

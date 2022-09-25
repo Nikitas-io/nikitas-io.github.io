@@ -8,7 +8,7 @@ const mainContent = document.getElementsByTagName('main');
 const homeSection = document.getElementById('home');
 const word = document.querySelector("h1 span");
 const loadingDots = document.getElementsByClassName('loading-dots');
-const scrollIndicator = document.getElementsByClassName('scroll-indicator');
+const scrollIndicator = document.getElementsByClassName('arrows');
 
 window.addEventListener('DOMContentLoaded', (evt) => {
   // Fade in the home section.
