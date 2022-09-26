@@ -381,7 +381,7 @@
     }
 
     aside {
-        margin-top: 194px;
+        margin-top: 163px;
         width: 20%;
         margin-left: 2%;
     }
@@ -455,7 +455,7 @@
 
 @media screen and (min-width:981px) and (max-width:1090px) {
     aside{
-        margin-top: 196px;
+        margin-top: 190px;
     }
 
     body::before {
