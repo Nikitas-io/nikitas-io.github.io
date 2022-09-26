@@ -739,12 +739,13 @@ article a {
     display: none;
     opacity: 0;
     transition: opacity 0.5s ease-in;
+    cursor: pointer;
 }
 
 .arrows path {
 	stroke: #2994D1;
 	fill: transparent;
-	stroke-width: 2px;	
+	stroke-width: 2px;
 	animation: arrow 2s infinite;
 	-webkit-animation: arrow 2s infinite; 
 }

@@ -23,11 +23,13 @@ window.addEventListener('DOMContentLoaded', (evt) => {
       // Fade in the main content.
       mainContent[0].classList.add('loaded');
       document.body.style.overflowY = 'auto';
-
+      
       // Animate the Nikitas text.
       void word.offsetWidth;
       word.classList.add("animating");
-
+      
+      // Fade in the burger menu.
+      burger.style.opacity = 1;
       
       // Fade out the loading dots.
       loadingDots[0].classList.add('loaded');
@@ -84,6 +86,15 @@ window.addEventListener('DOMContentLoaded', (evt) => {
       burger.style.opacity = 1;
     }
   }
+
+  
+  let aboutSection = document.getElementById('about');
+  // The scroll indicator was clicked.
+  scrollIndicator[0].addEventListener('click', function() {
+    // Play SFX
+    soundRestart(scrollSpy);
+    aboutSection.scrollIntoView();
+  });
 
   /*--------TOUCH EVENTS---------*/
   document.addEventListener('touchstart', handleTouchStart, false);

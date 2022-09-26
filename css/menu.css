@@ -178,7 +178,6 @@ main.loaded {
     top: 30px;
     margin-right: 15px;
     z-index: 1000;
-    opacity: 1;
     cursor: pointer;
     color: white;
     background-color: rgb(64 183 247);
@@ -187,6 +186,9 @@ main.loaded {
     padding: 10px 15px;
     transition: .2s linear;
     box-shadow: rgb(51 106 158) 0px 3px 22px 4px;
+
+    transition: opacity 0.5s ease-in;
+    opacity: 0;
 }
 
 #hamburger:focus {

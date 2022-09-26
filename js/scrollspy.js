@@ -72,6 +72,7 @@ projectList.addEventListener('click', function(evt){
 
 
 
+
 // Get the current year.
 let year = new Date().getFullYear();
 // Add the current year to the footer of the page.
