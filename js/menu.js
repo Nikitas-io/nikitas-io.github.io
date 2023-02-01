@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', (evt) => {
       navBar[0].classList.add('loaded');
       // Fade in the main content.
       mainContent[0].classList.add('loaded');
-      document.body.style.overflowY = 'auto';
+      document.body.style.overflowY = 'overlay';
       
       // Animate the Nikitas text.
       void word.offsetWidth;
