@@ -34,7 +34,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 html::-webkit-scrollbar-track {
-    background: transparent;
+    background: rgba(47,44,91,1);
+    background: linear-gradient(180deg, rgba(38,29,69,1) 80%, rgba(47,44,91,1) 96%);
 }
 
 body {
