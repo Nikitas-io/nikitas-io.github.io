@@ -613,7 +613,7 @@ p.tab-content {
   color: white;
   font-family: courier, monospace;
 
-  pointer-events: none; // Disable pointer events for the element.
+  pointer-events: none; /* Disable pointer events for the element. */
 }
 .timeline-item:before {
     border: 1px solid rgb(64, 183, 247);
@@ -630,7 +630,7 @@ p.tab-content {
   font-size: 1em;
   box-shadow: 0px 0px 8px 0px rgb(64, 183, 247);
 
-  pointer-events: all; // Enable pointer events for the pseudo-element.
+  pointer-events: all; /* Enable pointer events for the pseudo-element. */
 }
 
 
@@ -721,8 +721,8 @@ article a {
     background-image: url(../images/projects/streetart_bg.jpg) !important;
 }
 
-#thecoreys-content {
-    background-image: url(../images/projects/thecoreys_bg.jpg) !important;
+#video-photography-content {
+    background-image: url(../images/projects/videophotography_bg.jpg) !important;
 }
 
 #maps-content {
