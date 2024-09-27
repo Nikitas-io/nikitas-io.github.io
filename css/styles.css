@@ -817,10 +817,8 @@ article a {
     cursor: pointer;
     position: relative;
     height: 100px;
-  background: rgb(41 39 79);
   border: 1px solid rgb(64, 183, 247);
   background-repeat: no-repeat;
-  background-position: center;
   background-position: left;
   background-position-x: 20px;
 }
@@ -844,7 +842,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090544",endCo
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-image: url('../images/logos/inhinito.png');
-    background-color: #0a0a5f;
     background-size: clamp(180px, 35vw, 350px);
 }
 .accordion .item:first-of-type::after {
@@ -853,17 +850,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090544",endCo
 }
 .accordion .item:nth-of-type(2) {
     background-image: url('../images/logos/ideas-forward.png');
-    background-color: white;
     background-size: clamp(175px, 35vw, 340px);
 }
 .accordion .item:nth-of-type(3) {
     background-image: url('../images/logos/multispace.png');
-    background-color: #E7F3FC;
     background-size: clamp(155px, 32vw, 310px);
 }
 .accordion .item:last-of-type {
     background-image: url('../images/logos/softweb.png');
-    background-color: #18afdf;
     background-size: clamp(130px, 24vw, 225px);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -883,12 +877,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090544",endCo
   font-family: courier, monospace;
   background: rgb(0 190 190 / 22%);
   color: white;
-  border-left: 1px solid rgb(64, 183, 247);
-  border-right: 1px solid rgb(64, 183, 247);
 }
 
 .accordion p:last-of-type {
-  border-bottom: 1px solid rgb(64, 183, 247);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   margin-top: -3px;
