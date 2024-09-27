@@ -792,42 +792,64 @@ article a {
   background: transparent;
   cursor: pointer;
 }
-.accordion .item {
-  height: 100px;
-}
+
 .accordion .item h3 {
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-  padding-left: 50px;
-  font-family: "JF Flat Regular";
-  font-size: 20px;
-  font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: courier, monospace;
+    text-align: right;
 }
 .accordion .item img {
-  padding-left: 15px;
-  width: 30px;
-  vertical-align: middle;
+    padding-left: 15px;
+    width: 30px;
+    vertical-align: middle;
 }
 .accordion .item h3:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
 }
 
 .accordion .item {
+    position: relative;
+    height: 100px;
   background: rgb(41 39 79);
   border: 1px solid rgb(64, 183, 247);
   background-repeat: no-repeat;
   background-position: center;
+  background-position: left;
+  background-position-x: 20px;
 }
+
+.accordion .item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; 
+    width: 100%;
+    
+    background: rgb(9,5,68);
+background: -moz-linear-gradient(270deg, rgba(9,5,68,0.9) 0%, rgba(17,17,88,0.7) 35%, rgba(255,255,255,0) 100%);
+background: -webkit-linear-gradient(270deg, rgba(9,5,68,0.9) 0%, rgba(17,17,88,0.7) 35%, rgba(255,255,255,0) 100%);
+background: linear-gradient(270deg, rgba(9,5,68,0.9) 0%, rgba(17,17,88,0.7) 35%, rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090544",endColorstr="#ffffff",GradientType=1);
+}
+
 .accordion .item:first-of-type {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-image: url('../images/logos/inhinito.png');
     background-color: #0a0a5f;
     background-size: clamp(210px, 35vw, 350px);
+}
+.accordion .item:first-of-type::after {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .accordion .item:nth-of-type(2) {
     background-image: url('../images/logos/ideas-forward.png');
@@ -836,13 +858,17 @@ article a {
 }
 .accordion .item:nth-of-type(3) {
     background-image: url('../images/logos/multispace.png');
-    background-color: #0a0a5f;
-    background-size: clamp(185px, 35vw, 310px);
+    background-color: #E7F3FC;
+    background-size: clamp(185px, 32vw, 310px);
 }
 .accordion .item:last-of-type {
     background-image: url('../images/logos/softweb.png');
-    background-color: blue;
+    background-color: #18afdf;
     background-size: clamp(160px, 28vw, 225px);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.accordion .item:last-of-type::after {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
