@@ -202,6 +202,10 @@
     .arrows {
         display: inline-block !important;
     }
+
+    #about{
+        width: 94%;
+    }
 }
 
 @media screen and (min-width:1500px) {

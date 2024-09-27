@@ -1,80 +1,82 @@
+window.addEventListener("DOMContentLoaded", (evt) => {
+  /* Navbar Scrollspy Start */
+  "use strict";
 
-window.addEventListener('DOMContentLoaded', (evt) => {
+  var sections = document.querySelectorAll("section");
+  var sectionPositions = {};
 
-	/* Navbar Scrollspy Start */
-	'use strict';
+  Array.prototype.forEach.call(sections, function (section) {
+    sectionPositions[section.id] = section.offsetTop;
+  });
 
-	var section = document.querySelectorAll("section");
-	var sections = {};
-	var i = 0;
+  window.onscroll = function () {
+    var scrollPosition =
+      document.documentElement.scrollTop + 200 || document.body.scrollTop + 200;
 
-	Array.prototype.forEach.call(section, function(e) {
-		sections[e.id] = e.offsetTop;
-		
-	});
+    for (var i in sectionPositions) {
+      if (sectionPositions[i] <= scrollPosition) {
+        document
+          .querySelector(".active-section")
+          .classList.remove("active-section");
+        document
+          .querySelector("a[href*=" + i + "]")
+          .classList.add("active-section");
+      }
+    }
+  };
+  /* Navbar Scrollspy End */
 
-	window.onscroll = function() {
-		var scrollPosition = (document.documentElement.scrollTop + 200) || (document.body.scrollTop + 200);
+  /* Projects Scrollspy Start */
+  window.addEventListener("scroll", () => {
+    const articles = document.querySelectorAll("article[id]");
+    let currentArticle = null;
+    let minOffset = Infinity;
 
-		for (i in sections) {
-			
-			if (sections[i] <= scrollPosition) {
-				document.querySelector('.active-section').setAttribute('class', ' ');
-				document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active-section');
-			}
-		}
-	};
-	/* Navbar Scrollspy End */
+    articles.forEach((article) => {
+      const rect = article.getBoundingClientRect();
+      if (rect.top >= 0 && rect.top < minOffset) {
+        minOffset = rect.top;
+        currentArticle = article;
+      }
+    });
 
+    if (currentArticle) {
+      const id = currentArticle.getAttribute("id");
 
-	/* Projects Scrollspy Start */
+      // Remove 'active' class from all nav items
+      document
+        .querySelectorAll("nav li")
+        .forEach((li) => li.classList.remove("active"));
 
-	// Clear any hashtags from the page URL if there are any.
-	window.history.replaceState("", document.title, window.location.pathname);
-	
-	const observer = new IntersectionObserver(entries => {
-		entries.forEach(entry => {
-			const id = entry.target.getAttribute('id');
-			if (entry.intersectionRatio > 0) {
-				document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
-			} else {
-				document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
-			}
-		});
-	});
-	
-	// Track all articles that have an `id` applied
-	document.querySelectorAll('article[id]').forEach((article) => {
-		observer.observe(article);
-	});
-	/* Projects Scrollspy End */
-	
+      // Add 'active' class to the current nav item
+      document
+        .querySelector(`nav li a[href="#${id}"]`)
+        .parentElement.classList.add("active");
+    }
+  });
+  /* Projects Scrollspy End */
 });
 
-const projectList = document.getElementById('project-list');
+const projectList = document.getElementById("project-list");
 // Select a project to scroll to.
-projectList.addEventListener('click', function(evt){
-    // Check if a tab label was clicked.
-    if(evt.target.nodeName=='A'){
-		// Prevent the default scrolling mechanism.
-		evt.preventDefault();
-		// Play SFX
-		soundRestart(scrollSpy);
+projectList.addEventListener("click", function (evt) {
+  // Check if a tab label was clicked.
+  if (evt.target.nodeName == "A") {
+    // Prevent the default scrolling mechanism.
+    evt.preventDefault();
+    // Play SFX (assuming soundRestart is defined)
+    soundRestart(scrollSpy);
 
-		// Get the id of the project we want to scroll to.
-		let projectId = evt.target.getAttribute('href');
-		// Get the project article we want to scroll to from the DOM.
-		let project = document.querySelector(projectId);
-		project.scrollIntoView();
-	}
+    // Get the id of the project we want to scroll to.
+    let projectId = evt.target.getAttribute("href");
+    // Get the project article we want to scroll to from the DOM.
+    let project = document.querySelector(projectId);
+    project.scrollIntoView();
+  }
 });
-
-
-
-
 
 // Get the current year.
 let year = new Date().getFullYear();
 // Add the current year to the footer of the page.
-const currentYear = document.getElementById('current-year');
+const currentYear = document.getElementById("current-year");
 currentYear.innerHTML = year;
