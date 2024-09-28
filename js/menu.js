@@ -208,6 +208,9 @@ window.addEventListener('DOMContentLoaded', (evt) => {
 
   // Function to toggle slide up/down
   function slideToggle(element, duration) {
+    // Play a sound effect.
+    soundRestart(accordion);
+    
     if (window.getComputedStyle(element).display === 'none') {
       slideDown(element, duration);
     } else {

@@ -203,10 +203,6 @@
 /*For medium screens (Mostly tablets, maybe cellphones)*/
 
 @media screen and (max-width:600px) {
-    .arrows {
-        display: inline-block !important;
-    }
-
     #about{
         width: 94%;
     }

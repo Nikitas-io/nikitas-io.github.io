@@ -890,24 +890,33 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090544",endCo
   text-align: right;
   display: flex;
   height: 100%;
-  justify-content: space-between;
+  justify-content: center;
   z-index: 1;
   position: absolute;
   right: 0;
   flex-direction: column;
 }
 .role-container h3 {
-  padding: 15px;
-  color: #f1f1f1;
+  padding-right: 15px;
   margin: 0;
 }
 .company-role {
   font-family: "vger_bold";
   font-size: clamp(17px, 3vw, 20px);
+  padding-top: 15px;
+  padding-bottom: 2px;
+  color: #f1f1f1;
 }
 .role-duration {
   font-family: 'vger_regular';
   font-size: clamp(13px, 3vw, 16px);
-  padding-bottom: 13.5px !important;
+  padding-top: 2px;
+  padding-bottom: 13.5px;
+  color: #f0ffffc2;
+}
+@media screen and (max-width:370px) {
+  body .role-container {
+    justify-content: space-between;
+  }
 }
 /* Accordion End */
