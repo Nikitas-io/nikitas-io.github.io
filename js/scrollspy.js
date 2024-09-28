@@ -27,36 +27,33 @@ window.addEventListener("DOMContentLoaded", (evt) => {
   /* Navbar Scrollspy End */
 
   /* Projects Scrollspy Start */
-  let ticking = false;
+  window.addEventListener("scroll", () => {
+    const articles = document.querySelectorAll("article[id]");
+    let currentArticle = null;
+    let minOffset = Infinity;
 
-window.addEventListener('scroll', function() {
-  if (!ticking) {
-    window.requestAnimationFrame(function() {
-      handleScroll();
-      ticking = false;
+    articles.forEach((article) => {
+      const rect = article.getBoundingClientRect();
+      if (rect.top >= 0 && rect.top < minOffset) {
+        minOffset = rect.top;
+        currentArticle = article;
+      }
     });
 
-    ticking = true;
-  }
-});
+    if (currentArticle) {
+      const id = currentArticle.getAttribute("id");
 
-function handleScroll() {
-  var scrollPosition =
-    document.documentElement.scrollTop + 200 || document.body.scrollTop + 200;
+      // Remove 'active' class from all nav items
+      document
+        .querySelectorAll("nav li")
+        .forEach((li) => li.classList.remove("active"));
 
-  for (var i in sectionPositions) {
-    if (sectionPositions[i] <= scrollPosition) {
-      const activeLink = document.querySelector(".active-section");
-      const newActiveLink = document.querySelector("a[href*=" + i + "]");
-
-      if (activeLink !== newActiveLink) {
-        activeLink.classList.remove("active-section");
-        newActiveLink.classList.add("active-section");
-      }
+      // Add 'active' class to the current nav item
+      document
+        .querySelector(`nav li a[href="#${id}"]`)
+        .parentElement.classList.add("active");
     }
-  }
-}
-
+  });
   /* Projects Scrollspy End */
 });
 
