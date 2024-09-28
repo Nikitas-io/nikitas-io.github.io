@@ -1,9 +1,9 @@
 #home{
   width: 100%;
   position: relative;
-  height: calc(100vh - 50px);
+  height: calc(100dvh - 50px);
   display: flex;
-  line-height: 100vh;
+  line-height: 100dvh;
   justify-content: center;
   align-items: center;
   margin-left: auto;

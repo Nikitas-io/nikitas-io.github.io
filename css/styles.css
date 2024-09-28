@@ -853,7 +853,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090544",endCo
     background-size: clamp(165px, 35vw, 340px);
 }
 .accordion .item:nth-of-type(3) {
-    background-image: url('../images/logos/multispace.png');
+    background-image: url('../images/logos/multispace-2.png');
     background-size: clamp(145px, 32vw, 310px);
 }
 .accordion .item:last-of-type {
