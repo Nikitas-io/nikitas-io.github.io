@@ -1,13 +1,16 @@
+:root {
+    --vh: 1vh;
+}
+
 #home{
   width: 100%;
   position: relative;
-  height: calc(100vh - 50px);
+  min-height: calc((var(--vh, 1vh) * 100) - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
 
   transition: opacity 0.5s ease-in;
   opacity: 0;
@@ -54,6 +57,7 @@
 }
 
 main {
+    margin-top: 100px;
     transition: opacity 0.3s ease-in;
     opacity: 0;
 }
@@ -166,9 +170,6 @@ main.loaded {
     }
     body #hamburger {
         display: block;
-    }
-    body #home {
-        padding-top: 50px;
     }
     .arrows {
         display: inline-block !important;
