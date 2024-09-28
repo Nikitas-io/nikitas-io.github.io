@@ -161,92 +161,92 @@ window.addEventListener('DOMContentLoaded', (evt) => {
   /*--------TOUCH EVENTS END---------*/
 
   /*---------ACCORDION START---------*/
-  // // Function to slide up an element
-  // function slideUp(element, duration) {
-  //   if (!element) return;
-  //   element.style.height = element.offsetHeight + 'px';
-  //   element.style.transitionProperty = `height, margin, padding`;
-  //   element.style.transitionDuration = `${duration}ms`;
-  //   element.style.boxSizing = 'border-box';
-  //   element.offsetHeight; // force repaint
-  //   element.style.overflow = 'hidden';
-  //   element.style.height = 0;
-  //   element.style.paddingTop = 0;
-  //   element.style.paddingBottom = 0;
-  //   element.style.marginTop = 0;
-  //   element.style.marginBottom = 0;
+  // Function to slide up an element
+  function slideUp(element, duration) {
+    if (!element) return;
+    element.style.height = element.offsetHeight + 'px';
+    element.style.transitionProperty = `height, margin, padding`;
+    element.style.transitionDuration = `${duration}ms`;
+    element.style.boxSizing = 'border-box';
+    element.offsetHeight; // force repaint
+    element.style.overflow = 'hidden';
+    element.style.height = 0;
+    element.style.paddingTop = 0;
+    element.style.paddingBottom = 0;
+    element.style.marginTop = 0;
+    element.style.marginBottom = 0;
 
-  //   window.setTimeout(() => {
-  //     element.style.display = 'none';
-  //     element.style.removeProperty('height');
-  //     element.style.removeProperty('padding-top');
-  //     element.style.removeProperty('padding-bottom');
-  //     element.style.removeProperty('margin-top');
-  //     element.style.removeProperty('margin-bottom');
-  //     element.style.removeProperty('overflow');
-  //     element.style.removeProperty('transition-duration');
-  //     element.style.removeProperty('transition-property');
-  //   }, duration);
-  // }
+    window.setTimeout(() => {
+      element.style.display = 'none';
+      element.style.removeProperty('height');
+      element.style.removeProperty('padding-top');
+      element.style.removeProperty('padding-bottom');
+      element.style.removeProperty('margin-top');
+      element.style.removeProperty('margin-bottom');
+      element.style.removeProperty('overflow');
+      element.style.removeProperty('transition-duration');
+      element.style.removeProperty('transition-property');
+    }, duration);
+  }
 
-  // // Function to slide down an element
-  // function slideDown(element, duration) {
-  //   if (!element) return;
-  //   element.style.removeProperty('display');
-  //   let display = window.getComputedStyle(element).display;
+  // Function to slide down an element
+  function slideDown(element, duration) {
+    if (!element) return;
+    element.style.removeProperty('display');
+    let display = window.getComputedStyle(element).display;
 
-  //   if (display === 'none') {
-  //     display = 'block';
-  //   }
+    if (display === 'none') {
+      display = 'block';
+    }
 
-  //   element.style.display = display;
-  //   let height = element.offsetHeight;
-  //   element.style.height = 0;
-  //   element.style.overflow = 'hidden';
-  //   element.style.boxSizing = 'border-box';
-  //   element.offsetHeight; // force repaint
-  //   element.style.transitionProperty = `height, margin, padding`;
-  //   element.style.transitionDuration = `${duration}ms`;
-  //   element.style.height = height + 'px';
+    element.style.display = display;
+    let height = element.offsetHeight;
+    element.style.height = 0;
+    element.style.overflow = 'hidden';
+    element.style.boxSizing = 'border-box';
+    element.offsetHeight; // force repaint
+    element.style.transitionProperty = `height, margin, padding`;
+    element.style.transitionDuration = `${duration}ms`;
+    element.style.height = height + 'px';
 
-  //   window.setTimeout(() => {
-  //     element.style.removeProperty('height');
-  //     element.style.removeProperty('overflow');
-  //     element.style.removeProperty('transition-duration');
-  //     element.style.removeProperty('transition-property');
-  //   }, duration);
-  // }
+    window.setTimeout(() => {
+      element.style.removeProperty('height');
+      element.style.removeProperty('overflow');
+      element.style.removeProperty('transition-duration');
+      element.style.removeProperty('transition-property');
+    }, duration);
+  }
 
-  // // Function to toggle slide up/down
-  // function slideToggle(element, duration) {
-  //   // Play a sound effect.
-  //   soundRestart(accordion);
+  // Function to toggle slide up/down
+  function slideToggle(element, duration) {
+    // Play a sound effect.
+    soundRestart(accordion);
     
-  //   if (window.getComputedStyle(element).display === 'none') {
-  //     slideDown(element, duration);
-  //   } else {
-  //     slideUp(element, duration);
-  //   }
-  // }
+    if (window.getComputedStyle(element).display === 'none') {
+      slideDown(element, duration);
+    } else {
+      slideUp(element, duration);
+    }
+  }
 
-  // // Attach click event to elements with class 'item'
-  // const items = document.querySelectorAll('.item');
+  // Attach click event to elements with class 'item'
+  const items = document.querySelectorAll('.item');
 
-  // items.forEach(function(item) {
-  //   item.addEventListener('click', function() {
-  //     const nextElement = this.nextElementSibling;
+  items.forEach(function(item) {
+    item.addEventListener('click', function() {
+      const nextElement = this.nextElementSibling;
 
-  //     // Toggle the next sibling element
-  //     slideToggle(nextElement, 100);
+      // Toggle the next sibling element
+      slideToggle(nextElement, 100);
 
-  //     // Slide up all other <p> elements except the toggled one
-  //     const pElements = document.querySelectorAll('.role-content');
-  //     pElements.forEach(function(p) {
-  //       if (p !== nextElement) {
-  //         slideUp(p, 200); // 'fast' in jQuery is approximately 200ms
-  //       }
-  //     });
-  //   });
-  // });
-  // /*---------ACCORDION END---------*/
+      // Slide up all other <p> elements except the toggled one
+      const pElements = document.querySelectorAll('.role-content');
+      pElements.forEach(function(p) {
+        if (p !== nextElement) {
+          slideUp(p, 200); // 'fast' in jQuery is approximately 200ms
+        }
+      });
+    });
+  });
+  /*---------ACCORDION END---------*/
 });
