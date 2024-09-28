@@ -226,7 +226,7 @@ window.addEventListener('DOMContentLoaded', (evt) => {
       slideToggle(nextElement, 100);
 
       // Slide up all other <p> elements except the toggled one
-      const pElements = document.querySelectorAll('p');
+      const pElements = document.querySelectorAll('.role-content');
       pElements.forEach(function(p) {
         if (p !== nextElement) {
           slideUp(p, 200); // 'fast' in jQuery is approximately 200ms

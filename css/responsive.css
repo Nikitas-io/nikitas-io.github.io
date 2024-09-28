@@ -17,6 +17,10 @@
         font-size: 15px;
     }
 
+    body .accordion p {
+        font-size: 15px;
+    }
+
     body .section {
         margin-top: -10px !important;
         height: 330px !important;

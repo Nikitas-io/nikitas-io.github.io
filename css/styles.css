@@ -700,6 +700,10 @@ article a {
   background-image: url(../images/projects/inhinito_bg.jpg) !important;
 }
 
+#articlereader-content {
+  background-image: url(../images/projects/articlereader_bg.jpg) !important;
+}
+
 #lofi-content {
   background-image: url(../images/projects/lofi_bg.jpg) !important;
 }
@@ -712,8 +716,8 @@ article a {
   background-image: url(../images/projects/videophotography_bg.jpg) !important;
 }
 
-#maps-content {
-  background-image: url(../images/projects/maps_bg.jpg) !important;
+#working-content {
+  background-image: url(../images/projects/working_bg.jpg) !important;
 }
 
 /* Scroll Indicator */
@@ -865,7 +869,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090544",endCo
 .accordion p {
   font-family: "JF Flat Regular";
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   padding: 15px;
   display: none;
