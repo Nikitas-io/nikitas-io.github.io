@@ -41,6 +41,14 @@ html::-webkit-scrollbar-track {
   );
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* html, body {
+  height: 100%;
+} */
+
 body {
   max-width: 900px;
   margin-left: auto;
