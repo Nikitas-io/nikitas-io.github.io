@@ -19,7 +19,8 @@
     font-style: normal;
 } */
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -47,7 +48,9 @@ html::-webkit-scrollbar-track {
   );
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -619,7 +622,6 @@ p.tab-content {
   padding: 20px;
   height: 3.8em;
   width: 3.8em;
-  background-repeat: no-repeat;
   background-color: #34435e;
   text-align: center;
   line-height: 1.25em;
@@ -679,7 +681,6 @@ p.tab-content {
   background-image: url(../images/logos/walk.png) !important;
   background-size: contain;
 }
-
 
 article a {
   text-decoration: none;
@@ -811,22 +812,22 @@ article a {
   border-radius: 5px;
 }
 .accordion .item img {
-    padding-left: 15px;
-    width: 30px;
-    vertical-align: middle;
+  padding-left: 15px;
+  width: 30px;
+  vertical-align: middle;
 }
 .accordion .item h3:before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
 }
 
 .accordion .item {
-    cursor: pointer;
-    position: relative;
-    height: 100px;
-    background: #13296c;
+  cursor: pointer;
+  position: relative;
+  height: 100px;
+  background: #261d45;
   border: 1px solid rgb(64, 183, 247);
   background-repeat: no-repeat;
   background-position: left;
@@ -835,47 +836,62 @@ article a {
 }
 
 .accordion .item::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%; 
-    width: 100%;
-    
-    background: rgb(9,5,68);
-background: -moz-linear-gradient(270deg, rgba(9,5,68,0.9) 0%, rgba(17,17,88,0.7) 35%, rgba(255,255,255,0) 100%);
-background: -webkit-linear-gradient(270deg, rgba(9,5,68,0.9) 0%, rgba(17,17,88,0.7) 35%, rgba(255,255,255,0) 100%);
-background: linear-gradient(270deg, rgba(9,5,68,0.9) 0%, rgba(17,17,88,0.7) 35%, rgba(255,255,255,0) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090544",endColorstr="#ffffff",GradientType=1);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background: rgb(9, 5, 68);
+  background: -moz-linear-gradient(
+    270deg,
+    rgb(26 20 126 / 90%) 0%,
+    rgb(48 48 119 / 70%) 35%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    270deg,
+    rgb(26 20 126 / 90%) 0%,
+    rgb(48 48 119 / 70%) 35%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: linear-gradient(
+    270deg,
+    rgb(26 20 126 / 90%) 0%,
+    rgb(48 48 119 / 70%) 35%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090544",endColorstr="#ffffff",GradientType=1);
 }
 
 .accordion .item:first-of-type {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    background-image: url('../images/logos/inhinito.png');
-    background-size: clamp(170px, 35vw, 350px);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-image: url("../images/logos/inhinito.png");
+  background-size: clamp(170px, 35vw, 350px);
 }
 .accordion .item:first-of-type::after {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .accordion .item:nth-of-type(2) {
-    background-image: url('../images/logos/ideas-forward.png');
-    background-size: clamp(165px, 35vw, 340px);
+  background-image: url("../images/logos/ideas-forward.png");
+  background-size: clamp(165px, 35vw, 340px);
 }
 .accordion .item:nth-of-type(3) {
-    background-image: url('../images/logos/multispace-2.png');
-    background-size: clamp(145px, 32vw, 310px);
+  background-image: url("../images/logos/multispace-2.png");
+  background-size: clamp(145px, 32vw, 310px);
 }
 .accordion .item:last-of-type {
-    background-image: url('../images/logos/softweb.png');
-    background-size: clamp(120px, 24vw, 225px);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+  background-image: url("../images/logos/softweb.png");
+  background-size: clamp(120px, 24vw, 225px);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .accordion .item:last-of-type::after {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .accordion p {
   font-family: "JF Flat Regular";
@@ -919,13 +935,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090544",endCo
   color: #f1f1f1;
 }
 .role-duration {
-  font-family: 'vger_regular';
+  font-family: "vger_regular";
   font-size: clamp(13px, 3vw, 16px);
   padding-top: 2px;
   padding-bottom: 13.5px;
   color: #f0ffffc2;
 }
-@media screen and (max-width:370px) {
+@media screen and (max-width: 370px) {
   body .role-container {
     justify-content: space-between;
   }
