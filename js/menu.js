@@ -10,21 +10,6 @@ const word = document.querySelector("h1 span");
 const loadingDots = document.getElementsByClassName('loading-dots');
 const scrollIndicator = document.getElementsByClassName('arrows');
 
-// Function to set the height of the #home section
-function setHomeSectionHeight() {
-  var homeSection = document.getElementById('home');
-  if (homeSection) {
-    // Get the viewport height
-    var viewportHeight = window.innerHeight;
-    // Set the height of the #home section
-    homeSection.style.height = viewportHeight + 'px';
-  }
-}
-
-// Set the height on page load
-window.addEventListener('load', setHomeSectionHeight);
-// Update the height when the window is resized (e.g., orientation change)
-window.addEventListener('resize', setHomeSectionHeight);
 
 window.addEventListener('DOMContentLoaded', (evt) => {
   "use strict";
