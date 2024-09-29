@@ -900,9 +900,9 @@ article a {
   font-weight: 400;
   padding: 15px;
   display: none;
-  box-shadow: inset 0 3px 15px -5px #152867;
+  box-shadow: inset 0 3px 15px -5px #061444;
   font-family: courier, monospace;
-  background: rgb(0 190 190 / 22%);
+  background: #2b3560;
   color: white;
 }
 
