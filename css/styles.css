@@ -19,6 +19,12 @@
     font-style: normal;
 } */
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -55,7 +61,6 @@ body {
   margin-right: auto;
   font-family: vger_regular;
   background-color: rgb(38, 29, 69);
-  background: linear-gradient(209deg, rgb(38, 29, 69) 15%, rgb(18 42 110) 83%);
   color: crimson;
 }
 
