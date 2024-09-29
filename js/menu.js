@@ -10,16 +10,6 @@ const word = document.querySelector("h1 span");
 const loadingDots = document.getElementsByClassName('loading-dots');
 const scrollIndicator = document.getElementsByClassName('arrows');
 
-// Function to set the height of the #home section
-function setHomeSectionHeight() {
-  var homeSection = document.getElementById('home');
-  if (homeSection) {
-    // Get the viewport height
-    var viewportHeight = window.innerHeight;
-    // Set the height of the #home section
-    homeSection.style.height = viewportHeight + 'px';
-  }
-}
 
 window.addEventListener('DOMContentLoaded', (evt) => {
   "use strict";
@@ -46,12 +36,11 @@ window.addEventListener('DOMContentLoaded', (evt) => {
       // Fade out the loading dots.
       loadingDots[0].classList.add('loaded');
       setTimeout(function(){
+
         // Hide the loading dots.
         loadingDots[0].style.display = 'none';
         // Fade in the scroll indicator.
         scrollIndicator[0].style.opacity = 1;
-        // Set the height of the #home section.
-        setHomeSectionHeight();
 
       }, 500);
     }
