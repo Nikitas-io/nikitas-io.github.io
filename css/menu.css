@@ -1,7 +1,3 @@
-:root {
-    --vh: 1vh;
-}
-
 #home {
     height: 100%;
     width: 100%;
@@ -216,11 +212,11 @@ main.loaded {
     user-select: none;
     /* Standard */
     color: white;
-    font-size: 4vh;
+    font-size: 30px;
     padding: 10px 0px 7px 8px;
     width: fit-content;
     cursor: pointer;
-    margin: 35px 0px 0px 20px;
+    margin: 15px 0px 0px 20px;
 }
 
 #close-burger:hover {
