@@ -10,7 +10,7 @@
     padding-bottom: 60px;
     
     transition: opacity 0.5s ease-in;
-    opacity: 0;
+    opacity: 1;
 }
   
 #home.loaded {
@@ -61,7 +61,7 @@
 main {
     margin-top: 100px;
     transition: opacity 0.3s ease-in;
-    opacity: 0;
+    opacity: 1;
 }
 main.loaded {
     opacity: 1;
